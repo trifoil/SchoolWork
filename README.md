@@ -1,2 +1,0 @@
-# SchoolWork
-School work repo
