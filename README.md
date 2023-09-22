@@ -16,3 +16,4 @@ Ce serait bien qu'on aie chacun son directory pour travailler donc, je vai svoir
 Pour unifier notre belle communauté nerdo-anarcho-communiste, nous pouvons dès à présent créer, remplir, compléter les notes déjà présentes.
 
 Veillons à bien structurer le repo pour plus de clarté, et ainsi favoriser la réussite de tous.
+
