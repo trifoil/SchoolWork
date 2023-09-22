@@ -7,7 +7,7 @@ Si qqun est chaud de faire l'explication pour l'utilisation de git, ça sera coo
 
 Pour le moment, mon repo perso
 
-Ce serait bien qu'on aie chacun son directory pour travailler donc, je vai svoir pour faire ça 
+Ce serait bien qu'on aie chacun son directory pour travailler donc, je vais voir pour faire ça 
 
 :)
 
