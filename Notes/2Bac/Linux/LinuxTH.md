@@ -7,6 +7,18 @@ dans le bashrc confi gde bash (pour aller modifier)
 
 Constitués de secteurs, constitués eux même de blocs = plus petite unité 
 
+```
+df -i
+```
+
+Ajout de disques via
+
+```
+mount
+```
+
+
+
 ### Journalisés 
 
 
