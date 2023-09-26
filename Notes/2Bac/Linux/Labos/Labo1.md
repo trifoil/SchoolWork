@@ -36,4 +36,3 @@ userdel /home/bruhh
 ```
 more /etc/passwd
 ```
-
