@@ -12,3 +12,6 @@
     Une table ne change pas de serveur.     
     Un serveur ne travaille pas tous les jours.     
     Un produit n'appartient qu'à un seul type. 
+
+
+2) 
