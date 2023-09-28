@@ -1,4 +1,17 @@
 # Sythèse de théorie des réseaux 
+## Chapitre 1 : Introduction et généralités
+
+L'admin gère :
+* Les besoins, budget et priorités
+* Les ordinateurs et périphériques
+* Les performances des systèmes
+* Les utilisateurs
+* Les fichiers et disques
+* Les services
+* Les problèmes
+* Les sauvegardes et stockage des données
+* Le réseau
+* La sécurité
 
 ## Chapitre 2 : Communication et protocoles réseaux
 
