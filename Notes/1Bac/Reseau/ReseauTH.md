@@ -34,7 +34,7 @@ L'admin gère :
       | 2^x | 2^10 | 2^9 | 2^8 | 2^7 | 2^6 | 2^5 | 2^4 | 2^3 | 2^2 | 2^1 | 2^0 |
       | ---  | ---- | --- |---  | ---- | --- |---  | ---- | --- |---  | ---- | --- |
       | Base 10 | 1024 | 512 | 256 | 128 | 64 | 32 | 16 | 8 | 4 | 2 | 1 |
-       | Base 2 |  |  |  |  |  |  |  |  |  |  |  |
+      | Base 2 |  |  |  |  |  |  |  |  |  |  |  |
 
     * On note le nombre en base 2 en partant de la droite, puis on additionne les nombres en base 10 qui sont face à un 1
       
