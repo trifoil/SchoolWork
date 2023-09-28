@@ -22,12 +22,12 @@ L'admin gère :
 
 1) 10 en base 2    
 
-| 2^x | 2^10 | 2^9 | 2^8 | 2^7 | 2^6 | 2^5 | 2^4 | 2^3 | 2^2 | 2^1 | 2^0 |
-| ---  | ---- | --- |---  | ---- | --- |---  | ---- | --- |---  | ---- | --- |
-| valeur | 1024 | 512 | 256 | 128 | 64 | 32 | 16 | 8 | 4 | 2 | 1 |
+  | 2^x | 2^10 | 2^9 | 2^8 | 2^7 | 2^6 | 2^5 | 2^4 | 2^3 | 2^2 | 2^1 | 2^0 |
+  | ---  | ---- | --- |---  | ---- | --- |---  | ---- | --- |---  | ---- | --- |
+  | valeur | 1024 | 512 | 256 | 128 | 64 | 32 | 16 | 8 | 4 | 2 | 1 |
 
-* Si le nombre à convertir est plus petit que la valeur du tableau, on note un zero sous la case
-* Si le nombre à convertir est plus grand que la valeur du tableau, on note un un, on soustrait la valeur au nombre à convertir et on continue le processus.
+  * Si le nombre à convertir est plus petit que la valeur du tableau, on note un zero sous la case
+  * Si le nombre à convertir est plus grand que la valeur du tableau, on note un un, on soustrait la valeur au nombre à convertir et on continue le processus.
   
 3) 2 en base 10
 4) 2 en base 8
