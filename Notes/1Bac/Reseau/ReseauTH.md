@@ -25,11 +25,12 @@ L'admin gère :
   | :---        |    :----:   |          ---: |
   | Header      | Title       | Here's this   |
   | Paragraph   | Text        | And more      |
-2) 2 en base 10
-3) 2 en base 8
-4) 2 en base 16
-5) 8 en base 2
-6) 10 en base 8 ou 16
+  
+3) 2 en base 10
+4) 2 en base 8
+5) 2 en base 16
+6) 8 en base 2
+7) 10 en base 8 ou 16
 ## Chapitre 2 : Communication et protocoles réseaux
 
 ### Protocoles
