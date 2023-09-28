@@ -21,6 +21,7 @@ L'admin gère :
 ### Conversion de nombres dans d'autres bases
 
 1) 10 en base 2    
+
 | 2^x | 2^10 | 2^9 |
 | ---  | ---- | --- |
 | valeur | 1024 | 512 |
