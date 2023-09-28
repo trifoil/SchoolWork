@@ -24,16 +24,24 @@ L'admin gère :
   
       | 2^x | 2^10 | 2^9 | 2^8 | 2^7 | 2^6 | 2^5 | 2^4 | 2^3 | 2^2 | 2^1 | 2^0 |
       | ---  | ---- | --- |---  | ---- | --- |---  | ---- | --- |---  | ---- | --- |
-      | valeur | 1024 | 512 | 256 | 128 | 64 | 32 | 16 | 8 | 4 | 2 | 1 |
+      | Base 10 | 1024 | 512 | 256 | 128 | 64 | 32 | 16 | 8 | 4 | 2 | 1 |
   
     * Si le nombre à convertir est plus petit que la valeur du tableau, on note un zero sous la case
     * Si le nombre à convertir est plus grand que la valeur du tableau, on note un un, on soustrait la valeur au nombre à convertir et on continue le processus.
   
 2) 2 en base 10
-3) 2 en base 8
-4) 2 en base 16
-5) 8 en base 2
-6) 10 en base 8 ou 16
+  
+      | 2^x | 2^10 | 2^9 | 2^8 | 2^7 | 2^6 | 2^5 | 2^4 | 2^3 | 2^2 | 2^1 | 2^0 |
+      | ---  | ---- | --- |---  | ---- | --- |---  | ---- | --- |---  | ---- | --- |
+      | Base 10 | 1024 | 512 | 256 | 128 | 64 | 32 | 16 | 8 | 4 | 2 | 1 |
+       | Base 2 |  |  |  |  |  |  |  |  |  |  |  |
+
+    * On note le nombre en base 2 en partant de la droite, puis on additionne les nombres en base 10 qui sont face à un 1
+      
+4) 2 en base 8
+5) 2 en base 16
+6) 8 en base 2
+7) 10 en base 8 ou 16
 ## Chapitre 2 : Communication et protocoles réseaux
 
 ### Protocoles
