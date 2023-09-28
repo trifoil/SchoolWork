@@ -1,5 +1,8 @@
-# Sythèse de théorie des réseaux 
+# Sythèse de théorie des réseaux
+
 ## Chapitre 1 : Introduction et généralités
+
+### Rôles de l'administrateur
 
 L'admin gère :
 * Les besoins, budget et priorités
@@ -12,6 +15,11 @@ L'admin gère :
 * Les sauvegardes et stockage des données
 * Le réseau
 * La sécurité
+
+### Methodologie de l'administrateur
+
+### Conversion de nombres dans d'autres bases
+
 
 ## Chapitre 2 : Communication et protocoles réseaux
 
