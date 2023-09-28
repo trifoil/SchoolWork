@@ -26,6 +26,8 @@ L'admin gère :
 | ---  | ---- | --- |---  | ---- | --- |---  | ---- | --- |---  | ---- | --- |
 | valeur | 1024 | 512 | 256 | 128 | 64 | 32 | 16 | 8 | 4 | 2 | 1 |
 
+* Si le nombre à convertir est plus petit que la valeur du tableau, on note un zero sous la case
+* Si le nombre à convertir est plus grand que la valeur du tableau, on note un un, on soustrait la valeur au nombre à convertir et on continue le processus.
   
 3) 2 en base 10
 4) 2 en base 8
