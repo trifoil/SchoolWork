@@ -67,6 +67,8 @@ Deux critères pour les catégoriser :
     * Token ring
     * FDDI (fiber distributed data interface)
 
+    
+
 ### Modes de fonctionnement 
 ```
 Tous les ordinateurs connectés à un réseau et qui participent directement aux communications
