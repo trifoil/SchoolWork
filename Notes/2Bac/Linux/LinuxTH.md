@@ -29,13 +29,31 @@ La plupart des logiciels libres sont disponibles via :
 * Gitlab
 * L'hébergement par l'organisme lui-même 
 
-### Utilisation de RPM
+Comme la distribution sur laquelle nous allons travailler cette année sont de la famille Red Hat, nous nous focalisons sur certains gestionnaires de packages.
 
-L'utilitaire de gestion des packages RPM (RedHat Package Manager) est celui qui porte sur les derivés de la famille de distributions de Red Hat.
+Nous allons principalement utiliser trois methodes pour installer un programme :
+* DNF (Dandified YUM)
+* RPM (RedHat Package Manager)
+* Compilation
+
+Les deux premiers ont le même but : installer des packages .rpm
+
+Le premier est toujours préférable au second car :
+* DNF identifie et installe automatiquement toutes les dépendances nécessaire au programme qu'on installe
+* RPM installe seulement le programme, et doit être utilisée plusieurs fois pour rechercher les dépendances et les installer, ce qui est chiant.
+
+
+### Utilisation de RPM
 
 Il fonctionne :
 * de manière graphique lorsqu'on travaille dans un DE (desktop environment), 
 * en CLI (command line interface).
+
+Sa nomenclature est très simple :
+* Nomn du package
+* Version
+* Architecture visée 
+* Extention .rpm
 
 ### Installation d'archives
 
