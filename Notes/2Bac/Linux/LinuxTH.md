@@ -58,12 +58,18 @@ Sa nomenclature est très simple :
 Commandes les plus courantes :
 
 ```
-rpm -ivh rule34-1.2.3.i386.rpm
+rpm -ivh packagename-1.2.3.i386.rpm
 ```
 L'option :
 * -i veut dire installer
 * -v affiche les infos de debugging
 * -h affiche des résultats plus lisibles our un être humain
+
+Si un package manque, il faut aller le chercher manuellement
+
+```
+rpm -e packagename
+```
 
 ### Installation d'archives
 
