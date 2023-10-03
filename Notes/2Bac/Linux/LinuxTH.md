@@ -92,7 +92,12 @@ Affiche tous les packages et leurs infos (contenues dans le nom)
 
 ### Installation d'archives
 
+Une archive est toujours nommée sous cette forme :
 
+```<Nom>-<Version>.<src ou bin>.<(Type de binaire)>.<Type d'archive>.<type de compression>```
+
+* bin veut dire que l'archive contient un fichier binaire prêt à être executé 
+* src veut dire que l'archive contient le code source
 
 ## Gestion des process
 
