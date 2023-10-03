@@ -1,0 +1,269 @@
+@font-face {
+    font-family: "Lato";
+    src: url("fonts/Lato-Regular.ttf");
+}
+
+body{
+    margin:0;
+    font-family:"Lato","Calibri",sans-serif;
+    
+}
+
+header {
+    background-color:#e45e55;
+
+}
+#logo {
+    margin:0;
+    padding:50px 0;
+}
+
+#logo img{
+    width: 100%;
+}
+
+#logo h1 {
+    display: none;
+}
+
+header nav{
+    padding-bottom: 50px;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding:0; /*"padding: 0 0 30px 0;" ordre : haut droit bas gauche*/
+}
+
+header div  {
+
+}
+header nav a {
+    color: #FFFFFF;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 15px;
+    display: block;  /* pour pas que les block se superposent*/
+    text-align: center;
+    font-size: 1.3rem; /* "rem" ratio par rapport a la taille de la police (si bien config 1rem si c'est un paragraphe ca seras parfaitement lisible) et "em" c'est par rapport au parent */ 
+    font-weight: bold;
+}   
+
+header nav ul ul{  
+    display: none;
+}
+
+header nav a:hover, header nav a:active {
+    color:#000000;
+}
+
+main{
+    padding: 25px;
+    background: url("img/background.jpg") #FFFFFF bottom center no-repeat;
+    background-size: 200%;
+}
+
+main h2{
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    border-bottom: solid 2px #e45e55; /* ligne simple de 2px en couleur rose comme le header  */
+    margin-bottom: 0;
+    padding-bottom: 5px;
+}
+
+main section article p {
+    margin-top: 5px;
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+}
+
+main section article p a {
+    color: #e45e55;
+    text-decoration: none;
+}
+ main section article p a:hover, main section article p a:active{ /* hover quand on passe dessus, active quand on clique dessus */
+    color:#000000;
+}
+
+
+main aside div{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+}
+
+.vignette{
+    text-decoration: none;
+    display: block;
+    width: 80%;
+    margin:5%;
+    text-align: center;
+    height:0;
+    padding-bottom: 40%;
+    border-radius: 10px; /*coin des carrés */
+    position: relative;
+}
+
+
+#ral1003{background-color: #f9a800;}
+#ral2004{background-color: #e25303;}
+#ral3020{background-color: #bb1e10;}
+#ral4010{background-color: #bc4077;}
+#ral5013{background-color: #193153;}
+#ral6000{background-color: #3c7460;}
+#ral6020{background-color: #37422f;}
+#ral9001{background-color: #e9e0d2;}
+
+
+.vignette h3 {
+    color: #000000;
+    font-size: 1.3rem;
+    margin-bottom:0;
+
+}
+
+.vignette p{
+    color: #FFFFFF;
+    font-size:0.8rem;
+    margin-top:5px;
+}
+
+.clair p{
+    color: #000000;
+}
+
+.loupe{
+    background-image:url("img/icone-loupe.png");
+    width: 38px;
+    height: 38px;
+    position:absolute;
+    left: -19px;
+    top: -19px;
+    display: none;
+
+}
+
+.end-float{
+    clear: both;
+}
+
+footer{
+    background-color: #e45e55;
+    font-style: italic;
+    padding: 10px;
+    color:#FFFFFF;
+    text-align: center;
+}
+
+@media screen and (min-width:1024px) {
+    html{
+        background: url("img/pattern.png") #FFFFFF top center;
+    }
+
+    body {
+        width: 1000px;
+        margin: 0 auto;
+    }
+
+    header{
+        
+    }
+
+    #logo{
+        
+        width: 200px;
+        padding: 25px 50px;
+    }
+
+    header nav{
+        flex:1;
+        text-align: right;
+        padding-bottom: 0;
+    }
+
+    header nav ul{
+        
+        padding: 35px;
+    }
+
+    header nav ul li {
+        position: relative;
+    }
+
+    header nav a{
+        font-size: 1.1rem;
+    }
+
+    header nav ul ul {
+        position:absolute;
+        left:0;
+        top: 50px;
+        background-color: #FFFFFF;
+        border:solid 2px #e45e55;
+        padding: 0;
+        text-align: center;
+    }
+
+    header nav ul li:hover ul{
+        display: block;
+    }
+
+    header nav ul ul a {
+        color: #000000;
+        font-size: 0.9rem;
+        padding: 8px;
+
+    }
+
+    header nav ul ul a:hover, header nav ul ul a:active{
+         color:#e45e55;
+    }
+
+    main{
+        background-size: 100%;
+    }
+
+    main section{
+        display: flex;
+        flex-flow: row
+    }
+
+    main section article{
+        
+        width: 33.33%;
+
+    }
+
+    main h2,main section article p{
+        margin:20px;
+          
+    }
+
+    main h2{
+        margin-bottom:0;
+    }
+
+    main section article p {
+        margin-top: 5px;
+        font-size:1rem;
+        line-height: 1.3rem;
+    }
+
+    aside>div{
+        padding-top: 30px;
+    }
+
+    .vignette{
+        width: 20%;
+        margin:2.5%;
+        padding-bottom: 20%;
+
+
+    }
+
+    .loupe{
+        display:block;  /* afficher*/
+    }
+
+}

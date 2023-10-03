@@ -1,0 +1,6 @@
+[PROJECTS]
+Count=2
+Project0=..\04 selection de modes amélioré\selections_modes.mcppi
+Project1=MyProject.mcppi
+[ActiveProject]
+Index=0

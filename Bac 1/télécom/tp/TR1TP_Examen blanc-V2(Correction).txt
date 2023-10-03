@@ -1,0 +1,175 @@
+
+!!!!!!!!!!!!!!!!!!!!! !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!Correction Examen blanc TR1TR2   !!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!
+REMARQUE: comme indiqué dans le questionnaire, le pourcentage de complétion des fichiers et les indications des fenêtres « Results » (Activity results, Check activity, …) ne sont pas en relation directe avec la cotation de l’exercice. 
+Notamment, vous n'arriverez pas à 100% en répondant aux questions car toutes les questions ne sont pas évaluées automatiquement.
+!
+!
+hostname R1
+!
+!!!!!!!!! config des interfaces
+!
+interface fa 0/0
+  ip address 172.20.3.254 255.255.252.0
+  ipv6 address 2001::1:172:0:0:1/64
+  ipv6 enable
+  no shutdown
+  exit
+!
+interface fa 0/1
+  ip address 172.20.4.254 255.255.255.0
+  no shutdown
+  exit
+!
+!
+interface fa 1/0
+  ip address 172.20.6.2 255.255.255.252
+  ipv6 address 2001::2:172:0:0:2/64
+  ipv6 enable
+  no shutdown
+  exit
+!
+!
+ip route 172.20.5.0 255.255.255.128  172.20.6.1
+ip route 172.20.5.128 255.255.255.128  172.20.6.1
+ip route 172.20.6.4 255.255.255.252  172.20.6.1
+!
+ipv6 unicast-routing
+!
+ipv6 route ::/0 2001::2:172:0:0:229
+!
+!
+enable secret ciscocisco
+!
+service password-encryption
+!
+line console 0
+  password ciscocisco
+  login
+exit
+!
+line vty 0 4
+  password ciscocisco
+  login
+exit
+!
+banner motd &RESTRICTED&
+!
+login block-for 300 attempts 3 within 120
+!
+!
+!--------------------------------------------------
+!
+hostname R2
+!
+!!!!!!!!! config des interfaces
+!
+interface fa 0/0
+  ip address 172.20.6.5 255.255.255.252
+  no shutdown
+  exit
+!
+!
+interface fa 0/1
+  ip address 172.20.5.126 255.255.255.128
+  no shutdown
+  exit
+!
+!
+interface fa 1/0
+  ip address 172.20.6.1 255.255.255.252
+  ipv6 address 2001::2:172:0:0:229/64
+  ipv6 enable
+  no shutdown
+  exit
+!
+ipv6 unicast-routing
+!
+ip route 172.20.0.0 255.255.252.0  172.20.6.2
+ip route 172.20.4.0 255.255.255.0  172.20.6.2
+ip route 172.20.5.128 255.255.255.128  172.20.6.6
+!
+!
+!
+!--> non demandé mais permet tester le connectivité IPv6 vers PC1 : 
+ipv6 route 2001:0:0:1::/64 2001::2:172:0:0:2
+!
+!
+!--------------------------------------------------
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! sur R3
+!
+hostname R3
+!
+!!!!!!!!! config des interfaces
+!
+interface gi 0/0
+  ip address 172.20.6.6 255.255.255.252
+  no shutdown
+  exit
+!
+interface gi 0/1
+  ip address 172.20.5.254 255.255.255.128
+  no shutdown
+  exit
+!
+!
+!
+ip route 0.0.0.0 0.0.0.0 172.20.6.5
+!
+
+!
+!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!sur SW4
+hostname SW4
+!
+interface vlan 1
+  ip add 172.20.5.131 255.255.255.128
+  no shut
+exit
+!
+ip default-gateway 172.20.5.254
+!
+!
+line vty 0 15
+  transport input ssh
+  login local
+exit
+!
+enable secret ciscocisco
+!
+ip domain-name domain.heh
+!
+username admin password ciscocisco
+!
+crypto key generate rsa general-keys modulus 2048
+!
+mac-address-table static 0001.643D.D4A3 vlan 1 interface fastEthernet 0/20
+!
+!
+!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!sur SW2
+hostname SW2
+!
+interface vlan 1
+  ip add 172.20.4.250 255.255.255.0
+  no shut
+exit
+!
+ip default-gateway 172.20.4.254
+!
+line vty 0 15
+  password cisco
+  login
+!
+enable secret cisco
+!
+
+
+
+
+
+

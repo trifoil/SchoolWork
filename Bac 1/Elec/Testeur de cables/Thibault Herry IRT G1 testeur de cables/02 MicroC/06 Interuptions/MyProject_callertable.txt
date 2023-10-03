@@ -1,0 +1,3 @@
+main
+	InitExternal_INT
+interrupt

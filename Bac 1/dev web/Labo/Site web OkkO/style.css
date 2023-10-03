@@ -1,0 +1,121 @@
+/* CSS du site web Okko bande dessinée fantastique */
+html { margin:0; padding:0; font-size:100%; 
+	font-family:Arial, sans-serif;
+}
+body { margin:0; padding:0; }
+img, video, iframe, input, audio { max-width:100%; }
+a { }
+
+/* HEADER */
+#header {
+	height:33vh; min-height:100px; 
+	background-image:url(img/okko-bandeau.jpg);
+	background-color:brown;
+	background-position:center center;
+	background-repeat:no-repeat;
+	background-size:cover;
+	margin-bottom:-11vh;
+}
+
+/* MAIN */
+#main { 
+	max-width:1200px;
+	width:92%;
+	margin:0 auto;
+	background-color:#fff;
+}
+
+/* MAIN : H1 */
+#main h1 { margin:0; text-align:center; }
+#main h1 img { }
+
+/* MAIN : SECTIONS */
+section {
+	margin:3em 0; 
+}
+section h2 { 
+	border-left:solid 4px orange; 
+	padding:0.5em; 
+}
+
+/* Flex 2 colonnes */
+.flex2 {
+	display:flex;
+	justify-content:space-between;
+	align-items:center;
+}
+.flex2>* {
+	width:48%;
+}
+
+.cols-2 { column-count:2; }
+.cols-2 p:first-child { margin-top:0; }
+
+/* Flex 10 images */
+.flex10 {
+	display:flex;
+	flex-wrap:wrap;
+	justify-content:space-between;
+	align-items:center;
+	margin:-2%;
+}
+.flex10>* {
+	width:16%;
+	margin:2%;
+}
+
+/* Flex 4 vignettes */
+.flex4 { 
+	display:flex;
+	flex-wrap:wrap;
+	flex-direction:row;
+	justify-content:space-between;
+	margin:-2%;
+}
+.flex4>* { 
+	width:21%;
+	margin:4% 2%;
+	clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+}
+
+.flex4 a { 
+	text-decoration:none;
+	transition:500ms;
+}
+.flex4 figure { 
+	margin:0;
+}
+.flex4 img { 
+	display:block;
+}
+.flex4 figcaption { 
+	background-color:gold;
+	color:white;
+	padding:0.5em;
+	padding-right:calc(0.5em + 25%);
+	font-weight:bold;
+	text-align:center; 
+}
+.flex4 a:hover, .flex4 a:focus { 
+	transform:scale(1.2);
+}
+.flex4 a:hover figcaption, .flex4 a:focus figcaption { 
+	background-color:brown;
+}
+.flex4 a:active figcaption { 
+	background-color:yellow;
+}
+
+/* FOOTER */
+
+
+/* MOBILE */
+@media screen and (max-width:800px) {
+	.flex2 { flex-direction:column; }
+	.flex2>* { width:100%; }
+	.flex10>* { width:46%; }
+	.flex4>* { width:46%; }
+}
+@media screen and (max-width:400px) {
+	.cols-2 { column-count:1; }
+}

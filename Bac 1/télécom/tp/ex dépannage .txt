@@ -1,0 +1,8 @@
+ex dépannage : 
+  			-  verifier que les prériphériques finaux appartiennent au réseaux 
+			-  verifier ip 
+			- tests de ping
+			- router 
+			-  commandes : show running config 
+					   show ip interface brief
+			-  

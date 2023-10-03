@@ -1,0 +1,15 @@
+surcharger une méthode  = donner d'autres paramètres dans la même classe et va agir différament en fonction des arguments 
+redéfinir une méthode =  
+
+polymorphisme :  
+
+
+Examen : Mardi           | tp + exp
+	   Mercredi matin  | tp + exp 
+	   
+	   Mercedi aprem   | Oral 2 parties : Poo + uml (10 min chrono 7 questions 2 points par questions) et Algo (10 min 2 questions dans la liste)
+	   Jeudi           | Oral 2 parties : Poo + uml (10 min chrono 7 questions 2 points par questions) et Algo (10 min 2 questions dans la liste)
+	   Vendredi        | Oral 2 parties : Poo + uml (10 min chrono 7 questions 2 points par questions) et Algo (10 min 2 questions dans la liste)
+
+
+Termes Techniques ! 

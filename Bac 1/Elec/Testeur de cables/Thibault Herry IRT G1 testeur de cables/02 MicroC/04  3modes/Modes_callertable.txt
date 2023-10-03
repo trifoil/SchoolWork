@@ -1,0 +1,7 @@
+main
+	__CC2DW
+		____DoICP
+	eteindre
+	pas_a_pas
+	sequence
+	continu

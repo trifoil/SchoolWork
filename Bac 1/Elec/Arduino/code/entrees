@@ -1,0 +1,41 @@
+int LED [] = {2,3,4,5,6,7,8,9};
+int POT = A0;
+int RGB[]= {10,11,12};
+
+int Button = 13;
+bool switchState = false;
+
+  void setup(){
+    for (int i=0;i<8;i++){
+        pinMode(LED[i],OUTPUT);
+    }
+    for (int j=0;j<8;j++){
+       pinMode(RGB[j],OUTPUT);
+    }
+    digitalWrite(RGB[2], LOW);	
+    digitalWrite(RGB[0], LOW);	
+   	pinMode(Button,INPUT);
+}
+void loop(){
+  
+   	int potentiometer = analogRead(POT); 
+    int led = potentiometer/(1024/8);
+
+    for (int k=0;k<8;k++){
+    	digitalWrite(LED[k], LOW);
+    }
+     if (digitalRead(Button) == HIGH){
+        switchState = !switchState; 
+        while (digitalRead(Button) == HIGH);
+    }
+    if (switchState == false) {
+        digitalWrite(RGB[0], LOW); 
+        digitalWrite(RGB[2],HIGH);
+  }    
+    else {
+        digitalWrite(RGB[2], LOW); 
+        digitalWrite(LED[led], HIGH);  
+        digitalWrite(RGB[0], HIGH);  
+  }
+}
+
