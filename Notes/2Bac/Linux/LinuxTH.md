@@ -101,4 +101,15 @@ Une archive est toujours nommée sous cette forme :
 
 ## Gestion des process
 
+
+
 ## Gestion des ressources
+
+
+
+
+## Tips
+
+
+
+Ne pas oublier de dire à Malaise que NFS est routable, de cette manière, il rira dans sa barbe et mettra secrètement ZERO à la question
