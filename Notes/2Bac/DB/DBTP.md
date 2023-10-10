@@ -15,13 +15,30 @@ Choix selon plateforme
 
 ### Installation de XAMPP sous linux (fedora)
 
-
-
 XAMPP a besoin de libnsl pour fonctionner sous fedora linux :
 
 ```
 sudo dnf install libnsl
 ```
+
+Pour installer XAMPP, aller sur le site et télécharger le .run de la bonne version :
+
+https://www.apachefriends.org/index.html
+
+Ensuite il faut ouvrir un terminal dans le dossier ou le package a été téléchargé, et entrer la commande suivante afin de rendre le fichier exécutable :
+```
+chmod +x xampp-linux-x64-7.2.9-0-installer.run
+```
+
+Puis on l'installe via :
+
+```
+sudo ./xampp-linux-x64-7.2.9-0-installer.run
+```
+
+Follow the GUI installation.
+
+
 
 ### Utilisation de XAMPP sous linux
 
