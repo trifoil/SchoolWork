@@ -53,7 +53,11 @@ Puis on lance l'exécutable (le nom dépend de la version!!!):
 ./manager-linux-x64.run
 ```
 
+Comme ci-dessous :
+
 ![Alt text](<assets/images/Screenshot from 2023-10-10 15-15-13.png>)
+
+Le menu ressembleà ceci :
 
 ![Alt text](<assets/images/Screenshot from 2023-10-10 15-15-22.png>)
 
