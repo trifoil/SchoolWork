@@ -10,7 +10,9 @@ Laragon, XAMPP
 sudo dnf install libnsl
 ```
 
+![Alt text](<assets/images/Screenshot from 2023-10-10 15-15-13.png>)
 
+![Alt text](<assets/images/Screenshot from 2023-10-10 15-15-22.png>)
 
 ### Redirections
 
