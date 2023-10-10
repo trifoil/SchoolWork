@@ -64,11 +64,15 @@ Le menu ressembleà ceci :
 
 ## Le PHP <a name="php"></a>
 
-### Redirections
+
+
+### Inclusions / Redirections
 
 ### Variables
 
+### Dates
 
+### Structures conditionnelles et itératives
 
 ## SQL <a name="sql"></a>
 
