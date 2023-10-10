@@ -1,7 +1,7 @@
 # Notes labo Bases de données
 
 1. [Installation](#installation)
-2. [Le PHP](#PHP)
+2. [Le PHP](#php)
 3. [SQL](#SQL)
 
 ## Softs pour gérer les bases de données et PHP <a name="installation"></a>
@@ -20,7 +20,7 @@ sudo dnf install libnsl
 
 ![Alt text](<assets/images/Screenshot from 2023-10-10 15-15-22.png>)
 
-## Le PHP <a name="PHP"></a>
+## Le PHP <a name="php"></a>
 
 ### Redirections
 
