@@ -62,17 +62,25 @@ Le menu ressembleà ceci :
 
 ![Alt text](<assets/images/Screenshot from 2023-10-10 15-15-22.png>)
 
+Les fichiers PHP doivent être placés dans le répertoire /opt/lampp
+
+
+
 ## Le PHP <a name="php"></a>
 
-
-
 ### Inclusions / Redirections
+
+
 
 ### Variables
 
 ### Dates
 
 ### Structures conditionnelles et itératives
+
+in array 
+
+pour checker une valeur dans 
 
 ## SQL <a name="sql"></a>
 
