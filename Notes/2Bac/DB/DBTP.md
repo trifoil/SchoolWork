@@ -8,15 +8,24 @@ Table des matières
 
 ## Softs pour gérer les bases de données et PHP <a name="installation"></a>
 
-Laragon, XAMPP
+Choix selon plateforme
 
-### Installation sous linux
+* Laragon
+* XAMPP
+
+### Installation de XAMPP sous linux (fedora)
 
 
+
+XAMPP a besoin de libnsl pour fonctionner sous fedora linux :
 
 ```
 sudo dnf install libnsl
 ```
+
+### Utilisation de XAMPP sous linux
+
+
 
 ![Alt text](<assets/images/Screenshot from 2023-10-10 15-15-13.png>)
 
