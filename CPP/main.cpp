@@ -1,5 +1,6 @@
 #include <SDL2/SDL.h>
 #include <iostream>
+#include <fstream>
 #include <string>
 
 class User {
@@ -21,7 +22,14 @@ int main(int argc, char* argv[]) {
         SDL_Log("SDL could not initialize: %s", SDL_GetError());
         return 1;
     }
-
+    std::ifstream file("userconfig.txt");
+    if (file.is_open()) {
+        std::cout << "File 'userconfig.txt' exists in the current directory." << std::endl;
+        // You can perform further operations on the file if needed.
+        file.close(); // Close the file after use.
+    } else {
+        std::cout << "File 'userconfig.txt' does not exist in the current directory." << std::endl;
+    }
     // Prompt the user for their name
     std::cout << "Enter your name: ";
     std::string name;
@@ -39,7 +47,7 @@ int main(int argc, char* argv[]) {
 
     // Create a window
     SDL_Window* window = SDL_CreateWindow(
-        "SDL2 Window",
+        "Tonk | Master",
         SDL_WINDOWPOS_UNDEFINED,
         SDL_WINDOWPOS_UNDEFINED,
         640, 480,  // Window size (width x height)
