@@ -5,6 +5,7 @@ Table des matières
 1. [Installation](#installation)
 2. [Le PHP](#php)
 3. [SQL](#sql)
+4. [Exam Tips](#tips)
 
 ## Softs pour gérer les bases de données et PHP <a name="installation"></a>
 
@@ -67,12 +68,14 @@ Le menu ressembleà ceci :
 
 ### Variables
 
-## Tips exam
+
+
+## SQL <a name="sql"></a>
+
+## Tips exam <a name="tips"></a>
 
 Question d'examen :
 
 ```ìnclude``` n'arrête pas le code si erreur
 
 ```require``` arrête le code lors d'un problème
-
-## SQL <a name="sql"></a>
