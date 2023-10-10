@@ -1,8 +1,10 @@
 # Notes labo Bases de données
 
+Table des matières
+
 1. [Installation](#installation)
 2. [Le PHP](#php)
-3. [SQL](#SQL)
+3. [SQL](#sql)
 
 ## Softs pour gérer les bases de données et PHP <a name="installation"></a>
 
@@ -34,4 +36,4 @@ Question d'examen :
 
 ```require``` arrête le code lors d'un problème
 
-## SQL <a name="SQL"></a>
+## SQL <a name="sql"></a>
