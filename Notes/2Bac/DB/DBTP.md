@@ -36,13 +36,22 @@ Puis on l'installe via :
 sudo ./xampp-linux-x64-7.2.9-0-installer.run
 ```
 
-Follow the GUI installation.
-
+Il faut suivre les instructions et cocher la case "launch xampp"
 
 
 ### Utilisation de XAMPP sous linux
 
+Il faut se rendre dans le repertoire contenant les fichiers du programme :
 
+```
+cd /opt/lampp
+```
+
+Puis on lance l'exécutable (le nom dépend de la version!!!):
+
+```
+./manager-linux-x64.run
+```
 
 ![Alt text](<assets/images/Screenshot from 2023-10-10 15-15-13.png>)
 
