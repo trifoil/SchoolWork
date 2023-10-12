@@ -27,6 +27,12 @@ cd ..
 ls
 ```
 
+Pour lister les permissions :
+
+```
+ls -l
+```
+
 ### Commande cat
 
 Permet de montrer/écrire des fichiers
@@ -101,4 +107,13 @@ Pour éviter les liens symboliques et avoir l'addresse physique du directory
 pwd -P
 ```
 
-## TP2 : 
+### Commande whoami
+
+Pour connaitre son username actuel
+
+```
+whoami
+```
+
+## TP2 : Gestion des fichiers
+

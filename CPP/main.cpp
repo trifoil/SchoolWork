@@ -13,7 +13,7 @@ int main(int argc, char* argv[]) {
     TTF_Font* font = TTF_OpenFont("path_to_your_font.ttf", 24);
 
     // Create a text surface
-    SDL_Color textColor = {255, 255, 255};
+    SDL_Color textColor = {0, 255, 255};
     SDL_Surface* textSurface = TTF_RenderText_Solid(font, "Hello, SDL!", textColor);
 
     // Create a texture from the text surface
