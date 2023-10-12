@@ -6,20 +6,33 @@
 
 int main(int argc, char *argv[]) {
 
-// SDL2 init
+  // SDL2 init
 
-if (SDL_Init(SDL_INIT_VIDEO) < 0) {
+  if (SDL_Init(SDL_INIT_VIDEO) < 0) {
     SDL_Log("SDL could not initialize: %s", SDL_GetError());
     std::cout << "SDL couldn't initialize";
     return 1;
   }
-std::cout << "SDL2 loaded\n";
+  std::cout << "SDL2 loaded\n";
 
-// GUI launch
+  // GUI launch
 
-// User data extraction
+        // still to do
 
+  // User data file check
 
+  std::ifstream file("userconfig.txt");
+  if (file.is_open()) {
+    std::cout << "File 'userconfig.txt' exists in the current directory.\n";
+  } else {
+    std::ofstream newFile("userconfig.txt");
+  }
 
-return 0;
+  // USer data extraction
+
+  // User checking
+
+  // User selection prompt
+
+  return 0;
 }
