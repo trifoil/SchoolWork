@@ -57,6 +57,20 @@ Permet d'ajouter un utilisateur,par exemple appelé toto :
 useradd toto
 ```
 
+### Commande passwd
+
+Pour changer le mdp de l'utilisateur actuel :
+
+```
+passwd 
+```
+
+Pour changer le mdp de l'utilisateur toto :
+
+```
+passwd toto
+```
+
 ### Commande usermod
 
 Permet de modifier un utilisateur
@@ -69,5 +83,22 @@ Permet de supprimer un utilisateur, par exemple toto :
 userdel toto
 ```
 
+Pour supprimer l'utilisateur, son home directory, et son mail utilisateur :
+
+```
+userdel toto -r
+```
+### Commande pwd
+
+Indique le chemin complet du directory ou on se trouve
+
+```
+pwd
+```
+
+Pour éviter les liens symboliques et avoir l'addresse physique du directory
+```
+pwd -P
+```
 
 ## TP2 : 
