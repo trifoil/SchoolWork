@@ -79,7 +79,7 @@ réseau s’appellent des hôtes ou des périphériques finaux
 
 ### Protocoles
 
-```Un protocole est une suite de règles qui visent à ce qu'un message soit correctement transmis et compris```
+<cite>Un protocole est une suite de règles qui visent à ce qu'un message soit correctement transmis et compris</cite>
 
 ### Codage d'un message 
 
