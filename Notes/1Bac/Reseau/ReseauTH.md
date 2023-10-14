@@ -1,9 +1,13 @@
 # Sythèse de théorie de télécommunications et réseaux 🖧
-## Chapitre 0 : Table des matières
+## Chapitre 0 : Table des matières <a name="1"></a>
 
+0. [Chapitre 0 : Table des matières](#1)
+1. [Installation](#installation)
+2. [Le PHP](#php)
+3. [SQL](#sql)
+4. [Exam Tips](#tips)
 
-
-## Chapitre 1 : Introduction et généralités
+## Chapitre 1 : Introduction et généralités <a name="deux"></a>
 
 ### Rôles de l'administrateur
 
@@ -97,7 +101,7 @@ Un message est d'abord codé en bits puis converti en en impulsions électriques
 
 ### Encapsulation 
 
-## Chapitre 3 : 
+## Chapitre 3 : Accès réseau
 
 ## Chapitre 4 : Ethernet
 
@@ -105,4 +109,20 @@ Un message est d'abord codé en bits puis converti en en impulsions électriques
 
 Technologie #1 dans le monde
 
-## Chapitre 5 : Système d
+## Chapitre 5 : Système d'exploitation réseau
+
+
+## Chapitre 6 : Couche réseau
+
+
+## Chapitre 7 : Couche transport
+
+
+## Chapitre 8 : Adressage IP
+
+
+## Chapitre 9 : Découpage réseau
+
+
+## Chapitre 10 : Couche Application
+
