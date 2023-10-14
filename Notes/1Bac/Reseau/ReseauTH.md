@@ -1,11 +1,17 @@
 # Sythèse de théorie de télécommunications et réseaux 🖧
-## Chapitre 0 : Table des matières <a name="1"></a>
+## Chapitre 0 : Table des matières <a name="0"></a>
 
-0. [Chapitre 0 : Table des matières](#1)
-1. [Installation](#installation)
-2. [Le PHP](#php)
-3. [SQL](#sql)
-4. [Exam Tips](#tips)
+0. [Chapitre 0 : Table des matières](#0)
+1. [Introduction et généralités](#1)
+2. [Communication et protocoles réseaux](#2)
+3. [Accès réseau](#3)
+4. [Ethernet](#4)
+5. [Système d'exploitation de réseau](#5)
+5. [Couche réseau](#6)
+5. [Couche transport](#7)
+5. [Adressage IP](#8)
+5. [Découpage réseau](#9)
+5. [La couche application](#10)
 
 ## Chapitre 1 : Introduction et généralités <a name="deux"></a>
 
