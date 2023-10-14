@@ -118,6 +118,18 @@ Un message est d'abord codé en bits puis converti en en impulsions électriques
 * Au niveau de la couche liaison de donnée et couche physique
 * Norme IEE 802.2 / 802.3 
 * 10 Mb/s -> 10 Gb/s
+
+### Couche liaison de donnée
+
+* Sous-couche LLC Ethernet
+
+    Gère la communication entre les couches supérieures et inférieures.
+* Sous-couche MAC Ethernet
+
+    Elle encapsule les données et contrôle l'accès au support
+
+### Adresse MAC
+
 ## Chapitre 5 : Système d'exploitation réseau <a name="5"></a>
 
 
