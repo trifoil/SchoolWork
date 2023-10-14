@@ -48,7 +48,7 @@ L'admin gère :
 
 ### Les réseaux 
 
-```un réseau est un ensemble d'équipements et de logiciels qui permettent d'acheminer de l'information d'un émetteur jusqu'à un ou plusieurs récepteurs```
+>un réseau est un ensemble d'équipements et de logiciels qui permettent d'acheminer de l'information d'un émetteur jusqu'à un ou plusieurs récepteurs
 
 Deux critères pour les catégoriser :
 * Etendue du réseau
@@ -58,33 +58,38 @@ Deux critères pour les catégoriser :
     * WAN (wide area network)
 * Technologie du réseau     
     Topologie physique
-    * Diffusion (support de transmission partagé par tous les équipements).
+    * Diffusion (support de transmission partagé par tous les équipements). On y retrouve BUS et ANNEAU.
         * Dans le cas ou le message est destiné à tous les équipements on a une diffusion générale (broadcast).
-        ![Alt text](assets/images/diffusion.png)
 
-    * Point à point (un seul support de transmission reliant une paire d'équipements seulement).
+    * Point à point (un seul support de transmission reliant une paire d'équipements seulement). On y retrouve POINT A POINT, ETOILE, MAILLÉE
         * Le point à point entre un expediteur et un destinataire est une diffusion individuelle (unicast).
 
     En général la topologie représente la disposition physique des composants, mais il existe aussi la topologie logique qui est la manière dont les stations se partagent le support et dépend de la methode d'accès au réseau.
 
     On retrouve dans les topologies logiques :
     * Ethernet
+        * Repose sur une topologie de type bus linéaire
+        * protocole CSMA/CD (Carrier Sense Multiple Access
+with Collision Detection)
     * Token ring
+        * Seul le poste ayant le jeton peut transmettre sur le réseau
+        * Si un poste veut émettre, il doit attendre jusqu'à ce qu'il ait le jeton
+        * Topologie en anneau
     * FDDI (fiber distributed data interface)
-
-    
+        * Fibre optique
+        * Anneaux primaire et secondaire (pour rattrapage d'erreurs)
 
 ### Modes de fonctionnement 
-```
-Tous les ordinateurs connectés à un réseau et qui participent directement aux communications
+
+> Tous les ordinateurs connectés à un réseau et qui participent directement aux communications
 réseau s’appellent des hôtes ou des périphériques finaux
-```
+
 
 ## Chapitre 2 : Communication et protocoles réseaux
 
 ### Protocoles
 
-<cite>Un protocole est une suite de règles qui visent à ce qu'un message soit correctement transmis et compris</cite>
+>Un protocole est une suite de règles qui visent à ce qu'un message soit correctement transmis et compris
 
 ### Codage d'un message 
 
