@@ -1,4 +1,7 @@
 # Sythèse de théorie des réseaux
+## Chapitre 0 : Table des matières
+
+
 
 ## Chapitre 1 : Introduction et généralités
 
@@ -57,6 +60,8 @@ Deux critères pour les catégoriser :
     Topologie physique
     * Diffusion (support de transmission partagé par tous les équipements).
         * Dans le cas ou le message est destiné à tous les équipements on a une diffusion générale (broadcast).
+        ![Alt text](assets/images/diffusion.png)
+
     * Point à point (un seul support de transmission reliant une paire d'équipements seulement).
         * Le point à point entre un expediteur et un destinataire est une diffusion individuelle (unicast).
 
