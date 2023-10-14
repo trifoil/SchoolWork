@@ -1,1 +1,1 @@
-# Sythèse d'architecture des réseaux
+# Sythèse de théorie d'architecture des ordinateurs 🖳

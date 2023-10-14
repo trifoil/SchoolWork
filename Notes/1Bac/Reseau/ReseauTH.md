@@ -1,4 +1,4 @@
-# Sythèse de théorie des réseaux
+# Sythèse de théorie de télécommunications et réseaux 🖧
 ## Chapitre 0 : Table des matières
 
 
@@ -97,7 +97,7 @@ Un message est d'abord codé en bits puis converti en en impulsions électriques
 
 ### Encapsulation 
 
-
+## Chapitre 3 : 
 
 ## Chapitre 4 : Ethernet
 
@@ -105,3 +105,4 @@ Un message est d'abord codé en bits puis converti en en impulsions électriques
 
 Technologie #1 dans le monde
 
+## Chapitre 5 : Système d
