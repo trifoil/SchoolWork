@@ -13,7 +13,7 @@
 5. [Découpage réseau](#9)
 5. [La couche application](#10)
 
-## Chapitre 1 : Introduction et généralités <a name="deux"></a>
+## Chapitre 1 : Introduction et généralités <a name="1"></a>
 
 ### Rôles de l'administrateur
 
@@ -95,7 +95,7 @@ with Collision Detection)
 réseau s’appellent des hôtes ou des périphériques finaux
 
 
-## Chapitre 2 : Communication et protocoles réseaux
+## Chapitre 2 : Communication et protocoles réseaux <a name="2"></a>
 
 ### Protocoles
 
@@ -107,28 +107,28 @@ Un message est d'abord codé en bits puis converti en en impulsions électriques
 
 ### Encapsulation 
 
-## Chapitre 3 : Accès réseau
+## Chapitre 3 : Accès réseau <a name="3"></a>
 
-## Chapitre 4 : Ethernet
+## Chapitre 4 : Ethernet <a name="4"></a>
 
 ### Ethernet
 
 Technologie #1 dans le monde
 
-## Chapitre 5 : Système d'exploitation réseau
+## Chapitre 5 : Système d'exploitation réseau <a name="5"></a>
 
 
-## Chapitre 6 : Couche réseau
+## Chapitre 6 : Couche réseau <a name="6"></a>
 
 
-## Chapitre 7 : Couche transport
+## Chapitre 7 : Couche transport <a name="7"></a>
 
 
-## Chapitre 8 : Adressage IP
+## Chapitre 8 : Adressage IP <a name="8"></a>
 
 
-## Chapitre 9 : Découpage réseau
+## Chapitre 9 : Découpage réseau <a name="9"></a>
 
 
-## Chapitre 10 : Couche Application
+## Chapitre 10 : Couche Application <a name="10"></a>
 
