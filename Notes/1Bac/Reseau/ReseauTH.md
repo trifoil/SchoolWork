@@ -101,6 +101,8 @@ réseau s’appellent des hôtes ou des périphériques finaux
 
 >Un protocole est une suite de règles qui visent à ce qu'un message soit correctement transmis et compris
 
+Organisé en couches
+
 ### Codage d'un message 
 
 Un message est d'abord codé en bits puis converti en en impulsions électriques ou ondes lumineuses
@@ -113,9 +115,11 @@ Un message est d'abord codé en bits puis converti en en impulsions électriques
 
 ### Ethernet
 
-Technologie #1 dans le monde
-
+* Au niveau de la couche liaison de donnée et couche physique
+* Norme IEE 802.2 / 802.3 
+* 10 Mb/s -> 10 Gb/s
 ## Chapitre 5 : Système d'exploitation réseau <a name="5"></a>
+
 
 
 ## Chapitre 6 : Couche réseau <a name="6"></a>
