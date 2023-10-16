@@ -93,7 +93,23 @@ Domain Services"
 3) Cliquer sur le drapeau avec un point d'exclamation -> "Promote this server to a domain controller"
 4) "Add a new forest"
 5) Ajouter un nom de domaine, par ex. "GHOST.lan"
-6) 
+6) On met un mdp par ex. "Test123*"
+7) 
 
 8) DNS primaire = adresse du serveur
 9) Installer le role AD-DS
+
+
+### Unité d'organisation 
+
+> UO = container qui contient tous les objets qu'on peut mettre dans un AD
+
+Orgnaigramme =/= structure de l'AD
+
+-Direct
+-RH
+    -> Gest
+    -> Recrutement
+- FIN
+    -> Compta
+    -> Invest
