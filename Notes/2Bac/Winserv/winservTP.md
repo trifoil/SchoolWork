@@ -41,3 +41,38 @@ Travail avec DNS secondaire (copie du DNS primaire)
 FQDN du serveur = nom du serveur + nom de domaine
 
 Delegation de zone dans le cas ou on a bcp de zones, le serveur primaire a toujours autorité sur la azone mais ne s'en occupe plus (serveur secondaire a les droits d'écriture)
+
+## TP4 Oct 16
+
+### DHCP 
+DHCP 192.168.1.0/24
+SCOPE 50
+Soit 192.168.1.1->254
+Soit 192.168.1.1->49  +20%
+
+x3
+
+Plage d'exclusion
+Reservation d'une adresse IP par rapport à une adresse MAC
+
+Le couillon qui met au dessus de F pour une adresse mac a zero
+Si  adresse mac non précisée, on en met une au hasard
+
+### BAIL
+Le BAIL est par défaut à 8 jours lors de l'installation du serveur DHCP 
+Chose à ne pas faire est de par exemple mettre 1h
+Ne pas descendre en dessous de 4h
+
+### CLASS UT
+
+### OP ETENDUE
+
+
+### Manipulation
+
+Dans une installation fraîche :
+
+1) IP statique 192.168.0.1
+2) Reboot
+3) Dans "Manage" -> "Add roles" on selectionne "DHCP Server" -> "Add features"
+4) Install
