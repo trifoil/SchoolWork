@@ -67,8 +67,13 @@ Ne pas descendre en dessous de 4h
 
 ### OP ETENDUE
 
+### AD-DS
 
-### Manipulation
+On ne supprime jamais un compte pcq il y a une serie de choses liées au compte
+
+-> on le désactive
+
+### Manipulation DHCP
 
 Dans une installation fraîche :
 
@@ -76,3 +81,19 @@ Dans une installation fraîche :
 2) Reboot
 3) Dans "Manage" -> "Add roles" on selectionne "DHCP Server" -> "Add features"
 4) Install
+5) Reboot & snapshot
+6) Cliquer sur le drapeau avec un point d'exclamation -> Complete DHCP configuration
+7) 
+
+### Manipulation AD-DS
+
+1) Dans "Manage" -> "Add roles" on selectionne "Active Directory
+Domain Services"
+2) Install
+3) Cliquer sur le drapeau avec un point d'exclamation -> "Promote this server to a domain controller"
+4) "Add a new forest"
+5) Ajouter un nom de domaine, par ex. "GHOST.lan"
+6) 
+
+8) DNS primaire = adresse du serveur
+9) Installer le role AD-DS
