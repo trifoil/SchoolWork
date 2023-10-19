@@ -7,7 +7,7 @@
 
 ## TP1 : commandes fondamentales <a name="1"></a>
 
-### Commande cd 
+### Commande cd
 
 Pour accéder au root directory :
 
@@ -164,4 +164,4 @@ mount -l
 
 ## TP5 : Sauvegarde élèves <a name="5"></a>
 
-## TP6
+## TP6 : 
