@@ -1,6 +1,11 @@
 # Sythèse de TP de linux
 
-## TP1 : commandes fondamentales
+0. [TP0 : Table des matières](#0)
+1. [TP1 : Cmd de base 1](#1)
+2. [TP2 : Cmd de base 2](#2)
+3. [TP3 : Permissions 3](#3)
+
+## TP1 : commandes fondamentales <a name="1"></a>
 
 ### Commande cd 
 
@@ -115,9 +120,9 @@ Pour connaitre son username actuel
 whoami
 ```
 
-## TP2 : Gestion des fichiers
+## TP2 : Gestion des fichiers <a name="2"></a>
 
-## TP3 : 
+## TP3 : Permissions <a name="3"></a>
 
 ### Droits d'exécution
 
@@ -133,6 +138,14 @@ En sortie on a :
 r pour read
 w pour write
 x pour execute (peut etre même sur des non-executables)
+d pour un directory
+```
+
+Dans l'ordre on aura le type, les droits de l'user, du groupe autorisé, et autres
+
+```
+ t  |  u  |  g  |  o
+ d  | rwx | r-x | r--
 ```
 
 On va voir les permissions associées aux fichiers systemd, inittab, skel :
@@ -144,6 +157,11 @@ drwxr-xr-x.  2 root root     62 Sep 15 09:12 skel
 ```
 
 
-## TP4 : 
+
+## TP4 : Gestion utilisateurs <a name="4"></a>
 
 mount -l 
+
+## TP5 : Sauvegarde élèves <a name="5"></a>
+
+## TP6
