@@ -117,3 +117,25 @@ whoami
 
 ## TP2 : Gestion des fichiers
 
+## TP3 : 
+
+### Droits d'exécution
+
+Pour afficher les droits :
+
+```
+ls -l 
+```
+
+En sortie on a :
+
+```
+r pour read
+w pour write
+x pour execute (peut etre même sur des non-executables)
+```
+
+
+
+## TP4 : 
+
