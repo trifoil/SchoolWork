@@ -1,5 +1,5 @@
 # Sythèse de TP de linux
-
+## TP0 : Table des matières
 0. [TP0 : Table des matières](#0)
 1. [TP1 : Cmd de base 1](#1)
 2. [TP2 : Cmd de base 2](#2)
@@ -16,7 +16,6 @@
 4. [TP13 : NFS](#13)
 4. [TP14 : iptables](#14)
 4. [TP15 : LVM script](#15)
-
 
 ## TP1 : commandes fondamentales <a name="1"></a>
 
@@ -182,10 +181,29 @@ mount -l
 ## TP7 : Fichiers et systèmes de fichiers <a name="7"></a>
 
 ## TP8 : Cron <a name="8"></a>
+
 ## TP9 : Interface réseau <a name="9"></a>
+
 ## TP10 : Gestion des ressources <a name="10"></a>
+
 ## TP11 : Les quotas <a name="11"></a>
+
 ## TP12 : Arrêt/demarrage <a name="12"></a>
+
+Affichage des infos de démarrage 
+
+```
+dmesg
+```
+
+On redirige la commande vers un fichier 
+
+```
+dmesg > demarrageLog.txt
+```
+
 ## TP13 : NFS <a name="13"></a>
+
 ## TP14 : iptables <a name="14"></a>
+
 ## TP15 : LVM script <a name="15"></a>
