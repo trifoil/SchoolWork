@@ -190,17 +190,30 @@ mount -l
 
 ## TP12 : Arrêt/demarrage <a name="12"></a>
 
-Affichage des infos de démarrage 
+### Compte rendu de démarrage
+
+Affichage des infos de démarrage :
 
 ```
 dmesg
 ```
 
-On redirige la commande vers un fichier 
+On redirige la commande vers un fichier :
 
 ```
 dmesg > demarrageLog.txt
 ```
+
+On peut ensuite aller ouvrir le ```demarrageLog.txt```
+
+Puis on verifie que le ```/var/log/messages``` ne contient pas d'erreur relative audémarrage.
+
+### Mode de fonctionnement
+
+
+
+
+
 
 ## TP13 : NFS <a name="13"></a>
 
