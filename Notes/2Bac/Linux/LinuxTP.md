@@ -135,7 +135,15 @@ w pour write
 x pour execute (peut etre même sur des non-executables)
 ```
 
+On va voir les permissions associées aux fichiers systemd, inittab, skel :
+
+```
+drwxr-xr-x.  5 root root   4096 Sep 17 20:00 systemd
+-rw-r--r--.  1 root root    490 Sep 17 20:00 inittab
+drwxr-xr-x.  2 root root     62 Sep 15 09:12 skel
+```
 
 
 ## TP4 : 
 
+mount -l 
