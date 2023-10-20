@@ -10,12 +10,19 @@ The basics (CLI)
 
 3. [Basic structure](#3)
 4. [Variables](#4)
-5. [](#)
-5. [](#)
-5. [](#)
-5. [](#)
-5. [](#)
-5. [](#)
+5. [In/outputs](#5)
+5. [Conditions](#6)
+5. [Loops](#7)
+5. [Pointers](#8)
+5. [References](#9)
+5. [](#10)
+5. [](#11)
+5. [](#12)
+5. [](#13)
+5. [](#14)
+5. [](#15)
+5. [](#16)
+5. [](#17)
 
 Advanced (GUI)
 
@@ -40,7 +47,7 @@ To run your code :
 
 ## Basic structure <a name="3"></a>
 
-Any code will require a main function to work (your working code has to be in the brackets :
+Any code will require a main function to work. Your working code has to be in the brackets :
 ```
 int main(){}
 ```
@@ -89,13 +96,13 @@ Floats. You can use an f placed right after the variable value to mention explic
 ```
 float variableName = valuef;
 ```
-### Inputs and outputs
-### Conditions
+## Inputs and outputs
+## Conditions
 ```
 if(){}
 ```
 
-### Loops
+## Loops
 Two types of loops in C++ : While and Do While.
 The first one checks the condition prior to running the code inside of it :
 ```
