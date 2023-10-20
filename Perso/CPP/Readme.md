@@ -1,4 +1,4 @@
-# HowtoCPP
+# HowtoCPP ⛤
 C++ quick tutorial
 
 ## Table of contents <a name="0"></a>

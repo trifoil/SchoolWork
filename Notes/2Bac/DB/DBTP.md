@@ -1,4 +1,4 @@
-# Notes labo Bases de données
+# Notes labo Bases de données ⛁
 
 Table des matières
 
