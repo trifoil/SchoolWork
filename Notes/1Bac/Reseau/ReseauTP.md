@@ -1,3 +1,15 @@
+# Synthèse TP réseau
+
+## TP0 : Table des matières <a name="0"></a>
+
+0. [TP0 : Table des matières](#0)
+1. [TP1 : ]
+2. [TP2 : ](#2)
+3. [TP3 : ](#3)
+4. [TP4 : ]
+5. [TP5 : ]
+
+
 ### Normes ISO
 
 * 568 A
@@ -35,3 +47,37 @@
 	* RJ45
 	* Patch panel
 * Testeur
+
+## TP2 : Installation de packet tracer <a name="2"></a>
+
+## TP3 : Logical and physical Mode Exploration
+
+## TP4 : Network representation
+
+## TP5 : Navigate the IOS
+
+Liste des commandes :
+```
+S1>?
+```
+
+Liste des commandes commençant par la lettre t :
+
+```
+S1>t?
+```
+
+Autocomplétion de commande avec la touche tab (comme dans linux).
+
+Si on utilise la commande ```enable```, on active le mode d'éxécution privilégié.
+
+Le symbole doit changer en dièse
+
+```
+S1>enable
+S1#
+```
+
+
+
+## TP6 : Configure initial switch settings
