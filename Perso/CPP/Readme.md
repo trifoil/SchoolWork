@@ -30,6 +30,8 @@ Advanced (GUI)
 
 Since I'm busy learning C++, why not writing it here? 
 
+This is hence a C++ cookbook for beginners :shipit:
+
 ## The g++ compiler <a name="2"></a>
 
 To compile your code, use this line :
