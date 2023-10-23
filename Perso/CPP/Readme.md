@@ -1,4 +1,4 @@
-# HowtoCPP ⛤
+# HowtoCPP ⛢
 C++ quick tutorial
 
 ## Table of contents <a name="0"></a>
@@ -18,6 +18,9 @@ The basics (CLI)
 5. [](#10)
 5. [](#11)
 5. [](#12)
+
+The mid tier (OOP CLI)
+
 5. [](#13)
 5. [](#14)
 5. [](#15)
@@ -184,10 +187,54 @@ And therefore,
 A class is declared before the main function like this :
 
 ```
-class User {};
+class User {
+    public:
+        int userId;
+        string userName;
+};
 
 int main() {}
 ```
+This class has two attributes (```userId``` and ```userName```).
+
+Once the class is created, you can create an object :
+
+```
+class User {
+    public:
+        int userId;
+        string userName;
+};
+
+int main() {
+    User firstUser;
+    firstUser.userId = 237;
+    cout << firstUser.userId;
+    return 0;
+}
+```
+
+In the main function, we access the public attributes of the object we created (with a dot).
+
+## Methods
+
+Methods are functions that belong to the class.
+
+They are either inside or outside the class definition.
+
+Inside :
+```
+
+```
+
+Outside :
+```
+
+```
+
+## Constructors
+
+
 
 ## CLI advanced softwares
 
