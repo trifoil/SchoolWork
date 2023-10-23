@@ -119,3 +119,35 @@ Orgnaigramme =/= structure de l'AD
 - FIN
     -> Compta
     -> Invest
+
+## TP4
+
+Création des groupes globaux 
+
+Profils itinérants -> qui peuvent être bougés avec un utilisateur amené à changer de poste (ex pour bouger dans un autre service)
+
+Dossier dans le C: par exemple appelé "PROFILS$"
+
+Le dollar est supposé être masqué dans le voisinnage réseau.
+
+Dossier doit être partagé pour pouvoir y accéder à distance
+
+Il faut lui attribuer des droits -> RW -> Modification
+
+La ou vont être crées les utilisateurs, il y a un onglet "profils" dans lequel doivent être mis les chemins d'accès vers le dossier partagé. 
+
+//Nomserveur/PROFILS/%USERNAME%
+
+Deux sources d'erreur :
+* Niveau de l'addresse
+* Niveau des droits RW
+
+Utilisateurs ont des caractéristiques
+
+* Horaires de connexions
+* Profils 
+* UPN   
+Login@nomdedomaine
+* GG Groupes globaux -> UO unité    
+GG - compta
+* GL Groupes locaux 
