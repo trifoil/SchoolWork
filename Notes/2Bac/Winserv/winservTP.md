@@ -1,4 +1,4 @@
-# Notes labo Windows server
+# Notes labo Windows server 🖥
 
 ## TP0 Table des matières
 
@@ -138,6 +138,9 @@ La ou vont être crées les utilisateurs, il y a un onglet "profils" dans lequel
 
 //Nomserveur/PROFILS/%USERNAME%
 
+SEUL L'UTILISATEUR EN QUESTION A ACCES A SON DOSSIER!
+
+
 Deux sources d'erreur :
 * Niveau de l'addresse
 * Niveau des droits RW
@@ -151,3 +154,10 @@ Login@nomdedomaine
 * GG Groupes globaux -> UO unité    
 GG - compta
 * GL Groupes locaux 
+
+---
+
+AGDLP
+
+User directory dans GL -> ZERO
+
