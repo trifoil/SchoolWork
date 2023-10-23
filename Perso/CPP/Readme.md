@@ -28,7 +28,7 @@ Advanced (GUI)
 
 ## Introduction <a name="1"></a>
 
-Since I'm busy learning C++, why not writing it here? 
+Since I'm busy learning C++, why not writing it here ?
 
 This is hence a C++ cookbook for beginners :suspect:
 

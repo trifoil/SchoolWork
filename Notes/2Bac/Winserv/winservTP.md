@@ -1,4 +1,10 @@
+# Notes labo Windows server
 
+## TP0 Table des matières
+
+
+
+## TP1 Installation Serveur/client et DNS principal
 
 ### Consignes
 1) Nom
@@ -34,7 +40,7 @@ NSLookUP
 -> Nom
 -> IP
 
-## TP2
+## TP2 DNS secondaire
 
 Travail avec DNS secondaire (copie du DNS primaire)
 
@@ -42,7 +48,7 @@ FQDN du serveur = nom du serveur + nom de domaine
 
 Delegation de zone dans le cas ou on a bcp de zones, le serveur primaire a toujours autorité sur la azone mais ne s'en occupe plus (serveur secondaire a les droits d'écriture)
 
-## TP4 Oct 16
+## TP3 DHCP et AD-DS
 
 ### DHCP 
 DHCP 192.168.1.0/24
