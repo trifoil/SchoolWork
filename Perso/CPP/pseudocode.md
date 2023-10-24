@@ -1,5 +1,45 @@
 # Tonk pseudocode 
 
+## Real tasklist
+
+- [ ] Get joysticks inputs and print them on terminal
+- [ ] Establish a communication bridge using sockets
+- [ ] Send and receive data between sockets
+- [ ] Share a video stream on local network
+- [ ] Read and display video stream from local network
+- [ ] Imagine config file standards
+- [ ] Read config file
+- [ ] Create config file
+- [ ] Put read and create config file together
+- [ ] Nice GUI :)
+- [ ] Sound options (optional)
+
+## Features
+
+Features include :
+* Network
+* Controls
+* Feedback
+* Video
+* UI and user management
+* Sound 
+
+### Network
+
+### Controls
+
+### Feedback
+
+### Video
+
+### UI and user management
+
+### Sound
+
+To be developed last
+
+## Trash
+
 1) Menu
 * Main menu
     * User management
@@ -33,11 +73,3 @@
     * "Create a user"
     * "Proceed without user (limited use only)" that will only work in local mode
     * "Choose a user" only available if a config file already exists AND contains a userId 
-
-## Real tasklist 
-
-- [ ] Get joysticks inputs and print them on terminal
-- [ ] Imagine config file standards
-- [ ] Read config file
-- [ ] Create config file
-- [ ] 
