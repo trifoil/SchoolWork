@@ -1,4 +1,4 @@
-# Tonk pseudocode 
+# Tonk Kommander ↯
 
 ## Real tasklist
 
@@ -37,6 +37,10 @@ Features include :
 ### Sound
 
 To be developed last
+
+## User manual 
+
+
 
 ## Trash
 
