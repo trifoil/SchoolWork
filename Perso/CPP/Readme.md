@@ -21,9 +21,9 @@ The basics (CLI)
 
 The mid tier (OOP CLI)
 
-5. [](#13)
-5. [](#14)
-5. [](#15)
+5. [Classes and objects](#13)
+5. [Methods](#14)
+5. [Constructors](#15)
 5. [](#16)
 5. [](#17)
 

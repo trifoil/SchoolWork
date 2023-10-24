@@ -1,5 +1,10 @@
 # Tonk Kommander ↯
 
+## Intro
+
+Aimed at RC hobby vehicles, this software equipment aims to provide a complete remote solution to control your toy.
+The concept is actually the one of a ground station.
+
 ## Real tasklist
 
 - [ ] Get joysticks inputs and print them on terminal
@@ -77,3 +82,54 @@ To be developed last
     * "Create a user"
     * "Proceed without user (limited use only)" that will only work in local mode
     * "Choose a user" only available if a config file already exists AND contains a userId 
+
+
+# TK 🛆
+Tank Kommander : Open source tank remote control sofware with video feedback
+
+The final product should include :
+
+* Hardware
+  
+  * Bundle rogue
+   
+    * Handheld
+    * Backpack (optional)
+   
+  * Bundle hybrid
+ 
+    * Gamepad
+    * Laptop
+    * Backpack (optional)
+    
+  * Bundle headquarters
+
+    * Desktop computer
+    * Custom built sim, including
+
+      * Handwheel
+      * Dashboard
+      * Pedals
+      * Joystick
+      
+* Software
+
+The project initially started using python and the following modules :
+
+  * Pygame
+  * OpenCV
+  * 
+
+
+## Software part
+
+Made with love
+
+https://www.youtube.com/watch?v=TH7plF4UT_E&list=PLSPw4ASQYyynKPY0I-QFHK0iJTjnvNUys&index=17
+
+### Client
+Includes the GUI
+### Server
+Embedded board 
+### Arduino
+Connected to the board
