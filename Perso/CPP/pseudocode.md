@@ -36,8 +36,8 @@
 
 ## Real tasklist 
 
-- [] Get joysticks inputs and print them on terminal
-- [] Imagine config file standards
-- [] Read config file
-- [] Create config file
-- [] 
+- [ ] Get joysticks inputs and print them on terminal
+- [ ] Imagine config file standards
+- [ ] Read config file
+- [ ] Create config file
+- [ ] 
