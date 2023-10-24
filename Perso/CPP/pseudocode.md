@@ -4,8 +4,9 @@
 
 Aimed at RC hobby vehicles, this software equipment aims to provide a complete remote solution to control your toy.
 The concept is actually the one of a ground station.
+It will provide you full control of any actuator on the vehicle, provide a strong user management, reliable data transmission for a smooth user experience, while being fairly easily customized.
 
-## Real tasklist
+## Tasklist
 
 - [ ] Get joysticks inputs and print them on terminal
 - [ ] Establish a communication bridge using sockets
