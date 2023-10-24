@@ -33,3 +33,11 @@
     * "Create a user"
     * "Proceed without user (limited use only)" that will only work in local mode
     * "Choose a user" only available if a config file already exists AND contains a userId 
+
+## Real tasklist 
+
+- [] Get joysticks inputs and print them on terminal
+- [] Imagine config file standards
+- [] Read config file
+- [] Create config file
+- [] 
