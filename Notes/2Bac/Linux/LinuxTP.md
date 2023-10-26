@@ -184,6 +184,13 @@ mount -l
 
 ## TP9 : Interface réseau <a name="9"></a>
 
+Installation de nmtui sous fedora :
+
+```
+sudo dnf install NetworkManager-tui
+```
+![Alt text](image.png)
+
 Pour lister les periph réseau :
 
 ```
@@ -216,6 +223,7 @@ ip -a
 
 On peut donc voir l'adresse IP et MAC, par exemple, ```192.168.122.66``` et ```52:54:00:31:66:cb```.
 
+Pour désactiver une interface réseau :
 
 
 ## TP10 : Gestion des ressources <a name="10"></a>
