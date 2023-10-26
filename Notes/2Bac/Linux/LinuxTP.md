@@ -261,6 +261,8 @@ Mem:         2000272      230172     1221120        5096      548980     1610416
 Swap:        6194168           0     6194168
 ```
 
+Puis on utilise la commande ```watch```
+
 ## TP11 : Les quotas <a name="11"></a>
 
 ## TP12 : Arrêt/demarrage <a name="12"></a>
