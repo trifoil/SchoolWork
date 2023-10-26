@@ -184,6 +184,40 @@ mount -l
 
 ## TP9 : Interface réseau <a name="9"></a>
 
+Pour lister les periph réseau :
+
+```
+lspci
+```
+
+Pour voir si le pilote est chargé :
+
+```
+lsmod
+```
+
+Pour que grep soit case insensitive :
+
+```
+grep -i 
+```
+
+Pour l'état des interfaces réseau, soit:
+
+```
+ifconfig
+```
+
+Ou : 
+
+```
+ip -a
+```
+
+On peut donc voir l'adresse IP et MAC, par exemple, ```192.168.122.66``` et ```52:54:00:31:66:cb```.
+
+
+
 ## TP10 : Gestion des ressources <a name="10"></a>
 
 ## TP11 : Les quotas <a name="11"></a>

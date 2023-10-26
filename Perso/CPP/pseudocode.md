@@ -32,13 +32,41 @@ Features include :
 
 ### Network
 
+First approach 
+
+The network should always be a local network, for convenience and simplicity of code.
+
+All networks available should always be checked, to be available if an intentional (or not) change occurs. 
+
+If network is saturated, then the user should be warned and asked if wants to reduce the amount of video channels
+
 ### Controls
+
+The app should send control data at a high rate to the vehicle.
+As a convention, the server is in the vehicle, because you can reconnect from another device, so it makes more sense.
+
+It should be verified that data hasn't been modified or altered.
 
 ### Feedback
 
+All useful informations from the tank should ciculate the same way control data goes in the other direction.
+
 ### Video
 
+Video streams from the vehicle should be streamed to the network and picked by the remote unit.
+
 ### UI and user management
+
+Two kind of users should exist :
+* Master 
+* Slave
+
+The master always has control over any slave user added to control the same vehicle.
+
+The slave can become the master if the master password is provided and the master becomes the new slave.
+Config files.
+
+The UI should be manageable by the user.
 
 ### Sound
 
@@ -46,9 +74,38 @@ To be developed last
 
 ## User manual 
 
-aa
+Start by crying (because you don't possess my genius)
+
+### Main menu
+
+### Commands
+
+### Views
+
+### Users management 
+
+## Pseudocode
 
 
+
+a
+a
+a
+a
+a
+a
+a
+
+    a
+    a
+    a
+    a
+    a
+    a
+    a
+    a
+    a
+    a
 
 ## Trash
 
