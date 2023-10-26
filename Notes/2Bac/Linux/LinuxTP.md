@@ -184,11 +184,14 @@ mount -l
 
 ## TP9 : Interface réseau <a name="9"></a>
 
+### Identifiez votre périphérique réseau
+
 Pour lister les periph réseau :
 
 ```
 lspci
 ```
+### Vérifiez que le pilote logiciel est bien chargé.
 
 Pour voir si le pilote est chargé :
 
@@ -196,11 +199,7 @@ Pour voir si le pilote est chargé :
 lsmod
 ```
 
-Pour que grep soit case insensitive :
-
-```
-grep -i 
-```
+### Affichez l'état des interfaces réseaux
 
 Pour l'état des interfaces réseau, soit:
 
@@ -216,19 +215,38 @@ ip -a
 
 On peut donc voir l'adresse IP et MAC, par exemple, ```192.168.122.66``` et ```52:54:00:31:66:cb```.
 
+### Activez/désactiver une interface réseau
+
 Installation de nmtui sous fedora :
 
 ```
-sudo dnf install NetworkManager-tui
+dnf install NetworkManager-tui
 ```
 
+Qu'on démarre :
 
+```
+nmtui
+```
+
+Pour désactiver une interface réseau, selectionner ```Activate a connection``` :
 
 ![Alt text](image.png)
 
-Pour désactiver une interface réseau :
+Puis selectionner la connexion et la ```Deactivate```
 
 ![Alt text](image-1.png)
+
+Pour la réactiver, simplement selectionner ```Activate```
+
+### Configurez manuellement (pas de DHCP) votre ordinateur de manière à vous connecter à internet
+
+Pour que grep soit case insensitive :
+
+```
+grep -i 
+```
+
 
 
 ## TP10 : Gestion des ressources <a name="10"></a>
