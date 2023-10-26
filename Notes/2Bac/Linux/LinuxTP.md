@@ -251,6 +251,16 @@ grep -i
 
 ## TP10 : Gestion des ressources <a name="10"></a>
 
+### Affichez la mémoire utilisée actuellement par le système
+
+On utilise la commande ```free``` dont l'output est :
+
+```
+               total        used        free      shared  buff/cache   available
+Mem:         2000272      230172     1221120        5096      548980     1610416
+Swap:        6194168           0     6194168
+```
+
 ## TP11 : Les quotas <a name="11"></a>
 
 ## TP12 : Arrêt/demarrage <a name="12"></a>
