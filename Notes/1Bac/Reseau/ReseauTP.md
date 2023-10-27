@@ -56,6 +56,8 @@
 
 ## TP5 : Navigate the IOS
 
+### Découverte IOS
+
 Liste des commandes :
 ```
 S1>?
@@ -69,6 +71,8 @@ S1>t?
 
 Autocomplétion de commande avec la touche tab (comme dans linux).
 
+### Mode d'exécution privilégié
+
 Si on utilise la commande ```enable```, on active le mode d'éxécution privilégié.
 
 Le symbole doit changer en dièse
@@ -78,13 +82,18 @@ S1>enable
 S1#
 ```
 
-Si on utilise la commande ```configure```, on passe en mode de configuration globale. La console affiche donc :
+### Mode de configuration globale
+
+Si on utilise la commande ```configure``` après être passé en mode d'exécution privilégié, on passe en mode de configuration globale. La console affiche donc :
 
 ```
+S1#configure
 S1(config)#
 ```
 
+Les commandes ```end```, ```exit``` ou Ctrl+Z permettent de quitter le mode de configuration globale. 
 
+### Réglage de l'horloge
 
 
 
