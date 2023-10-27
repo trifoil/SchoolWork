@@ -78,6 +78,14 @@ S1>enable
 S1#
 ```
 
+Si on utilise la commande ```configure```, on passe en mode de configuration globale. La console affiche donc :
+
+```
+S1(config)#
+```
+
+
+
 
 
 ## TP6 : Configure initial switch settings
