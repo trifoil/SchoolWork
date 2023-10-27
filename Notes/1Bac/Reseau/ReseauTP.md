@@ -58,7 +58,7 @@
 
 ### Découverte IOS
 
-Liste des commandes :
+Le point d'interrogation liste l'ensemble des commandes disponibles ou la suite d'une commande.
 ```
 S1>?
 ```
@@ -95,6 +95,17 @@ Les commandes ```end```, ```exit``` ou Ctrl+Z permettent de quitter le mode de c
 
 ### Réglage de l'horloge
 
+La commande ```show clock``` montre l'heure. Si elle n'est pas correcte, on peut la définir :
 
+```
+S1#clock set 15:00:00 2 JAN 2035
+```
+
+Bien évidemment donc, Heure, minute seconde, jour, mois et année.
 
 ## TP6 : Configure initial switch settings
+
+La commande ```show version``` affiche a version du firmware.
+
+## TPX : Synthèse des commandes
+
