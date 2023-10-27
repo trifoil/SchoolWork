@@ -12,6 +12,7 @@
 
 ### Normes ISO
 
+
 * 568 A
 * 568 B = le plus souvent
 
@@ -107,10 +108,20 @@ Bien évidemment donc, Heure, minute seconde, jour, mois et année.
 
 La commande ```show version``` affiche a version du firmware.
 
-## TP7 : Configure initial switch settings
+## TP7 : Configuration initiale des switches
 
+Pour afficher la config initiale, on utilise la commande ```startup-config```
 
+Pour activer 
 
+```
+S1# config t
+S1(config)# enable secret itsasecret
+S1(config)# exit
+S1#
+```
+
+![Alt text](image.png)
 ## TPX : Synthèse des commandes
 
 ## TPZ : Tips pour l'examen
