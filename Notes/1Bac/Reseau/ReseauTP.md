@@ -56,7 +56,9 @@
 
 ## TP5 : Navigate the IOS
 
-Liste des commandes :
+### Découverte IOS
+
+Le point d'interrogation liste l'ensemble des commandes disponibles ou la suite d'une commande.
 ```
 S1>?
 ```
@@ -69,6 +71,8 @@ S1>t?
 
 Autocomplétion de commande avec la touche tab (comme dans linux).
 
+### Mode d'exécution privilégié
+
 Si on utilise la commande ```enable```, on active le mode d'éxécution privilégié.
 
 Le symbole doit changer en dièse
@@ -78,6 +82,30 @@ S1>enable
 S1#
 ```
 
+### Mode de configuration globale
 
+Si on utilise la commande ```configure``` après être passé en mode d'exécution privilégié, on passe en mode de configuration globale. La console affiche donc :
+
+```
+S1#configure
+S1(config)#
+```
+
+Les commandes ```end```, ```exit``` ou Ctrl+Z permettent de quitter le mode de configuration globale. 
+
+### Réglage de l'horloge
+
+La commande ```show clock``` montre l'heure. Si elle n'est pas correcte, on peut la définir :
+
+```
+S1#clock set 15:00:00 2 JAN 2035
+```
+
+Bien évidemment donc, Heure, minute seconde, jour, mois et année.
 
 ## TP6 : Configure initial switch settings
+
+La commande ```show version``` affiche a version du firmware.
+
+## TPX : Synthèse des commandes
+
