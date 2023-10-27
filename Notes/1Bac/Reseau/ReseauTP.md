@@ -103,9 +103,21 @@ S1#clock set 15:00:00 2 JAN 2035
 
 Bien évidemment donc, Heure, minute seconde, jour, mois et année.
 
-## TP6 : Configure initial switch settings
+## TP6 : Connectivité initiale de la console
 
 La commande ```show version``` affiche a version du firmware.
 
+## TP7 : Configure initial switch settings
+
+
+
 ## TPX : Synthèse des commandes
+
+## TPZ : Tips pour l'examen
+
+Mettre d'office :
+
+* Bannière 
+* MDP pour accéder à la console 
+* MDP pour accéder au mode privilégié
 
