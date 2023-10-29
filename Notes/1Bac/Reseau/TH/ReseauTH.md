@@ -99,11 +99,13 @@ réseau s’appellent des hôtes ou des périphériques finaux
 
 ### Protocoles
 
->Un protocole est une suite de règles qui visent à ce qu'un message soit correctement transmis et compris
+>Un protocole est une suite de règles qui visent à ce qu'un message soit correctement transmis et compris.
 
 Organisé en couches
 
 ### Codage d'un message 
+
+>Un codage est le processus de conversion des informations vers un autre format acceptable, à des fins de transmission.
 
 Un message est :
 1) Codé en bits 
@@ -111,14 +113,24 @@ Un message est :
 
 ### Encapsulation / désencapsulation
 
->L'encapsulation est un processus permettant d'encapsuler un message dans une trame (format spécifique)
+>L'encapsulation est un processus permettant d'encapsuler un message dans une trame.
 
 La trame contient :
 * L'adresse source
 * L'adresse de destination
 * Les données encapsulées
 
+![Alt text](image.png)
+
 Désencapsuler c'est extraire ces données.
+
+### Taille
+
+Si le message est grand, on le découpe en plusieurs trames.
+
+### Synchronisation
+
+
 
 ![Alt text](assets/Diagrammes/image.png)
 
