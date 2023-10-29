@@ -130,10 +130,18 @@ Si le message est grand, on le découpe en plusieurs trames.
 
 ### Synchronisation
 
+* Methode d'accès
+  >moment où un individu peut envoyer un message.
+
+* Contrôle de flux
+  >négocier une synchronisation correcte en vue d'établir une communication.
+
+* Délai d'attente de la réponse
+  >Les hôtes du réseau sont également soumis à des règles qui spécifient le délai d'attente des réponses et l'action à entreprendre en cas de dépassement du délai d'attente.
+
 
 
 ![Alt text](assets/Diagrammes/image.png)
-
 
 ## Chapitre 3 : Accès réseau <a name="3"></a>
 
