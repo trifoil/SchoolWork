@@ -111,6 +111,8 @@ Un message est d'abord codé en bits puis converti en en impulsions électriques
 
 ## Chapitre 3 : Accès réseau <a name="3"></a>
 
+![Alt text](assets/Diagrammes/image.png)
+
 ## Chapitre 4 : Ethernet <a name="4"></a>
 
 ### Ethernet
@@ -135,6 +137,7 @@ Un message est d'abord codé en bits puis converti en en impulsions électriques
 
 
 ## Chapitre 6 : Couche réseau <a name="6"></a>
+
 
 
 ## Chapitre 7 : Couche transport <a name="7"></a>
