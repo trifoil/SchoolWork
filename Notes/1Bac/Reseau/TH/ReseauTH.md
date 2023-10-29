@@ -122,58 +122,6 @@ La trame contient :
 * L'adresse de destination
 * Les données encapsulées
 
-### Acronymes
-
-1) Couche application
-
-* DNS (Domain Name System)  
-  * Nom de domaine -> Adresse IP
-* DHCP (Dynamic Host Configuration Protocol)    
-  * Attribution dynamique d'addresses IP aux stations clientes au démarrage
-* SMTP (Simple Mail Transfer Protocol)  
-  Permet aux terminaux d’envoyer un mail à un serveur de messagerie
-* POP (Post Office Protocol)  
-  * Permet aux clients de récupérer ou de télécharger des emails d’un serveur de messagerie
-* IMAP (Internet Message Access Protocol)   
-  * Permet aux clients d’accéder aux emails stockés sur un serveur de messagerie
-* FTP (File Transfert Protocol) 
-  * Permet à un hôte d’accéder à des fichiers sur un autre hôte du réseau
-  * Transférer des fichiers vers un autre hôte du réseau
-* TFTP (Trivial File Transfert Protocol)
-  * Version simplifiée de FTP, pas d’authentification
-* HTTP (HyperText Transfert Protocol)   
-  * Permet d’échanger du texte ou des fichiers multimédia sur le web
-
-2) Couche transport
-   
-* UDP (User Datagram Protocol)
-  * Permet à un processus exécuté sur un hôte d’envoyer des paquets à un processus exécuté sur un autre hôte
-  * Sans connexion  au préalable 
-  * Sans confirmation de la transmission de datagrammes
-* TCP (Transmission Control Protocol)
-  * Au contraire d’UDP, permet une connexion fiable entre les processus s’exécutant sur des hôtes distincts
-
-3) Couche internet
-
-* IP (Internet Protocol)
-  * Permet de recevoir des segments de message de la couche transport. 
-  * Il regroupe les messages en paquets et indique leur adresse pour permettre leur acheminement de bout en bout sur un interréseau
-* NAT (Network Address Translation)
-  * Permet de convertir les adresses IP d’un réseau privé en adresses IP globales et publiques
-* ICMP (Internet Control Message Protocol)
-  * Permet à l’hôte de destination de signaler à l’hôte source des erreurs liées aux transmissions de paquets
-* OSPF (Open Shortest Path First)
-  * Protocole de routage à états de liens permettant de faire du routage dynamique
-* EIGRP (Enhanced Interior Gateway Routing Protocol)
-  * Protocole de routage dynamique propriétaire de Cisco
-
-4) Protocoles de la couche réseau
-
-* ARP (Address Resolution Protocol) : Fournit un mappage dynamique entre une
-adresse logique (IP) et une adresse physique (MAC)
-● PPP (Point to Point Protocol) : Permet d’encapsuler des paquets pour les
-transmettre via une connexion en série
-
 ![Alt text](image.png)
 
 Désencapsuler c'est extraire ces données.
@@ -199,6 +147,58 @@ Options de remise des messages
 * Diffusion
 * Multidiffusion
   
+
+### Acronymes
+
+<ins>Couche application</ins>
+
+* DNS (Domain Name System)  
+  * Nom de domaine -> Adresse IP
+* DHCP (Dynamic Host Configuration Protocol)    
+  * Attribution dynamique d'addresses IP aux stations clientes au démarrage
+* SMTP (Simple Mail Transfer Protocol)  
+  Permet aux terminaux d’envoyer un mail à un serveur de messagerie
+* POP (Post Office Protocol)  
+  * Permet aux clients de récupérer ou de télécharger des emails d’un serveur de messagerie
+* IMAP (Internet Message Access Protocol)   
+  * Permet aux clients d’accéder aux emails stockés sur un serveur de messagerie
+* FTP (File Transfert Protocol) 
+  * Permet à un hôte d’accéder à des fichiers sur un autre hôte du réseau
+  * Transférer des fichiers vers un autre hôte du réseau
+* TFTP (Trivial File Transfert Protocol)
+  * Version simplifiée de FTP, pas d’authentification
+* HTTP (HyperText Transfert Protocol)   
+  * Permet d’échanger du texte ou des fichiers multimédia sur le web
+
+<ins>Couche transport</ins>
+   
+* UDP (User Datagram Protocol)
+  * Permet à un processus exécuté sur un hôte d’envoyer des paquets à un processus exécuté sur un autre hôte
+  * Sans connexion  au préalable 
+  * Sans confirmation de la transmission de datagrammes
+* TCP (Transmission Control Protocol)
+  * Au contraire d’UDP, permet une connexion fiable entre les processus s’exécutant sur des hôtes distincts
+
+<ins>Couche internet</ins>
+
+* IP (Internet Protocol)
+  * Permet de recevoir des segments de message de la couche transport. 
+  * Il regroupe les messages en paquets et indique leur adresse pour permettre leur acheminement de bout en bout sur un interréseau
+* NAT (Network Address Translation)
+  * Permet de convertir les adresses IP d’un réseau privé en adresses IP globales et publiques
+* ICMP (Internet Control Message Protocol)
+  * Permet à l’hôte de destination de signaler à l’hôte source des erreurs liées aux transmissions de paquets
+* OSPF (Open Shortest Path First)
+  * Protocole de routage à états de liens permettant de faire du routage dynamique
+* EIGRP (Enhanced Interior Gateway Routing Protocol)
+  * Protocole de routage dynamique propriétaire de Cisco
+
+<ins>Protocoles de la couche réseau</ins>
+
+* ARP (Address Resolution Protocol)
+  * Fournit un mappage dynamique entre une adresse logique (IP) et une adresse physique (MAC)
+* PPP (Point to Point Protocol)
+  * Permet d’encapsuler des paquets pour les transmettre via une connexion en série
 
 
 ![Alt text](assets/Diagrammes/image.png)
