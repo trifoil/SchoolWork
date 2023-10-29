@@ -122,7 +122,7 @@ La trame contient :
 * L'adresse de destination
 * Les données encapsulées
 
-<img src="image.png" alt="drawing" width="600"/>
+<img src="image.png" alt="drawing" width="800"/>
 
 Désencapsuler c'est extraire ces données.
 
@@ -208,7 +208,7 @@ Le modèle OSI est un modèle en 7 couches :
 * 2 couches moyennes : servant au contrôle du transport de l’information
 * 3 couches hautes : liées à la gestion de l’application
 
-<img src="assets/Diagrammes/image.png" alt="drawing" width="600"/>
+<img src="assets/Diagrammes/image.png" alt="drawing" width="800"/>
 
 ## Chapitre 3 : Accès réseau <a name="3"></a>
 
