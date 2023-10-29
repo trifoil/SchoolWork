@@ -122,7 +122,7 @@ La trame contient :
 * L'adresse de destination
 * Les données encapsulées
 
-![Alt text](image.png)
+<img src="image.png" alt="drawing" width="600"/>
 
 Désencapsuler c'est extraire ces données.
 
@@ -200,8 +200,15 @@ Options de remise des messages
 * PPP (Point to Point Protocol)
   * Permet d’encapsuler des paquets pour les transmettre via une connexion en série
 
+### Modèles de référence 
 
-![Alt text](assets/Diagrammes/image.png)
+Le modèle OSI est un modèle en 7 couches :
+
+* 2 couches basses : dédiées à l’infrastructure des réseaux
+* 2 couches moyennes : servant au contrôle du transport de l’information
+* 3 couches hautes : liées à la gestion de l’application
+
+<img src="assets/Diagrammes/image.png" alt="drawing" width="600"/>
 
 ## Chapitre 3 : Accès réseau <a name="3"></a>
 
