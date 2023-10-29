@@ -5,6 +5,7 @@
 - [ ] Windows Server 
 - [ ] Linux 
 - [ ] PHP
+- [ ] Technum
 
 ## Theorie
 
