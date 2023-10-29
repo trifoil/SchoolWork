@@ -105,13 +105,26 @@ Organisé en couches
 
 ### Codage d'un message 
 
-Un message est d'abord codé en bits puis converti en en impulsions électriques ou ondes lumineuses
+Un message est :
+1) Codé en bits 
+2) Converti en en impulsions électriques / ondes lumineuses
 
-### Encapsulation 
+### Encapsulation / désencapsulation
+
+>L'encapsulation est un processus permettant d'encapsuler un message dans une trame (format spécifique)
+
+La trame contient :
+* L'adresse source
+* L'adresse de destination
+* Les données encapsulées
+
+Désencapsuler c'est extraire ces données.
+
+![Alt text](assets/Diagrammes/image.png)
+
 
 ## Chapitre 3 : Accès réseau <a name="3"></a>
 
-![Alt text](assets/Diagrammes/image.png)
 
 ## Chapitre 4 : Ethernet <a name="4"></a>
 
