@@ -62,8 +62,7 @@ NSLookUP
     ![Alt text](image-1.png)
     ![Alt text](image.png)
 
-![Alt text](Capture4.PNG)
-
+![Alt text](image-4.png)
 ## TP2 DNS secondaire
 
 Travail avec DNS secondaire (copie du DNS primaire)
