@@ -48,10 +48,21 @@ NSLookUP
     * Computername -> Change
     * Mettre le nom 
         * Pour le serveur : NEMO
+
+        ![Alt text](image-3.png)
+
         * Pour le client : DORY
+        
     * Redémarrer le serveur
+
+
 2) Changer l'adresse IP
     * 
+
+    ![Alt text](image-1.png)
+    ![Alt text](image.png)
+
+![Alt text](Capture4.PNG)
 
 ## TP2 DNS secondaire
 
