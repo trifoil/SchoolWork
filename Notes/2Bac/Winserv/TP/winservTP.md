@@ -40,6 +40,19 @@ NSLookUP
 -> Nom
 -> IP
 
+## TP1 DNS primaire 
+
+1) Changer le nom du serveur et du client 
+
+    * Panneau de configuration -> System and security -> System -> Advanced system settings
+    * Computername -> Change
+    * Mettre le nom 
+        * Pour le serveur : NEMO
+        * Pour le client : DORY
+    * Redémarrer le serveur
+2) Changer l'adresse IP
+    * 
+
 ## TP2 DNS secondaire
 
 Travail avec DNS secondaire (copie du DNS primaire)
@@ -48,7 +61,7 @@ FQDN du serveur = nom du serveur + nom de domaine
 
 Delegation de zone dans le cas ou on a bcp de zones, le serveur primaire a toujours autorité sur la azone mais ne s'en occupe plus (serveur secondaire a les droits d'écriture)
 
-## TP3 DHCP et AD-DS
+## TP3 DHCP
 
 ### DHCP 
 DHCP 192.168.1.0/24
@@ -120,7 +133,7 @@ Orgnaigramme =/= structure de l'AD
     -> Compta
     -> Invest
 
-## TP4
+## TP4 AD-DS
 
 Création des groupes globaux 
 
