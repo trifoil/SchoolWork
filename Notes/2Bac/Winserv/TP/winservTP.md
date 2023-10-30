@@ -45,7 +45,7 @@ NSLookUP
 1) Changer le nom du serveur et du client 
 
     * Panneau de configuration -> System and security -> System -> Advanced system settings
-    * Computername -> Change
+    * Computer name -> Change
     * Mettre le nom 
         * Pour le serveur : NEMO
 
@@ -64,6 +64,7 @@ NSLookUP
     ![Alt text](image.png)
 
     ![Alt text](image-4.png)
+
 ## TP2 DNS : secondaire
 
 Travail avec DNS secondaire (copie du DNS primaire)
@@ -73,6 +74,9 @@ FQDN du serveur = nom du serveur + nom de domaine
 Delegation de zone dans le cas ou on a bcp de zones, le serveur primaire a toujours autorité sur la azone mais ne s'en occupe plus (serveur secondaire a les droits d'écriture)
 
 ## TP3 : DHCP
+
+![Alt text](Capture.PNG) ![Alt text](Capture1.PNG) ![Alt text](Capture2.PNG) ![Alt text](Capture3.PNG) ![Alt text](Capture4.PNG)
+
 
 ### DHCP 
 DHCP 192.168.1.0/24
@@ -97,11 +101,7 @@ Ne pas descendre en dessous de 4h
 
 ### OP ETENDUE
 
-### AD-DS
 
-On ne supprime jamais un compte pcq il y a une serie de choses liées au compte
-
--> on le désactive
 
 ### Manipulation DHCP
 
@@ -114,6 +114,18 @@ Dans une installation fraîche :
 5) Reboot & snapshot
 6) Cliquer sur le drapeau avec un point d'exclamation -> Complete DHCP configuration
 7) 
+
+
+
+## TP4 : AD-DS
+
+### AD-DS
+
+On ne supprime jamais un compte pcq il y a une serie de choses liées au compte
+
+-> on le désactive
+
+Création des groupes globaux 
 
 ### Manipulation AD-DS
 
@@ -143,10 +155,6 @@ Orgnaigramme =/= structure de l'AD
 - FIN
     -> Compta
     -> Invest
-
-## TP4 : AD-DS
-
-Création des groupes globaux 
 
 Profils itinérants -> qui peuvent être bougés avec un utilisateur amené à changer de poste (ex pour bouger dans un autre service)
 
