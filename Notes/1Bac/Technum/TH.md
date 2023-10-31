@@ -1,0 +1,28 @@
+# Sythèse de théorie de techniques numériques
+
+## Axiomes
+
+1) Fermeture
+    * A . B = OU
+    * A + B = ET
+2) Commutativité
+    * A . B = B . A
+    * A + B = B + A
+3) Associativité
+    * A . ( B . C ) = ( A . B ) . C
+    * A + ( B + C ) = ( A + B ) + C
+4) Distributivité
+    * A . ( B + C ) = ( A . B ) + ( A . C )
+    * A + ( B . C ) = ( A + B ) . ( A + C ) 
+5) Impotence
+    * A + A = A
+    * A . A = A
+6) Complementarité
+    * A + <span style="text-decoration:overline">A</span> = 1
+    * A . <span style="text-decoration:overline">A</span> = 0
+7) Identités remarquables
+    * 1 . A = A
+    * 1 + A = 1
+    * 0 . A = 0
+    * 0 + A = A
+8)
