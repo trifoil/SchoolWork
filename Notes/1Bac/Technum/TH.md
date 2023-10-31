@@ -25,4 +25,18 @@
     * 1 + A = 1
     * 0 . A = 0
     * 0 + A = A
-8)
+8) Distributivité interne
+    * A + ( B + C ) = ( A + B ) + ( A + C )
+    * A . ( B . C ) = ( A . B ) . ( A . C )
+9) Relations partculières
+    * A + AB = A
+    * A + <span style="text-decoration:overline">A</span> B = A + B
+    * A . ( A + B ) = A
+
+## De Morgan 
+
+1) <span style="text-decoration:overline">( A + B )</span> = <span style="text-decoration:overline">A</span> . <span style="text-decoration:overline">B</span>
+
+2) <span style="text-decoration:overline">( A . B )</span> = <span style="text-decoration:overline">A</span> + <span style="text-decoration:overline">B</span>
+
+## Karnaugh
