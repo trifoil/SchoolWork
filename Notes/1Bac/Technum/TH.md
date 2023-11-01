@@ -39,4 +39,9 @@
 
 2) <span style="text-decoration:overline">( A . B )</span> = <span style="text-decoration:overline">A</span> + <span style="text-decoration:overline">B</span>
 
+## Dualité
+
 ## Karnaugh
+
+La réunion d'un quartet de 1 adjacents élimine deux varuiables qui sont à la fois non complémentées et complémentées
+
