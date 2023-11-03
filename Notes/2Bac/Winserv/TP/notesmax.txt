@@ -1,0 +1,160 @@
+IP - Time Zone - Name Server (Obligatoire) 
+
+---
+DNS
+---
+
+----------------
+Serveur Primaire
+----------------
+
+-> Add roles and features 
+-> Add DNS 
+-> Install DNS 
+
+Une fois installé, 
+
+DNS -> DNS Manager 
+Double clique gauche sur le nom du serveur 
+Double clique gauche sur Forward Lookup Zone 
+-> créer une zone primaire [nom.lan] 
+
+(d'abord créer une zone primaire en reverse lookup) 
+
+-> créer un nouvel host - New Host :
+-> Name : [Name_Server]
+-> IP Address : [Ip_Primary_Server] 
+
+-> créer un alias : 
+-> Alias name : (exemple) www
+-> Fully qualified domain name, browse up to host 
+
+
+Double clique gauche sur Reverse Lookup Zone 
+-> Primary Zone 
+-> Network ID : Network Address 
+
+
+Une fois fait -> nslookup alias.[primary_zone] or nslookup [name_server].[primary_zone]
+
+------------------
+Serveur Secondaire
+------------------
+
+-> Add roles and features 
+-> Add DNS 
+-> Install DNS 
+
+Une fois installé, 
+
+New Zone - Secondary Zone : 
+[Même nom que la zone primaire (serveur principal)]
+[Ajout de l'adresse IP du serveur primaire]
+
+-----------------
+Transfert de zone
+-----------------
+
+Retour sur le serveur primaire 
+------------------------------
+
+Add New Host :
+-> Secondary name server 
+-> IP Secondary server 
+
+Properties [Primary Zone (exemple : setup.lan)]
+-> Name Servers - Add
+-> [Name Server] - Resolve 
+
+Retour sur le serveur secondaire
+--------------------------------
+
+• nslookup IP_de_votre_serveur_principal
+• ls –d votre_nom_de_zone
+
+(CMD ou PowerShell - Administrator) 
+
+------------------
+Délégation de zone
+------------------
+
+Toujours sur le serveur secondaire
+----------------------------------
+
+-> créer une zone primaire (nom de zone : delegue.setup.lan (exemple)) [forward lookup zones]
+-> créer une zone primaire [Reverse lookup zones]
+
+-> créer un nouveau host dans delegue.test.lan (serveur secondaire) qui correspond au serveur primaire 
+-> créer un nouveau host dans delegue.test.lan (serveur secondaire) qui correspond au serveur secondaire
+
+-> Serveur primaire - New delegation
+-> Ajouter le nom avant setup.lan (que vous avez créer) 
+-> Nom du serveur secondaire - resolve
+
+-> créer un alias dans delegue.setup.lan avec comme alias ce que tu veux et comme pointeur soit le SRV1 / SRV2 selon les consignes. 
+
+
+
+----
+DHCP
+----
+
+- Configurer le serveur avec une IP fixe (exemple : 192.168.1.1 avec un /24 comme CIDR, 
+et comme DNS principal, l'adresse IP du serveur principal [192.168.1.1])
+
+- Configurer le nom du serveur 
+
+- Configurer la TimeZone 
+
+- Configurer le FireWall (ICMPv4) 
+
+- Installer le DHCP 
+
+- Complete DHCP Configuration - Commit - Finish
+
+Une fois la configuration terminée, il faut aller dans "DHCP - Clique droit - DHCP Manager"
+
+- IPv4 -> New Scope :
+    
+    Name : Osef (exemple : New_DHCP) 
+    Ajout d'une range d'ip (selon le nbre demandé) 
+    Ajout d'une range d'exclusion (selon le nbre demandé) et faisant partie 
+    Bail = selon le nbre demandé mais attention ne pas le laisser par défaut
+
+- IPv4 -> Server Options -> Clique droit (configure options) -> 
+    Routeur : mettre dans le range d'exclusion 
+    DNS servers : (vu que l'AD va ajouter un DNS, mettre l'adresse IP du serveur primaire)
+    DNS Domain Name : mettre le nom de la zone primaire 
+
+
+- Création d'une classe Utilisateur : 
+
+- IPv4 - Define User Classes (clique droit) - Add
+    Display Name : nom de votre nouvelle classe 
+    ASCII : entrer un identifiant 
+
+- Création d'une nouvelle police : 
+
+- Policies - New Policy (clique droit) 
+    
+    Ajouter un nouveau nom pour cette police 
+    Ajouter la classe utilisateur dans cette police
+    Ajouter une range pour cette police 
+
+--------------
+Machine client
+--------------
+
+Connaître la carte réseau : 
+    netsh interface ipv4 show interfaces 
+    ipconfig /setclassid "nom de la carte réseau" "Identifiant"
+
+Pour tester : ipconfig /all
+
+-> Réservations : 
+
+-> Connaître l'adresse MAC du client (ipconfig /all) 
+-> Clique droit -> réservations 
+-> Ajouter les informations nécessaires.
+
+
