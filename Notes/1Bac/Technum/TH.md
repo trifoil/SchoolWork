@@ -1,4 +1,4 @@
-# Sythèse de théorie de techniques numériques
+# Synthèse de théorie de techniques numériques
 
 ## Axiomes
 
