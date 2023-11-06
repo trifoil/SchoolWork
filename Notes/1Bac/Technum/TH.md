@@ -1,10 +1,12 @@
 # Synthèse de théorie de techniques numériques
 
+## Operateurs
+
 ## Axiomes
 
 1) Fermeture
-    * A . B = OU
-    * A + B = ET
+    * A + B = OU
+    * A . B = ET
 2) Commutativité
     * A . B = B . A
     * A + B = B + A
