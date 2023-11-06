@@ -91,3 +91,37 @@ Question d'examen :
 ```ìnclude``` n'arrête pas le code si erreur
 
 ```require``` arrête le code lors d'un problème
+
+
+## PHP cheatsheet
+
+cd /opt/lampp
+./manager-linux-x64.run
+
+```
+include '';
+include_once '';
+require '';
+require_once '';
+
+header(''); toujours en premier
+exit; arret d'exécution
+
+header('Location:index.php'); redirection vers index.php
+
+$longueur = 10; est une variable (lettre/chiffre, mais pas apres le $/_)
+unset($longueur); détruit la variable 
+
+if (isset($longueur)){check si la variable a une valeur quelconque}
+if (empty($longueur)){check si la variable est inexistante, NULL ou 0};
+
+$A = &$B; A a comme référence B donc la valeur de A vaut celle de B
+
+gettype ($var); 
+
+is_<type de la variable : integer int float real double numeric bool string array object resource null> ($x); pour verifier le type de x
+
+
+
+
+```
