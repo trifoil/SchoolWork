@@ -7,8 +7,8 @@ Pour unifier notre belle communauté nerdo-anarcho-communiste, nous pouvons dès
 
 ### Organisation des notes
 - Chaque dossier de cours est divisé en deux sous-dossier
-    1. TH : Tous les documents relatifs à la théorie
-    2. TP : tous les documents relatifs aux travaux pratiques
+    - TH : Tous les documents relatifs à la théorie
+    - TP : Tous les documents relatifs aux travaux pratiques
 
 
 ## Utilisation de git
