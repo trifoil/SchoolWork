@@ -2,9 +2,14 @@
 
 ## Notes
 
+### Objectif du dépôt
 Pour unifier notre belle communauté nerdo-anarcho-communiste, nous pouvons dès à présent créer, remplir, compléter les notes déjà présentes.
 
-Veillons à bien structurer le repo pour plus de clarté, et ainsi favoriser la réussite de tous.
+### Organisation des notes
+- Chaque dossier de cours est divisé en deux sous-dossier
+    1. TH : Tous les documents relatifs à la théorie
+    2. TP : tous les documents relatifs aux travaux pratiques
+
 
 ## Utilisation de git
 #### Tutoriel en français sur git : https://www.atlassian.com/fr/git/tutorials
@@ -21,3 +26,43 @@ Veillons à bien structurer le repo pour plus de clarté, et ainsi favoriser la 
     - Puis utilisez la commande `git push` pour envoyer vos modifications sur le repo distant (cette page github) https://www.atlassian.com/fr/git/tutorials/syncing/git-push
 
 
+## Todo
+<details>
+<summary> Bac 1 </summary>
+
+## Bac 1
+### **TH**
+- [ ] Réseau
+  - [ ] Chap 1
+  - [ ] Chap 2
+  - [ ] Chap 3
+  - [ ] Chap 4
+  - [ ] Chap 5
+  - [ ] Chap 6
+  - [ ] Chap 7
+  - [ ] Chap 8
+  - [ ] Chap 9
+  - [ ] Chap 10
+
+- [ ] Archi
+- [ ] IOE
+### **TP**
+- [ ] Prog
+
+</details>
+
+<details>
+<summary> Bac 2 </summary>
+
+### Bac 2 
+---
+### **TH**
+- [ ] DB
+  
+### **TP**
+- [ ] Windows Server 
+- [ ] Linux 
+- [ ] PHP
+- [ ] Technum
+
+</details>
