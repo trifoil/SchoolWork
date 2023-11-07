@@ -1,3 +1,0 @@
-le programme affiche gagné
-1 équivalent à vrai
-0 équivalent à faux

@@ -1,7 +1,0 @@
-une_variable: str = "une valeur" # Variable de type str (chaine de caractere)
-une_variable: int = 123 # Variable de type int (entier)
-une_variable_float: float = 3.14  # Variable de type float (nombre à virgule flottante)
-une_variable_bool: bool = True  # Variable de type bool (booléen)
-une_variable_list: list = [1, 2, 3, 4]  # Variable de type list (liste)
-une_variable_tuple: tuple = (1, "deux", 3.0)  # Variable de type tuple (tuple)
-une_variable_dict: dict = {"clé1": 10, "clé2": 20}  # Variable de type dict (dictionnaire)

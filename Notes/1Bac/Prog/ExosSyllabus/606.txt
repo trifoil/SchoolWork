@@ -1,4 +1,0 @@
-a) Rien
-b) le programme affiche "presque gagné"
-c) le programme affiche perdu
- 

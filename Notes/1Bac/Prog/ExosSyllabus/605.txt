@@ -1,4 +1,0 @@
-a = 1 : perdu
-a = 2 : gagné 
-a = 3 : perdu
-a = 15 : perdu 
