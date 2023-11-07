@@ -209,6 +209,9 @@ User directory dans GL -> ZERO
 
 ![Alt text](image-17.png)
 
+![Alt text](image-18.png)
+
+![Alt text](image-19.png)
 
 ## backup
 
