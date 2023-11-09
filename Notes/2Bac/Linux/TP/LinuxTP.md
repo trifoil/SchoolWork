@@ -146,19 +146,20 @@ ls -l
 
 En sortie on a :
 
-```
-r pour read
-w pour write
-x pour execute (peut etre même sur des non-executables)
-d pour un directory
-```
+|   Lettre   | Definition |
+|:----------:|------------|
+|      r     |    Read    |
+|      w     |    Write   |
+|      x     |   Execute  |
+|      d     |  Directory |
 
 Dans l'ordre on aura le type, les droits de l'user, du groupe autorisé, et autres
 
-```
- t  |  u  |  g  |  o
+
+ type  |  user  |  group  |  others
+ |:----------:|:----------:|:----------:|:----------:|
  d  | rwx | r-x | r--
-```
+
 
 On va voir les permissions associées aux fichiers systemd, inittab, skel :
 
