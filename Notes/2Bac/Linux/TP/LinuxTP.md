@@ -205,7 +205,18 @@ chmod <reference><operateur><permission(s)> [nom de fichier]
 
 2) Mode octal
 
+Trois chiffres qui se suivent comme argument de la commmande :
+- le premier est pour l'user
+- le deuxième pour le groupe
+- le dernier pour others
 
+On calcule le chiffre en additionnant les chiffres correspondant aux permissions accordées :
+
+|Value|	Permission|
+|:----------:|------------|
+|4	|Read |
+|2	|Write |
+|1	|Execute |
 
 ## TP4 : Gestion utilisateurs <a name="4"></a>
 
