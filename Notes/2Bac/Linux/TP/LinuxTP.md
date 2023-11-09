@@ -218,6 +218,11 @@ On calcule le chiffre en additionnant les chiffres correspondant aux permissions
 |2	|Write |
 |1	|Execute |
 
+La syntaxe est comme ceci (RW pour l'owner, RWX pour le groupe, R pour les autres):
+
+```  
+chmod 674 [file_name]
+```
 ## TP4 : Gestion utilisateurs <a name="4"></a>
 
 mount -l 
