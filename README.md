@@ -57,6 +57,7 @@ Pour unifier notre belle communauté nerdo-anarcho-communiste, nous pouvons dès
 
 - [ ] Archi
 - [ ] IOE
+- [ ] Elec
 ### **TP**
 - [ ] Prog
 
