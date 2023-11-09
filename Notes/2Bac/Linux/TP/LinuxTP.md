@@ -168,6 +168,42 @@ drwxr-xr-x.  5 root root   4096 Sep 17 20:00 systemd
 drwxr-xr-x.  2 root root     62 Sep 15 09:12 skel
 ```
 
+1) Mode symbolique
+
+Pour ajouter ou retirer des permissions :
+
+|  Operateur  | Definition     |
+|:-----------:|----------------|
+|      +      | Ajout          |
+|      -      | Retrait        |
+|      =      | val. specifiee |
+
+Types de permissions :
+
+|   Lettre   | Definition |
+|:----------:|------------|
+|      r     |    Read    |
+|      w     |    Write   |
+|      x     |   Execute  |
+
+
+Références :
+
+|   Reference  | Definition |
+|:----------:|------------|
+|      u     |    Owner    |
+|      g     |    Group   |
+|      o     |   Others  |
+|      a     |   All  |
+
+La syntaxe est comme ceci :
+
+```
+chmod <reference><operateur><permission(s)> [nom de fichier]
+```
+
+2) Mode octal
+
 
 
 ## TP4 : Gestion utilisateurs <a name="4"></a>
