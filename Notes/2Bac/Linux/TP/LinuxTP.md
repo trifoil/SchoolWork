@@ -1,9 +1,9 @@
 # Sythèse de TP de linux
 ## TP0 : Table des matières<a name="0"></a>
 0. [TP0 : Table des matières](#0)
-1. [TP1 : Cmd de base 1](#1)
-2. [TP2 : Cmd de base 2](#2)
-3. [TP3 : Permissions 3](#3)
+1. [TP1 : Cmd de base ](#1)
+2. [TP2 : Cmd de base ](#2)
+3. [TP3 : Permissions ](#3)
 4. [TP4 : Gestion des utilisateurs](#4)
 4. [TP5 : Sauvegarde](#5)
 4. [TP6 : Processus](#6)
