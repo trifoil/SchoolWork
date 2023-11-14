@@ -235,6 +235,8 @@ mount -l
 
 ## TP8 : Cron <a name="8"></a>
 
+Directory /etc/crontab
+
 ## TP9 : Interface réseau <a name="9"></a>
 
 ### Identifiez votre périphérique réseau
