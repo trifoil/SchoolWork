@@ -125,6 +125,8 @@ Delegation de zone dans le cas ou on a bcp de zones, le serveur primaire a toujo
 
         ![Alt text](image-8.png)
 
+    * Bail = selon le nbre demandé mais attention ne pas le laisser par défaut (4h c'est bien)
+
     * Choisir de configurer les options de DHCP plus tard :
 
         ![Alt text](image-9.png)
@@ -141,15 +143,19 @@ Delegation de zone dans le cas ou on a bcp de zones, le serveur primaire a toujo
 
         ![Alt text](image-12.png)
 
-    * Selectionner l'option "DNS Domain name" et entrer un nom de domaine (ici, "test.lan") :
+    * Selectionner l'option "DNS Domain name" et entrer un nom de domaine (ici, "test.lan") puis cliquer sur "Apply" :
 
         ![Alt text](image-13.png)
 
-    
+7) Créer une classe utilisateur ("Add"):
 
-![Alt text](image-14.png)
+    * Clic droit sur "Policies" et selectionner "New Policy" :
 
-![Alt text](image-15.png)
+        ![Alt text](image-14.png)
+
+    * Ajouter un "Display name" et une chaine de caractères (les deux ne doivent pas être identiques):
+
+        ![Alt text](image-15.png)
 
 ![Alt text](image-16.png)
 
