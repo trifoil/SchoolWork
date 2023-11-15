@@ -1,10 +1,13 @@
 # Notes labo Windows server 🖥
 
-## TP0 Table des matières
+## Table des matières
 
+1. [DNS principal](#dnsprin)
+2. [DNS secondaire](#dnssec)
+3. [DHCP](#dhcp)
+4. [AD-DS](#adds)
 
-
-## TP1 Installation Serveur/client et DNS principal
+## TP1 Installation Serveur/client et DNS principal 
 
 ### Consignes
 1) Nom
@@ -40,7 +43,7 @@ NSLookUP
 -> Nom
 -> IP
 
-## TP1 : DNS primaire 
+## TP1 : DNS primaire <a name="dnsprin"></a>
 
 1) Changer le nom du serveur et du client 
 
@@ -65,7 +68,7 @@ NSLookUP
 
     ![Alt text](image-4.png)
 
-## TP2 DNS : secondaire
+## TP2 : DNS secondaire <a name="dnssec"></a>
 
 Travail avec DNS secondaire (copie du DNS primaire)
 
@@ -73,11 +76,75 @@ FQDN du serveur = nom du serveur + nom de domaine
 
 Delegation de zone dans le cas ou on a bcp de zones, le serveur primaire a toujours autorité sur la azone mais ne s'en occupe plus (serveur secondaire a les droits d'écriture)
 
-## TP3 : DHCP
+## TP3 : DHCP <a name="dhcp"></a>
 
-![Alt text](Capture.PNG) ![Alt text](Capture1.PNG) ![Alt text](Capture2.PNG) ![Alt text](Capture3.PNG) ![Alt text](Capture4.PNG)
+0) Configurer le nom du serveur 
+
+1) Configurer le serveur avec une IP fixe 
+    * IP addr : 192.168.1.1 
+    * Subnet : 255.255.255.0 (avec un /24 comme CIDR)
+    * DNS principal : 192.168.1.1 (= l'adresse IP du serveur principal)
+
+    ![Alt text](Capture.PNG) 
+
+2) Configurer la TimeZone 
+
+3) Configurer le FireWall (ICMPv4) 
 
 
+4) Installer le DHCP 
+
+    * Dans manage cliquer sur "add roles and features" :
+
+        ![Alt text](Capture1.PNG)
+    * Selectionner "DHCP server" et cliquer sur "add features" :
+
+        ![Alt text](Capture2.PNG) 
+    * Next next next ... close :
+
+        ![Alt text](Capture3.PNG) 
+5) Cliquer sur le drapeau et "Complete DHCP installation" - "Commit" - "Finish" :
+    
+    ![Alt text](Capture4.PNG)
+
+6) Ouvrir la fenêtre du DHCP dans tools et configurer :
+    
+    * cliquer droit sur IPv4 et selectionner New Scope :
+
+        ![Alt text](image-5.png)
+
+    * Ajouter un nom pour le DHCP (ici, "nouveauDHCP")
+
+        ![Alt text](image-6.png)
+    
+    * Ajouter un range d'IP (ex: de 10 à 60) :
+
+        ![Alt text](image-7.png)
+
+
+![Alt text](image-8.png)
+
+![Alt text](image-9.png)
+
+![Alt text](image-10.png)
+
+![Alt text](image-11.png)
+
+![Alt text](image-12.png)
+
+![Alt text](image-13.png)
+
+![Alt text](image-14.png)
+
+![Alt text](image-15.png)
+
+![Alt text](image-16.png)
+
+![Alt text](image-17.png)
+
+![Alt text](image-18.png)
+
+![Alt text](image-19.png)
 ### DHCP 
 DHCP 192.168.1.0/24
 SCOPE 50
@@ -117,7 +184,7 @@ Dans une installation fraîche :
 
 
 
-## TP4 : AD-DS
+## TP4 : AD-DS <a name="adds"></a>
 
 ### AD-DS
 
@@ -193,25 +260,7 @@ AGDLP
 
 User directory dans GL -> ZERO
 
-![Alt text](image-5.png)
-![Alt text](image-6.png)
-![Alt text](image-7.png)
-![Alt text](image-8.png)
-![Alt text](image-9.png)
-![Alt text](image-10.png)
-![Alt text](image-11.png)
-![Alt text](image-12.png)
-![Alt text](image-13.png)
-![Alt text](image-14.png)
-![Alt text](image-15.png)
 
-![Alt text](image-16.png)
-
-![Alt text](image-17.png)
-
-![Alt text](image-18.png)
-
-![Alt text](image-19.png)
 
 ## backup
 

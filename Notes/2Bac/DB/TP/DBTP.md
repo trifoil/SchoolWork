@@ -1,6 +1,6 @@
 # Notes labo Bases de données ⛁
 
-Table des matières
+## Table des matières
 
 1. [Installation](#installation)
 2. [Le PHP](#php)
