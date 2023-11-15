@@ -121,18 +121,31 @@ Delegation de zone dans le cas ou on a bcp de zones, le serveur primaire a toujo
 
         ![Alt text](image-7.png)
 
+    * Ajouter un range d'exclusion d'IP dans le range de base (ex : de 20 à 30)
 
-![Alt text](image-8.png)
+        ![Alt text](image-8.png)
 
-![Alt text](image-9.png)
+    * Choisir de configurer les options de DHCP plus tard :
 
-![Alt text](image-10.png)
+        ![Alt text](image-9.png)
 
-![Alt text](image-11.png)
+    * Selectionner l'option "Router" et mettre son adresse dans la zone d'exclusion :
 
-![Alt text](image-12.png)
+        ![Alt text](image-10.png)
 
-![Alt text](image-13.png)
+    * Selectionner l'option "DNS Servers" et lui mettre l'adresse IP du serveur (sur lequel on travaille donc ici 192.168.1.1) :
+
+        ![Alt text](image-11.png)
+    
+    * Oui :
+
+        ![Alt text](image-12.png)
+
+    * Selectionner l'option "DNS Domain name" et entrer un nom de domaine (ici, "test.lan") :
+
+        ![Alt text](image-13.png)
+
+    
 
 ![Alt text](image-14.png)
 
