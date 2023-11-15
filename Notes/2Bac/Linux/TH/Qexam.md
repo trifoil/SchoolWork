@@ -1,140 +1,142 @@
-qu'est ce qu'une distro linux
-exmples de distros
-que's q'un shell différence console terminal
-les commandes
-role de l'admin (connaitre les titres)
-linux tout est fichier 
-arborescence citer 5 ou 6 dossier de l'arbo (/etc = fichiers de config)
-types de fichiers 
-extenstions de fichiers (qui servent à rien)
-liens (dure symboliques avantages incon mais pas savoir utiliser)
-Droits 
-umask comment ca fonctionne, 
+# Questions d'examen types de Linux (RED-HAT like distros)
 
-Attention, les droits d'endossement d'utilisateur n'existent pas sur les dossiers
+* qu'est ce qu'une distro linux
+* exmples de distros
+* que's q'un shell différence console terminal
+* les commandes
+* role de l'admin (connaitre les titres)
+* linux tout est fichier 
+* arborescence citer 5 ou 6 dossier de l'arbo (/etc = fichiers de config)
+* types de fichiers 
+* extenstions de fichiers (qui servent à rien)
+* liens (dure symboliques avantages incon mais pas savoir utiliser)
+* Droits 
+* umask comment ca fonctionne, 
 
-risques liés aux droits d'endossement 
-changer les options d emontage pour contrer 
+* Attention, les droits d'endossement d'utilisateur n'existent pas sur les dossiers
 
-sticky bit
+* risques liés aux droits d'endossement 
+* changer les options d emontage pour contrer 
 
-quest un utilisateur physique / logique
+* sticky bit
 
-goupes
+* quest un utilisateur physique / logique
 
-upg - risque de securité
+* groupes
 
-authentification
+* upg - risque de securité
 
-ou sont les mdp et les infos utilisateurs
+* authentification
 
-un bon mot de passe
+* ou sont les mdp et les infos utilisateurs
 
-filesystems
+* un bon mot de passe
 
-cekoi un disque dur plateaux etc etc
+* filesystems
 
-expliquer la structure d'un type de fichiers ext
+* cekoi un disque dur plateaux etc etc
 
-inodes ce que ca contient
+* expliquer la structure d'un type de fichiers ext
 
-pq gérer soi meme un syteème de fichiers
+* inodes ce que ca contient
 
-pas mount (pour labo)
+* pq gérer soi meme un syteème de fichiers
 
-definir un systeme de fichiersjournalisé et citer 4 ou 5
+* pas mount (pour labo)
 
-ceoi archivage
+* definir un systeme de fichiersjournalisé et citer 4 ou 5
 
-plan de sauvegarde
+* cekoi archivage
 
-bon support de sauvegarde
+* plan de sauvegarde
 
-quand on sait que la sauvegarde est bonne
+* bon support de sauvegarde
 
-commande tar
+* quand on sait que la sauvegarde est bonne
 
-types de stocages avantages et inconvénients
+* commande tar
 
-installer un programme (les deux facons compiler ou telecharger la version précompilée)
+* types de stocages avantages et inconvénients
 
-cekoi un paquet
+* installer un programme (les deux facons compiler ou telecharger la version précompilée)
 
-processus puces pg 63
+* cekoi un paquet
 
-ppid?
+* processus puces pg 63
 
-modes d'execution 
+* ppid?
 
-heritage des process
-conditions pour envoyer un proc en arrière plan
+* modes d'execution 
 
-cekoi un signal 
+* heritage des process
+* conditions pour envoyer un proc en arrière plan
 
-priorité des processus
+* cekoi un signal 
 
-crontab
+* priorité des processus
 
-quotas types limite douce dure periode de grace comment les activer 
+* crontab
 
-principales ressource à surveiller
+* quotas types limite douce dure periode de grace comment les activer 
 
-avantages à gérer son systeme de fichier
+* principales ressource à surveiller
 
-pas les commandes pour gérer le cpu
+* avantages à gérer son systeme de fichier
 
-cekoi le noyau linux 
+* pas les commandes pour gérer le cpu
 
-role de l'os 
+* cekoi le noyau linux 
 
-definition os
+* role de l'os 
 
-noyau cekoi monolithique modulaire
+* definition os
 
-lvm (avantages inconvénients sur quelle partition pq schémas)
+* noyau cekoi monolithique modulaire
 
-comment marche le démarrage de linux (phases)
+* lvm (avantages inconvénients sur quelle partition pq schémas)
 
-grub
+* comment marche le démarrage de linux (phases)
 
-systemd
+* grub
 
-fichiers utilisateurs 
+* systemd
 
-logs 
+* fichiers utilisateurs 
 
-pas de theorie sur les reseaux
+* logs 
 
-NFS
+* pas de theorie sur les reseaux
 
-expliquer portmap
+* NFS
 
-RPC
+* expliquer portmap
 
-Scripting (+suppléments)
+* RPC
 
-Snmp mib 
+* Scripting (+suppléments)
 
-traps pulling
+* Snmp mib 
 
-pas la nomenclature
+* traps pulling
 
-securité citer qques menaces
+* pas la nomenclature
 
-cekoi un drp
+* securité citer qques menaces
 
-comment securiser (distro options de montage, logiciels)
+* cekoi un drp
 
-parefeux types avantages inconvénients paramètres de filtrage quels protocoles couches basses du modele osi pourquoi comment 
+* comment securiser (distro options de montage, logiciels)
 
-proxy pourquoi a quoi ca sert
+* parefeux types avantages inconvénients paramètres de filtrage quels protocoles couches basses du modele osi pourquoi comment 
 
-c koi une table une shelf cibles
+* proxy pourquoi a quoi ca sert
 
-politique par defaut d'une chaine 
+* c koi une table une shelf cibles
 
-etc/nologin personne ne se connecte sauf ceux dans le fichier
+* politique par defaut d'une chaine 
 
-usermod -G
+* etc/nologin personne ne se connecte sauf ceux dans le fichier
 
-chgrp 
+* usermod -G
+
+* chgrp 
