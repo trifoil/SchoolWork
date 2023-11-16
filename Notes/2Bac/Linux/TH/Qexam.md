@@ -1,7 +1,12 @@
 # Questions d'examen types de Linux (RED-HAT like distros)
 
-* qu'est ce qu'une distro linux
-* exmples de distros
+* Logiciel libre
+    * Definition
+    * Citer licence logiciel libre
+    * Logiciel open source
+
+* qu'est-ce qu'une distro linux
+* exemples de distros
 * que's q'un shell différence console terminal
 * les commandes
 * role de l'admin (connaitre les titres)

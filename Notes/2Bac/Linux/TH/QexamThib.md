@@ -1,0 +1,88 @@
+### Examen 
+-~~Logiciel libre~~
+- ~~citer licence logiciel libre~~ 
+- ~~logiciel open source~~ 
+- ~~cquoi linux (os , distrip)~~
+    -  ~~ex distrip~~ 
+- ~~mode graphique mode texte~~
+- ~~shell~~ 
+- role admin 
+- methodolie admin
+- gestion des fichier (citer 5 ou 6  ficher de base et ce qu'il y a dedans )
+- repertoire personel 
+- chemins relatif / absolue
+- Types de fichiers 
+- Extensions de fichier
+- liens durs, symboliques 
+- Droits d'accès (fichiers =! dossier) + commande 
+- Umask + (commande)
+- Droit d'endossements tout attention pièges 
+- sticky bit
+- gestion des groupes et utilisateurs   
+- UPG 
+- UID-GID
+- authentification
+- ou stocker mdp 
+- gestion systeme et ficheiers
+- disque secteur 
+- structeure systeme fichier 
+- tables inodes 
+- pq gerer sois meme systeme de fichier 
+- types de systems journalaises
+- types de systemes de fichier en citer 5 
+- sauvegardes 
+- plan de sauvegardes tout
+- avanatges et inco des types de stockages 
+- san ,das et nas suppléments du cours sur les auvegardes 
+    - raid 
+    - archivage =/sauvergardes 
+- virtualisation  
+- Intaller des programmes 
+- packages
+- logiciel compilé
+- débot internet
+- Gestion des processus 
+- comment gérer proc
+- ppi pid 
+- Excecution processus modes
+- héritages processus
+- condition pour l'envoyer en arrière plan
+- signal envoyer en processus
+- priorité d'un processus  (lequel est le plus prioritaire)
+- crontab
+- at cquoi 
+- anacran cquoi
+- les quotas, types , limite douce , dur ,perdiode de grace , comment l'activer , option de mantages 
+- recourcesa surveiller  
+- Noyau linux  
+- role os
+- def os 
+- pq recompiler noyaux
+- différence noyeau analityque modulaire 
+- LVM cquoi 
+- différent aventages inc
+- sur quel partition l'utiliser 
+- shéma pour lvm 
+- Démarage linux phases 
+- grub cquoi 
+- system d 
+- run level (system d)
+-  init pas besoin de savoir
+- fichier associer a l'utilisateur et a quoi ils servent 
+- logs machine 
+- NFS  principale faille de sécu , expliquer portmap , rpcshema 
+- Scripting (+ supplément )
+-  SNMP principe de fonctionnement 
+- cquoi une mib , tramps, pooling 
+- Sécurité (citer quelque menaces logiel )
+- DRP cquoi (suplémént)
+- quoi sécuriser  
+- comment on le sécurise quand on l'installe
+- sécu logiciel surotut
+- types de parfeu (sur quoi ce base pour  filtrer)
+- aventages incon
+- proxy reverse proxy (aventag , inconv)
+- statefull, stateless 
+- cquoi une chaine , table , cible 
+- pq l'ordre est important dun firewall 
+- cquoi la politique d'une chaine d'une firewall 
