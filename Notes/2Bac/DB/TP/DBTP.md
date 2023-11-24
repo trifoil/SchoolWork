@@ -97,14 +97,14 @@ Question d'examen :
 
 cd /opt/lampp
 ./manager-linux-x64.run
-
+              
 ```
 include '';
 include_once '';
 require '';
 require_once '';
 
-header(''); toujours en premier
+header(''); toujours en tout premier
 exit; arret d'exécution
 
 header('Location:index.php'); redirection vers index.php
@@ -120,8 +120,42 @@ $A = &$B; A a comme référence B donc la valeur de A vaut celle de B
 gettype ($var); 
 
 is_<type de la variable : integer int float real double numeric bool string array object resource null> ($x); pour verifier le type de x
+```
 
+**Exercice 2 : Inclusion de fichiers**
 
+index.php
 
+```
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Inclusion de fichiers</title>
+</head>
+<body>
+    <?php
+    include '_header.php' ;
+    include '_nav.php' ;
+    include '_footer.php' ;
+    ?>
+    <h2>Accueil</h2>
+</body>
+</html>
+```
+
+_footer.php
+
+```
+<footer>
+    <p>
+    Augustin Vangeebergen
+    </p>
+</footer>
+```
+
+administration.php
+
+```
 
 ```
