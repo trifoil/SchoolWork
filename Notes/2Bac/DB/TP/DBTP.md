@@ -120,7 +120,11 @@ $A = &$B; A a comme référence B donc la valeur de A vaut celle de B
 gettype ($var); 
 
 is_<type de la variable : integer int float real double numeric bool string array object resource null> ($x); pour verifier le type de x
+
+
 ```
+
+## PHP exercices
 
 **Exercice 2 : Inclusion de fichiers**
 
@@ -165,6 +169,7 @@ administration.php
 </head>
 <body>
     <?php
+    header('Location:index.php');
     include '_header.php' ;
     include '_nav.php' ;
     include '_footer.php' ;
@@ -193,3 +198,5 @@ contact.php
 </body>
 </html>
 ```
+
+**Exercice 3 : Opérations sur les variables**
