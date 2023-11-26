@@ -182,19 +182,111 @@ updatedb
 ### Commande scp
 
 Pour transférer des fichiers par ssh :
+
 ```
 scp /home/x/Documents/33e8e42ee9e634d3f19d15e6dc6abcc9.jpg root@10.143.90.2:/home/
 ```
 
 ### Commande file
 
-Donne les détails d'un fichier
+Donne les détails d'un fichier.
 
 ```
 file Agilent.html
 ```
 
 ### Commande du
+
+Donne la taille d'un fichier (-h pour human readable).
+
+```
+du Agilent.html -h
+```
+
+### Commande cat
+
+Affiche le contenu d'un fichier.
+
+```
+cat /etc/fstab
+```
+
+### Commande mv
+
+Bouge les fichiers, localisation, destination (et comme dans linux tout est fichier...).
+
+```
+mv bikibean.zip /tmp/bikibean.zip
+
+```
+
+### Commande find
+
+find + emplacement de démarrage + argument + ce qu'il faut par rapport à l'argument. Si pas d'emplacement de démarrage, alors la commande prend par défaut le repertoiire dans lequel on se toruve.
+
+```
+find / -name fstab
+```
+Pour trouver les fichiers modifiés dans un laps de temps de 10 jours (multiples de 24h).
+
+```
+find / -ctime -10 
+
+```
+
+### MOTD
+
+Afficher une bannière message of the day. 
+
+```
+locate motd
+```
+
+Le fichier se trouve dans /etc/motd
+
+```
+nano /etc/motd
+```
+
+### Commande which
+
+Affcihe le chemin de l'exécutable d'une commande, par exemple avec nano :
+
+```
+which nano
+```
+
+### Commande whereis
+
+Meme fonction que which mais avec la source et les manuels
+
+```
+whereis nano
+```
+
+### Commande tty
+
+Renvoie le nom du terminal sur lequel on est connecté
+
+```
+tty
+```
+
+### Commande last
+
+Montre les dernier utilisateurs à s'être connectés
+
+```
+last
+```
+
+### Commande wc
+
+Compte les nouvelles lignes, mots, et nb de bytes.
+
+```
+wc /home/Agilent.html
+```
 
 ## TP2 : Gestion des fichiers <a name="2"></a>
 
