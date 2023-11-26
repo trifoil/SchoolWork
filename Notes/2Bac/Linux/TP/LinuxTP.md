@@ -179,6 +179,14 @@ Si le dossier ou fichier est récent, il faut update la db :
 updatedb
 ```
 
+### ommande scp
+
+Pour transférer des fichiers par ssh :
+```
+scp /home/x/Documents/33e8e42ee9e634d3f19d15e6dc6abcc9.jpg root@10.143.90.2:/home/
+```
+
+
 ## TP2 : Gestion des fichiers <a name="2"></a>
 
 
