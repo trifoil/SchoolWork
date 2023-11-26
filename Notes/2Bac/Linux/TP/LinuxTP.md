@@ -1,8 +1,8 @@
 # Sythèse de TP de linux
 ## TP0 : Table des matières<a name="0"></a>
 0. [TP0 : Table des matières](#0)
-1. [TP1 : Cmd de base ](#1)
-2. [TP2 : Cmd de base ](#2)
+1. [TP1 : Commandes de base (1)](#1)
+2. [TP2 : Commandes de base (2)](#2)
 3. [TP3 : Permissions ](#3)
 4. [TP4 : Gestion des utilisateurs](#4)
 4. [TP5 : Sauvegarde](#5)
@@ -179,13 +179,22 @@ Si le dossier ou fichier est récent, il faut update la db :
 updatedb
 ```
 
-### ommande scp
+### Commande scp
 
 Pour transférer des fichiers par ssh :
 ```
 scp /home/x/Documents/33e8e42ee9e634d3f19d15e6dc6abcc9.jpg root@10.143.90.2:/home/
 ```
 
+### Commande file
+
+Donne les détails d'un fichier
+
+```
+file Agilent.html
+```
+
+### Commande du
 
 ## TP2 : Gestion des fichiers <a name="2"></a>
 
