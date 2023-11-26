@@ -132,17 +132,74 @@ Pour connaitre son username actuel
 whoami
 ```
 
+### Commande mkdir
+```
+mkdir directory/
+```
+
+### Commande touch
+
+```
+touch
+``` 
+
+### Commande cal 
+
+Pour montrer un span de trois mois autour de la date
+
+```
+cal 30 07 1999 -3
+```
+
+### Commande reboot et shutdown
+
+Effet immédiat redémarrage :
+```
+reboot 
+```
+
+Effet immédiat arrêt :
+```
+shutdown now
+```
+ou 
+```
+systemctl halt
+```
+
+### Commande locate 
+
+```
+locate truc_a_localiser
+```
+
+Si le dossier ou fichier est récent, il faut update la db :
+
+```
+updatedb
+```
+
 ## TP2 : Gestion des fichiers <a name="2"></a>
+
+
+
 
 ## TP3 : Permissions <a name="3"></a>
 
 ### Droits d'exécution
 
-Pour afficher les droits :
+Pour afficher le contenu d'un dossier et les droits :
 
 ```
 ls -l 
 ```
+
+A noter que 
+* les directories sont en bleu
+* les exécutables sont en vert
+* les fichiers sont en gris
+* les liens symboliques sont en cyan
+
 
 En sortie on a :
 
@@ -223,6 +280,9 @@ La syntaxe est comme ceci (RW pour l'owner, RWX pour le groupe, R pour les autre
 ```  
 chmod 674 [nom de fichier]
 ```
+
+
+
 ## TP4 : Gestion utilisateurs <a name="4"></a>
 
 mount -l 
