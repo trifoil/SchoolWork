@@ -5,25 +5,41 @@
     * Citer licence logiciel libre
     * Logiciel open source
 
-* qu'est-ce qu'une distro linux
-* exemples de distros
-* que's q'un shell différence console terminal
-* les commandes
-* role de l'admin (connaitre les titres)
-* linux tout est fichier 
-* arborescence citer 5 ou 6 dossier de l'arbo (/etc = fichiers de config)
-* types de fichiers 
-* extenstions de fichiers (qui servent à rien)
-* liens (dure symboliques avantages incon mais pas savoir utiliser)
-* Droits 
-* umask comment ca fonctionne, 
+* Qu'est-ce qu'une distro linux
+
+* Exemples de distros
+
+* Qu'est-ce q'un shell 
+
+* Différence 
+    * console 
+    * terminal
+
+* Les commandes
+
+* Role de l'admin (connaitre les titres)
+
+* Linux tout est fichier 
+
+* Arborescence citer 5 ou 6 dossier de l'arbo (/etc = fichiers de config)
+
+* Types de fichiers 
+
+* Extenstions de fichiers (qui servent à rien)
+
+* Liens (dure symboliques avantages incon mais pas savoir utiliser)
+
+* Droits
+
+* Comment fonctionne Umask
 
 * Attention, les droits d'endossement d'utilisateur n'existent pas sur les dossiers
 
-* risques liés aux droits d'endossement 
-* changer les options d emontage pour contrer 
+* Risques liés aux droits d'endossement 
 
-* sticky bit
+* Changer les options d emontage pour contrer 
+
+* Sticky bit
 
 * quest un utilisateur physique / logique
 
