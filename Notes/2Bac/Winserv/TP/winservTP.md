@@ -62,7 +62,6 @@ NSLookUP
 
 
 2) Changer l'adresse IP
-    * 
 
     ![Alt text](image-1.png)
 
