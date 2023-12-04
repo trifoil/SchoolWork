@@ -50,7 +50,7 @@ Pour lister les permissions :
 ls -l
 ```
 
-### Commande cat
+### Commande cat (concatenate)
 
 Permet de montrer/écrire des fichiers
 

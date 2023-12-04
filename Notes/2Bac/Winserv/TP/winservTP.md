@@ -3,12 +3,15 @@
 ## Table des matières
 
 1. [DNS principal](#dnsprin)
-2. [DNS secondaire](#dnssec)
+2. [DNS secondaire (non décrit car pas à l'examen pratique)](#dnssec)
 3. [DHCP](#dhcp)
 4. [AD-DS](#adds)
 
-## TP1 Installation Serveur/client et DNS principal 
+## TP1 : DNS primaire <a name="dnsprin"></a>
 
+0) Notes de débust de cours 
+
+```
 ### Consignes
 1) Nom
 2) IP Fixe
@@ -42,8 +45,7 @@ Ptr -> 192.168.1.1 -> Hote Serv2019
 NSLookUP
 -> Nom
 -> IP
-
-## TP1 : DNS primaire <a name="dnsprin"></a>
+```
 
 1) Changer le nom du serveur et du client 
 
