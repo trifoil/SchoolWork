@@ -2,7 +2,7 @@
 
 Date de création: 21 septembre 2023 16:53
 Supports: https://ecampus.heh.be/pluginfile.php/205875/mod_resource/content/1/cours_Architecture.pdf
-Relue ?: No
+
 
 ```jsx
 Savoir faire conversion binaire, octale , hexadécimale, décimal (pas opération (+; -; ..) mais bien de revoir)
@@ -1037,3 +1037,7 @@ Différents types :
     - ******************En résumé******************
         
         ![Untitled](Architecture%20des%20ordinateurs%20745a9fa757254762996dd15a60ed0cee/Untitled%2059.png)
+
+
+      Si tu es arrivé içi, c'est que tu as apprécié ma Synthèse un merci (ou une question) n'est pas de refus sur Discord : el_pablo__
+      et aussi envoie un message à chromaticsssss sur discord pour lui dire a quelle point il est nul pls
