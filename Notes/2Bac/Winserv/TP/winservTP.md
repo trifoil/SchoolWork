@@ -71,15 +71,19 @@ NSLookUP
 
 ## TP2 : DNS secondaire <a name="dnssec"></a>
 
+Notes de début de cours 
+
+```
 Travail avec DNS secondaire (copie du DNS primaire)
 
 FQDN du serveur = nom du serveur + nom de domaine
 
-Delegation de zone dans le cas ou on a bcp de zones, le serveur primaire a toujours autorité sur la azone mais ne s'en occupe plus (serveur secondaire a les droits d'écriture)
+Delegation de zone dans le cas ou on a bcp de zones, le serveur primaire a toujours autorité sur la zone mais ne s'en occupe plus (serveur secondaire a les droits d'écriture)
+```
 
 ## TP3 : DHCP <a name="dhcp"></a>
 
-0) Configurer le nom du serveur 
+0) Configurer le nom du serveur (idem que pour DNS)
 
 1) Configurer le serveur avec une IP fixe 
     * IP addr : 192.168.1.1 
@@ -206,6 +210,9 @@ Dans une installation fraîche :
 
 ## TP4 : AD-DS <a name="adds"></a>
 
+0) Notes de début de cours 
+
+```
 ### AD-DS
 
 On ne supprime jamais un compte pcq il y a une serie de choses liées au compte
@@ -286,3 +293,53 @@ User directory dans GL -> ZERO
 
 VEEAM
 
+
+```
+
+### Installation de l'AD
+
+1) Réaliser un DHCP
+
+2) Installation de l'AD 
+
+    * Dans manage cliquer sur "add roles and features" :
+
+    * ...
+
+3) Dans le menu drapeau, cliquer sur "Promote this server to a domain controller"
+
+4) Créer une nouvelle forêt avec son nom de domaine
+
+5) Options à choisir :
+
+    * Niveaux fonctionnels (version = OS minimum de nos serv)
+    
+    * Cocher ‘DNS server’ (pour installer le serveur DNS)
+
+    * Définir un mot de passe (sécurisé et à retenir !) (ex : Test123*)
+
+    * Retenir les 3 chemins !
+
+6) Configurer le DNS :
+
+    * 
+
+7) Réactiver le DHCP → DHCP Manager (clic droit) → Authorize
+
+### Configuration de l'AD
+
+1)
+
+### Configuration du partage
+
+### Configuration des quotas
+
+### Configuration Volume Shadow Copy
+
+### Configuration des backups
+
+### Corbeille AD
+
+### AD : GPO → Mappage disque
+
+## TPX : Annexes
