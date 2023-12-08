@@ -412,7 +412,7 @@ créer la partition)
 * ‘Enable Recycle Bin…’
 
 :warning: Vaut 1 point à l’examen pratique, ne pas l’oublier !
-
+⚠
 ### AD : GPO → Mappage disque
 
 ## TPX : Annexes
