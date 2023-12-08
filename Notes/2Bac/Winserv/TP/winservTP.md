@@ -76,7 +76,7 @@
 
 ## TP2 : DNS secondaire <a name="dnssec"></a>
 
-0) Notes de début de cours 
+### Notes de début de cours 
 
 <details>
     <summary> Voir plus </summary>
