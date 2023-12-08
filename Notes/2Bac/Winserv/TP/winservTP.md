@@ -217,6 +217,10 @@ Dans une installation fraîche :
 
 0) Notes de début de cours 
 
+<details>
+<summary> Voir plus </summary>
+
+
 ```
 ### AD-DS
 
@@ -301,6 +305,8 @@ VEEAM
 
 ```
 
+</details>
+
 ### Installation de l'AD
 
 1) Réaliser un DHCP
@@ -333,17 +339,79 @@ VEEAM
 
 ### Configuration de l'AD
 
-1)
+1) Ajouter des ressources dans Active Directory Users And
+Computers :
+    * Créer des OU (pour chaque sections)
+    * Créer un groupe globale par UO
+    * Créer un modèle d’utilisateur et définir les options spécifiques :
+        * Account → Logon Hours : Horaire de connexion
+        * Profile → Profile path : profil itinérant
+    * Créer des utilisateurs et les ajouter à l’UO
+    * Créer une délégation de contrôle → clique droit sur l’UO → ‘Delegate Control…’
+
+2) Ajouter un UPN (@domain) different :
+    * Dans Active Directory Domains and Trusts → clique droit → ‘UPN Suffixes' : ajouter le domaine
+    * Dans les propriétés du user → Account
 
 ### Configuration du partage
 
+1) Création de groupes locaux
+    * 2 Groupes locaux (R et RW) par dossier du partage
+contenant des groupes globaux
+2) Création et partage d'un dossier dans C:\
+    * Clic droit → Propriétés → Share
+    * Désactiver l'héritage
+    * Configurer les permissions (les 2 GL pour chaque dossier)
+3) Ajouter les GG dans les GL
+    * Mettre les groupes globaux et/ou les utilisateurs dans les groupes locaux associé à leurs permissions
+    * Ne pas oublier d’ajouter tout le monde au dossier principal en lecture seulement
+
 ### Configuration des quotas
+
+1) Installer le rôle File Server Ressource Manager (Server
+Manager → Manage)
+2) Configurer les quotas (File Server Ressource Manager)
+* Créer un template de quota (à partir d’un autre)
+* Créer les quotas à partir d’un template
+* Un quota s'applique uniquement à un dossier (pas un user ou un groupe) !
+* Appliquer le quota au dossier parent
+3) Tester sur le client
 
 ### Configuration Volume Shadow Copy
 
+Shadow copy permet de réaliser un instantanée des
+fichiers/dossiers du partage
+
+1) Dans les propriétés du disque (C:\) :
+    * Activer les Shadow Copies
+    * Modifier l’horaire de prise des snapshots
+        * Dans ‘Settings…’ → ‘Schedule…’
+2) Tester sur le client
+
 ### Configuration des backups
 
+1) Installer la fonctionnalité Windows Server Backup (Server
+Manager → Manage)
+2) Ajouter un disque dur (Disk Management/Diskpart permet de
+créer la partition)
+3) Configurer les backups (Windows Server Backup)
+    * Cliquer sur Local Backup
+    * Action → Configure Performance Settings
+        * Sélectionner ‘Faster backup performance’ pour réaliser des sauvegardes incrémentielles
+    * Créer un job de backup : ‘Backup Schedule…’
+        * Créer un backup custom
+        * Ajouter ‘System state’ (pour save les configs)
+        * Ajouter C:\Windows\NTDS et C:\Windows\SYSVOL
+        * Ajouter les dossier partagés (et profile itinerant)
+    * Choisir l’horaire et l’emplacement (disque de backup)
+
 ### Corbeille AD
+
+1) Dans Active Directory Administrative Center
+* Sélectionner la racine du domaine
+* ‘Enable Recycle Bin…’
+
+:warning: Vaut 1 point à l’examen pratique, ne pas l’oublier !
 
 ### AD : GPO → Mappage disque
 
