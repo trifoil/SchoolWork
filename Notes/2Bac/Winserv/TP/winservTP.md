@@ -424,24 +424,25 @@ créer la partition)
 ## TPX : Annexes
 
 ### AD : Profile itinérant
-1.Créer un dossier dans C:\ et le partager
-➢ Mettre un ‘$’ à la fin du nom du dossier permet
-de le cacher au client (recommandé)
-➢ Les seul permissions du partage doivent être
-RW pour le groupe disposant d’un profile
-itinerant (et pas de droit pour admin !)
-2.Ajouter le chemin réseau du partage dans les
-propriétés des comptes :
-➢ Dans : Profile → Profile path
-➢ //<server name>/PROFILS$/%username%
+1) Créer un dossier dans C:\ et le partager
+    * Mettre un ‘$’ à la fin du nom du dossier permet de le cacher au client (recommandé)
+    * Les seule permissions du partage doivent être
+    RW pour le groupe disposant d’un profile itinerant (et pas de droit pour admin !)
+2) Ajouter le chemin réseau du partage dans les propriétés des comptes :
+    * Dans : Profile → Profile path
+    * //<server name>/PROFILS$/%username%
 
 ### AD : Délégation de contrôle
 
+
+
 ### Résolution problème de connexion à l'AD
+
+* Erreur d'Hyper-V → cliquer sur ‘Enhanced session’
 
 ### Supprimer un objet de l’AD
 
-Par défaut, les objets de l’AD sont protéger de la suppression.
+* Par défaut, les objets de l’AD sont protéger de la suppression.
 * Il faut donc désactiver cette protection pour pouvoir supprimer un objet !
 * Pour se faire, aller dans les propriétés de l’objet, section objet et décocher la case →
 
