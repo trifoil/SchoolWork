@@ -239,7 +239,7 @@ Dans une installation fraîche :
 
         ![Alt text](image-19.png)
 
-    * :warning: Ne pas oublier d'activer le DHCP
+    * :warning: Ne pas oublier d'activer le DHCP :warning:
 
         ![Alt text](image-20.png)
 
@@ -248,7 +248,7 @@ Dans une installation fraîche :
 
 ## TP4 : AD-DS <a name="adds"></a>
 
-0) Notes de début de cours 
+### Notes de début de cours 
 
 <details>
 <summary> Voir plus </summary>
