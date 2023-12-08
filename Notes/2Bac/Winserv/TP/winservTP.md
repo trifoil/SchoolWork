@@ -383,9 +383,8 @@ VEEAM
 
     * Retenir les 3 chemins !
 
-
-        ![Alt text](image-29.png)
-    
+        ![Alt text](image-30.png)    
+        
 6) Configurer le DNS :
 
 
