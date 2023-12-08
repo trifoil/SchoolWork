@@ -411,8 +411,38 @@ créer la partition)
 * Sélectionner la racine du domaine
 * ‘Enable Recycle Bin…’
 
-:warning: Vaut 1 point à l’examen pratique, ne pas l’oublier !
-⚠
+:warning: Vaut 1 point à l’examen pratique, ne pas l’oublier ! :warning:
+
 ### AD : GPO → Mappage disque
 
+1) Dans Group Policy Management
+    * créer une GPO (et la linker au domaine)
+    * Éditer la GPO
+        * Choisir l’action et la configurer (ici mappage d’un disque réseau)
+2) Tester en se connectant sur le client
+
 ## TPX : Annexes
+
+### AD : Profile itinérant
+1.Créer un dossier dans C:\ et le partager
+➢ Mettre un ‘$’ à la fin du nom du dossier permet
+de le cacher au client (recommandé)
+➢ Les seul permissions du partage doivent être
+RW pour le groupe disposant d’un profile
+itinerant (et pas de droit pour admin !)
+2.Ajouter le chemin réseau du partage dans les
+propriétés des comptes :
+➢ Dans : Profile → Profile path
+➢ //<server name>/PROFILS$/%username%
+
+### AD : Délégation de contrôle
+
+### Résolution problème de connexion à l'AD
+
+### Supprimer un objet de l’AD
+
+Par défaut, les objets de l’AD sont protéger de la suppression.
+* Il faut donc désactiver cette protection pour pouvoir supprimer un objet !
+* Pour se faire, aller dans les propriétés de l’objet, section objet et décocher la case →
+
+Bonne chance (come mierda comme on dit <3)
