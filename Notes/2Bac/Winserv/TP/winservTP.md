@@ -350,11 +350,18 @@ VEEAM
 
     * Dans manage cliquer sur "add roles and features" :
 
-    * ...
+    * Selectionner "Active Directory Domain Services" -> "add feature" -> nextnextnext... :
+    
+        ![Alt text](image-22.png)
+    
 
 3) Dans le menu drapeau, cliquer sur "Promote this server to a domain controller"
 
+    ![Alt text](image-23.png)
+
 4) Créer une nouvelle forêt avec son nom de domaine
+
+    ![Alt text](<Screenshot from 2023-12-08 19-52-37.png>)
 
 5) Options à choisir :
 
@@ -364,11 +371,23 @@ VEEAM
 
     * Définir un mot de passe (sécurisé et à retenir !) (ex : Test123*)
 
+        ![Alt text](<Screenshot from 2023-12-08 19-52-45.png>)
+
+    * Pas de délégation de DNS
+
+        ![Alt text](<Screenshot from 2023-12-08 19-52-54.png>)
+
+    * Le nom du NETBIOS est configuré automatiquement :
+
+        ![Alt text](<Screenshot from 2023-12-08 19-53-03.png>)
+
     * Retenir les 3 chemins !
 
+
+        ![Alt text](image-29.png)
+    
 6) Configurer le DNS :
 
-    * 
 
 7) Réactiver le DHCP → DHCP Manager (clic droit) → Authorize
 
