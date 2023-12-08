@@ -76,7 +76,10 @@
 
 ## TP2 : DNS secondaire <a name="dnssec"></a>
 
-Notes de début de cours 
+0) Notes de début de cours 
+
+<details>
+    <summary> Voir plus </summary>
 
 ```
 Travail avec DNS secondaire (copie du DNS primaire)
@@ -86,7 +89,53 @@ FQDN du serveur = nom du serveur + nom de domaine
 Delegation de zone dans le cas ou on a bcp de zones, le serveur primaire a toujours autorité sur la zone mais ne s'en occupe plus (serveur secondaire a les droits d'écriture)
 ```
 
+</details>
+
 ## TP3 : DHCP <a name="dhcp"></a>
+
+### Notes de début de cours
+
+<details>
+    <summary> Voir plus </summary>
+
+```
+### DHCP 
+
+DHCP 192.168.1.0/24
+SCOPE 50
+Soit 192.168.1.1->254
+Soit 192.168.1.1->49  +20%
+
+x3
+
+Plage d'exclusion
+Reservation d'une adresse IP par rapport à une adresse MAC
+
+Le couillon qui met au dessus de F pour une adresse mac a zero
+Si  adresse mac non précisée, on en met une au hasard
+
+### BAIL
+Le BAIL est par défaut à 8 jours lors de l'installation du serveur DHCP 
+Chose à ne pas faire est de par exemple mettre 1h
+Ne pas descendre en dessous de 4h
+
+### CLASS UT
+
+### OP ETENDUE
+
+### Manipulation DHCP
+
+Dans une installation fraîche :
+
+1) IP statique 192.168.0.1
+2) Reboot
+3) Dans "Manage" -> "Add roles" on selectionne "DHCP Server" -> "Add features"
+4) Install
+5) Reboot & snapshot
+6) Cliquer sur le drapeau avec un point d'exclamation -> Complete DHCP configuration
+7) 
+```
+</details>
 
 0) Configurer le nom du serveur (idem que pour DNS)
 
@@ -174,42 +223,9 @@ Delegation de zone dans le cas ou on a bcp de zones, le serveur primaire a toujo
 ![Alt text](image-18.png)
 
 ![Alt text](image-19.png)
-### DHCP 
-DHCP 192.168.1.0/24
-SCOPE 50
-Soit 192.168.1.1->254
-Soit 192.168.1.1->49  +20%
 
-x3
+![Alt text](image-20.png)
 
-Plage d'exclusion
-Reservation d'une adresse IP par rapport à une adresse MAC
-
-Le couillon qui met au dessus de F pour une adresse mac a zero
-Si  adresse mac non précisée, on en met une au hasard
-
-### BAIL
-Le BAIL est par défaut à 8 jours lors de l'installation du serveur DHCP 
-Chose à ne pas faire est de par exemple mettre 1h
-Ne pas descendre en dessous de 4h
-
-### CLASS UT
-
-### OP ETENDUE
-
-
-
-### Manipulation DHCP
-
-Dans une installation fraîche :
-
-1) IP statique 192.168.0.1
-2) Reboot
-3) Dans "Manage" -> "Add roles" on selectionne "DHCP Server" -> "Add features"
-4) Install
-5) Reboot & snapshot
-6) Cliquer sur le drapeau avec un point d'exclamation -> Complete DHCP configuration
-7) 
 
 
 
@@ -310,6 +326,8 @@ VEEAM
 ### Installation de l'AD
 
 1) Réaliser un DHCP
+
+    * Voir TP 3
 
 2) Installation de l'AD 
 
