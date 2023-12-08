@@ -137,6 +137,8 @@ Dans une installation fraîche :
 ```
 </details>
 
+### Prerequis
+
 0) Configurer le nom du serveur (idem que pour DNS)
 
 1) Configurer le serveur avec une IP fixe 
@@ -151,22 +153,28 @@ Dans une installation fraîche :
 3) Configurer le FireWall (ICMPv4) 
 
 
-4) Installer le DHCP 
 
-    * Dans manage cliquer sur "add roles and features" :
+### Installation du DHCP 
 
-        ![Alt text](Capture1.PNG)
-    * Selectionner "DHCP server" et cliquer sur "add features" :
+1) Dans manage cliquer sur "add roles and features" :
 
-        ![Alt text](Capture2.PNG) 
-    * Next next next ... close :
+    ![Alt text](Capture1.PNG)
 
-        ![Alt text](Capture3.PNG) 
-5) Cliquer sur le drapeau et "Complete DHCP installation" - "Commit" - "Finish" :
+2) Selectionner "DHCP server" et cliquer sur "add features" :
+
+    ![Alt text](Capture2.PNG)
+
+3) Next next next ... close :
+
+    ![Alt text](Capture3.PNG)
+
+4) Cliquer sur le drapeau et "Complete DHCP installation" - "Commit" - "Finish" :
     
     ![Alt text](Capture4.PNG)
 
-6) Ouvrir la fenêtre du DHCP dans tools et configurer :
+### Configuration du DHCP
+
+1) Ouvrir la fenêtre du DHCP dans tools et configurer :
     
     * cliquer droit sur IPv4 et selectionner New Scope :
 
@@ -215,16 +223,25 @@ Dans une installation fraîche :
     * Ajouter un "Display name" et une chaine de caractères (les deux ne doivent pas être identiques):
 
         ![Alt text](image-15.png)
+    * Ajouter un nom pour la policy et sa description
+        
+        ![Alt text](image-16.png)
 
-![Alt text](image-16.png)
+    * Ajout de la condition pour la police : Equals to user class
 
-![Alt text](image-17.png)
+        ![Alt text](image-17.png)
 
-![Alt text](image-18.png)
+    * Selectionner un range d'IPs pour la police
 
-![Alt text](image-19.png)
+        ![Alt text](image-18.png)
 
-![Alt text](image-20.png)
+    * Set l'id de classe pour le bon adaptateur réseau
+
+        ![Alt text](image-19.png)
+
+    * :warning: Ne pas oublier d'activer le DHCP
+
+        ![Alt text](image-20.png)
 
 
 
