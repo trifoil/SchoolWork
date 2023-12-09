@@ -384,11 +384,14 @@ VEEAM
     * Retenir les 3 chemins !
 
         ![Alt text](image-30.png)    
-        
+
 6) Configurer le DNS :
 
 
+
 7) Réactiver le DHCP → DHCP Manager (clic droit) → Authorize
+
+    ![Alt text](image-31.png)
 
 ### Configuration de l'AD
 
