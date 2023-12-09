@@ -411,8 +411,17 @@ VEEAM
 
 1) Ajouter des ressources dans Active Directory Users And
 Computers :
+
+    ![Alt text](image-35.png)
+
     * Créer des OU (pour chaque sections)
+
+        ![Alt text](image-36.png)
+
     * Créer un groupe globale par UO
+
+
+
     * Créer un modèle d’utilisateur et définir les options spécifiques :
         * Account → Logon Hours : Horaire de connexion
         * Profile → Profile path : profil itinérant
@@ -521,3 +530,12 @@ Bonne chance (come mierda comme on dit <3)
 # Sources
 
 * https://www.it-connect.fr/dns-sous-windows-server-2022-comment-configurer-une-zone-de-recherche-inversee/
+
+Chauds remerciements à 
+
+* https://github.com/Ika-02
+
+* https://github.com/Maximilien-Bruyere
+
+* https://github.com/shadowthib
+
