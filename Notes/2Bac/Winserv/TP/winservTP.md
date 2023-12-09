@@ -389,9 +389,23 @@ VEEAM
 
 
 
+    ![Alt text](image-32.png)
+
 7) Réactiver le DHCP → DHCP Manager (clic droit) → Authorize
 
     ![Alt text](image-31.png)
+
+    Appuyer sur refresh après quelques instants
+
+    ![Alt text](image-33.png)
+
+    Et comme par magie, tout est vert !
+
+    On check avec ipconfig /all
+
+    ![](image-34.png)
+
+    Parfait !
 
 ### Configuration de l'AD
 
@@ -503,3 +517,7 @@ créer la partition)
 * Pour se faire, aller dans les propriétés de l’objet, section objet et décocher la case →
 
 Bonne chance (come mierda comme on dit <3)
+
+# Sources
+
+* https://www.it-connect.fr/dns-sous-windows-server-2022-comment-configurer-une-zone-de-recherche-inversee/
