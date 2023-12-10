@@ -226,7 +226,7 @@ Dans une installation fraîche :
 
 0) Configurer le nom du serveur (idem que pour DNS)
 
-1) Configurer le serveur avec une IP fixe 
+1) Configurer le serveur avec une IP fixe mais :warning: le(s) client doi(ven)t être en dynamique.
     * IP addr : 192.168.1.1 
     * Subnet : 255.255.255.0 (avec un /24 comme CIDR)
     * DNS principal : 192.168.1.1 (= l'adresse IP du serveur principal)
