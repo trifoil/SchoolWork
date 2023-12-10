@@ -309,13 +309,9 @@ Dans une installation fraîche :
 
 7) Créer une classe utilisateur ("Add"):
 
-    * Clic droit sur "Policies" et selectionner "New Policy" :
+    * Clic droit sur "IPv4" -> "Define User Classes"
 
-        ![Alt text](image-59.png)
-
-    * Ajouter un nom :
-
-        ![Alt text](image-60.png)
+        ![Alt text](image-61.png)
 
     * Cliquer sur "Add"
 
@@ -324,8 +320,15 @@ Dans une installation fraîche :
     * Ajouter un "Display name" et une chaine de caractères (les deux ne doivent pas être identiques):
 
         ![Alt text](image-15.png)
-    * Ajouter un nom pour la policy et sa description
+
+8) Ajouter un nom pour la policy et sa description
         
+    * "Policies" -> "New Policy"
+
+        ![Alt text](image-62.png)
+
+    * Donner un nom à la police :
+
         ![Alt text](image-16.png)
 
     * Ajout de la condition pour la police : Equals to user class
