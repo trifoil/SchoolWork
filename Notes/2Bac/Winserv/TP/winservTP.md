@@ -311,6 +311,14 @@ Dans une installation fraîche :
 
     * Clic droit sur "Policies" et selectionner "New Policy" :
 
+        ![Alt text](image-59.png)
+
+    * Ajouter un nom :
+
+        ![Alt text](image-60.png)
+
+    * Cliquer sur "Add"
+
         ![Alt text](image-14.png)
 
     * Ajouter un "Display name" et une chaine de caractères (les deux ne doivent pas être identiques):
