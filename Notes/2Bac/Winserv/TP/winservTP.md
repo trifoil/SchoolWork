@@ -33,7 +33,7 @@
 
     Creer nom de domaine Test.lan
 
-    forward lookup zone -> Test.len
+    forward lookup zone -> Test.lan
     Nom en ip   
     Obligatoire :
     Hote -> serv2019 -> 192.168.1.1
@@ -346,8 +346,6 @@ Dans une installation fraîche :
     * :warning: Ne pas oublier d'activer le DHCP :warning:
 
         ![Alt text](image-20.png)
-
-
 
 
 ## TP4 : AD-DS <a name="adds"></a>
