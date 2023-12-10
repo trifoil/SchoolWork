@@ -15,9 +15,9 @@ Serveur Primaire
 Une fois installé, 
 
 DNS -> DNS Manager 
-Double clique gauche sur le nom du serveur 
-Double clique gauche sur Forward Lookup Zone 
--> créer une zone primaire [nom.lan] 
+Double clic gauche sur le nom du serveur 
+Double clic gauche sur Forward Lookup Zone 
+-> créer une zone primaire [nom.lan]
 
 (d'abord créer une zone primaire en reverse lookup) 
 

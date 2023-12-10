@@ -14,7 +14,6 @@
     <details>
     <summary> Voir plus </summary>
 
-
     ```
     ### Consignes
     1) Nom
@@ -73,6 +72,92 @@
     ![Alt text](image.png)
 
     ![Alt text](image-4.png)
+
+3) Installation du DNS
+
+    * Cliquer sur add roles and features 
+
+        ![Alt text](image-39.png)
+
+    * "Next" jusqu'à arriver à "server roles"
+
+    * Selectionner "DNS Server" puis "Add Features"
+
+        ![Alt text](image-40.png)
+
+    * "Next" jusqu'au bouton "Install" et selectionner "Install"
+
+4) Configuration du DNS
+
+    * Selectionner l'onglet "Tools" -> "DNS"
+
+        ![Alt text](image-41.png)
+    
+    * Créer une Zone Primaire en Forward lookup
+
+        ![Alt text](image-42.png)
+
+    * Entrer un nom de domaine, par exemple "test.lan" ou ici "testage.lan"
+
+        ![Alt text](image-43.png)
+
+    * "Next" puis "Finish
+
+    * Créer une Zone Primaire dans le reverse lookup
+
+        ![Alt text](image-44.png)
+
+    * Selectionner "IPv4 Reverse ..."
+
+        ![Alt text](image-45.png)
+
+    * Insérer le network ID
+
+        ![Alt text](image-46.png)
+
+    * "Next" -> "Finish"
+
+    * Créer un nouvel hôte
+
+        ![Alt text](image-47.png)
+
+    * Mettre le nom du serveur (ici "NEMO"), et son adresse IP, et cocher la case pointeur :warning:
+
+        ![Alt text](image-48.png)
+
+    * Yay!
+
+        ![Alt text](image-49.png)
+
+    * La quatrième étape est de créer un alias (par exemple "www")
+
+        ![Alt text](image-51.png)
+
+    * Mettre "www" pour le "Alias name"
+
+        ![Alt text](image-50.png)
+
+    * Browse jusqu'à l'host
+
+        ![Alt text](image-52.png)
+
+    * Cliquer sur "Ok"
+
+        ![Alt text](image-53.png)
+
+5) Tester le DNS
+
+    * Ouvrir powershell et taper nslookup et puis l'IP du serveur DNS ou le nom de domaine.
+
+    * Sur le client :
+
+        ![Alt text](image-54.png) 
+
+    * Sur le serveur :
+
+        ![Alt text](image-55.png)
+
+    * And voilà !
 
 ## TP2 : DNS secondaire <a name="dnssec"></a>
 
@@ -418,8 +503,13 @@ Computers :
 
         ![Alt text](image-36.png)
 
-    * Créer un groupe globale par UO
+    * Bien décocher l'option qui protège, sinon c'est chiant
 
+        ![Alt text](image-37.png)
+
+        ![Alt text](image-38.png)
+
+    * Créer un groupe global par UO
 
 
     * Créer un modèle d’utilisateur et définir les options spécifiques :
