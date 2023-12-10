@@ -265,6 +265,8 @@ Dans une installation fraîche :
 
         ![Alt text](image-5.png)
 
+        ![Alt text](image-56.png)
+
     * Ajouter un nom pour le DHCP (ici, "nouveauDHCP")
 
         ![Alt text](image-6.png)
@@ -279,9 +281,15 @@ Dans une installation fraîche :
 
     * Bail = selon le nbre demandé mais attention ne pas le laisser par défaut (4h c'est bien)
 
+        ![Alt text](image-57.png)
+
     * Choisir de configurer les options de DHCP plus tard :
 
         ![Alt text](image-9.png)
+
+    * "Configure Options" dans "Scope Options" du scope créé :
+
+        ![Alt text](image-58.png)
 
     * Selectionner l'option "Router" et mettre son adresse dans la zone d'exclusion :
 
