@@ -288,11 +288,6 @@ Compte les nouvelles lignes, mots, et nb de bytes.
 wc /home/Agilent.html
 ```
 
-## TP2 : Gestion des fichiers <a name="2"></a>
-
-
-
-
 ## TP3 : Permissions <a name="3"></a>
 
 ### Droits d'exécution
@@ -334,6 +329,24 @@ drwxr-xr-x.  5 root root   4096 Sep 17 20:00 systemd
 -rw-r--r--.  1 root root    490 Sep 17 20:00 inittab
 drwxr-xr-x.  2 root root     62 Sep 15 09:12 skel
 ```
+
+Interpretation :
+1) Type de fichier. Dans notre exemple, il s’agit d’un répertoire
+symbolisé par la lettre "d".
+2) Indique les droits d'accès du propriétaire sur ce fichier (rwx :
+r=readable, w=writable, x=executable). Ce fichier sera donc accessible en lecture, écriture et exécution pour le propriétaire, root dans notre exemple.
+3) Indique les droits (r-x) des utilisateurs membre du groupe auquel est associé le fichier (dans l'exemple, il s'agit du groupe grpadmin). Ceux-ci auront donc un accès en lecture et exécution sur le fichier mais ne pourrons en aucun cas le modifier car il ne possède pas le droit en écriture ( - au lieu de w).
+4) Le quatrième champ indique les droits d'accès (r--) de tous les autres utilisateurs, on parle
+généralement du reste du monde. Dans notre exemple, ils n'auront qu'un accès en lecture au
+fichier.
+5) Chiffre qui indique le nombre de liens qui pointent vers ce
+fichier. S'il s'agit d'un répertoire, il indique le nombre de sous-répertoires.
+6) Indique le nom (root) du propriétaire du fichier.
+Le septième champ indique le nom du groupe (grpadmin) associé au fichier.
+7) Taille du fichier en octets (16), la date de sa dernière modification (sep 12 12:34) 
+8) Nom du fichier (nom_fichier).
+
+### Modification des permissions
 
 1) Mode symbolique
 
