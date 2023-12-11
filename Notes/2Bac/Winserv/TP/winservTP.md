@@ -632,7 +632,7 @@ créer la partition)
 * Il faut donc désactiver cette protection pour pouvoir supprimer un objet !
 * Pour se faire, aller dans les propriétés de l’objet, section objet et décocher la case →
 
-Bonne chance (come mierda comme on dit <3)
+Bonne chance
 
 # Sources
 
