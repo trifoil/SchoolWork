@@ -59,7 +59,7 @@ Pour unifier notre belle communauté nerdo-anarcho-communiste, nous pouvons dès
 - [ ] IOE
 - [ ] Elec
 ### **TP**
-- [ ] Prog
+- [x] Prog
 
 </details>
 
