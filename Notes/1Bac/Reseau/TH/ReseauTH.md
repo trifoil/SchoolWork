@@ -368,10 +368,15 @@ Dans les réseaux IPv4 l'adresse 0.0.0.0 avec le masque 0.0.0.0 est utilisée à
 effet. La route par défaut est utilisée pour transférer
 Les paquets pour lesquels aucune entrée ne figure dans la table de routage pour le
 réseau de destination.
-29Fonctionnement route statique
-$
+
+Fonctionnement route statique
+
+![Alt text](image-4.png)
+
 Quand un routeur reçoit des info. sur des nouvelles routes ou des routes modifiées, il
 met à jour sa propre table de routage et transmet ces infos aux autres routeurs.
+
+
 C'est donc du routage dynamique et l'inconvénient est que l'échange d'info. afin
 d'avoir les routes correctement à jour impose une surcharge de la bande passante.
 Les protocoles de routage sont:
@@ -397,12 +402,193 @@ les nouvelles routes suites à un changement dans le résau)
 
 ## Chapitre 7 : Couche transport <a name="7"></a>
 
+Chapitre 7: Couche transport
+Introduction
+La couche transport est chargée de l'établissement d'une session de communication
+temporaire entre deux applications et de l'acheminement des données entre elles.
+La plupart de ses protocoles ont des fonctions essentielles communes:
+* Segmentation et reconstitution => diviser un bloc de données en des sous-blocs
+plus petit et va les reconstituer à la réception
+* Multiplexage de conversions => à l'aide du port de l'application ou du service, la
+couche transport va déterminer à qui les données se rapportent
+Dans le cadre du TCP/IP la segmentation et la réorganisation peuvent être fait à
+l'aide des protocoles TCP et UDP
+Objectifs de la couche transport
+Effectuer un suivi des communications individuelles entre les applications résidant
+sur les hôtes source et de destination
+* Segmenter les données et gérer chaque bloc individuel
+* Réassembler les segments en flux de données d'application
+* Identifier les différentes applications en leur affectant un numéro de port
+
+### Fiabilité de la couche transport
+Elle est basée sur 3 opérations de base:
+● Effectuer le suivi des données transmises
+● Accuser la réception des données
+● Retransmettre toute donnée n'ayant pas fait l'objet d'un accusé de réception
+### Les protocoles TCP et UDP
+TCP (Transmission Control Protocol)
+Protocole de couche transport fiable et complet, qui garantit que toutes les données
+arrivent à destination.
+Il segmente un message en partie numérotées à une destination, si il ne reçoit pas
+d'accusé de réception, il renvoie tout en supposant que ça a été perdu.
+é
+En-tête TCP = 20 octets
+31UDP (User Datagram Protocol)
+Protocole de couche transport très simple qui ne permet pas de garantir la fiabilité
+Il fournit des fonction de base permettant d'acheminer des segments entre les
+applications appropriées avec peu de surcharge.
+En-tête UDP = 8 octets
+Donc TCP > UDP
+### Les numéros de port classé par l'IANA
+* Ports réservés (0 à 1023)   
+  Ils sont réservés à des services ou applications
+* Ports inscrits (1024 à 49151)   
+  Affecté à des processus ou applications d'utilisateurs
+* Ports privés ou dynamiques (49152 à 65535)    
+  Appelés port éphémères, affectés de façon dynamique à des applications clientes lors d'une connexion
+
+![Alt text](image-5.png)
+
+L’ensemble formé par le numéro de port et l’adresse ip s’appelle un SOCKET.
+### Etablissement d'une connexion TCP
+1) Le client demande l'établissement d'une session client-serveur avec le serveur
+Envoi d'une demande de synchronisation avec numéro de séquence
+SYN avec un numéro de séquence (SEQ. Ex 100).
+Champs de contrôle = SYN
+2) Le serveur accuse réception de la session et demande l'établissement d'une
+session serveur-client
+Réponse du serveur avec ACK égal au numéro d'ordre reçu +1 (ex : 101) et son
+numéro d'ordre de synchronisation (ex SEQ 300)
+CTL = SYN
+3) Le client accuse réception de la session serveur-client
+Connexion établie, le client répond avec un ACK égal au numéro d'ordre reçu + 1.
+SEQ = 101 ACK 301 CTL = ACK
+
+![Alt text](image-6.png)
+
+### Fermeture d'une connexion TCP
+1) Le client n'a plus rien à envoyer, il envoie un segment pour demander la fin de la
+connexion (FIN)
+2) Le serveur envoie un ACK disant qu'il a bien reçu le segment FIN, afin de fermer
+la session client-serveur
+3) Le serveur envoie un segment FIN au client pour mettre fin à la session serveur-
+client
+4) Le client envoie un ACK pour dire qu'il a bien reçu le segment FIN
+
+
+### Fiabilité de la connexion
+
+![Alt text](image-8.png)
+
+### La taille de fenêtre
+
+La quantité de données qu'une source peut transmettre avant qu'un accusé de
+réception soit reçu est la "taille de fenêtre"
+Cette taille est définie lors du démarrage de la session
+Le procotole TCP peut réduire la taille de la fenêtre afin de mieux contrôler le flux de
+données (envoie d'ACK plus fréquent, évite les pertes)
+
+![Alt text](image-9.png)
+
+### Gestion des pertes de segments du TCP
+Quand le protocole TCP source envoie des segments de données, il va : 
+* placer une copie du segment dans une file d'attente de retransmission
+* va déclencher en même temps un timer
+* Si il ne reçoit pas d'ACK avant la fin du timer, il va retransmettre à partir du dernier numéro d'accusé de réception.
+
+Il existe également des SACK (ACK sélectifs) permettant, si les 2 hôtes sont
+compatibles, une retransmission partielle des octets manquants.
+
+![Alt text](image-10.png)
+
+### Protocole de la couche application utilisant UDP
+
+UDP c'est quand même pas de la merde, c'est utile pour certains protocoles
+* DNS
+* DHCP
+* TFTP
+* RIP
+* VoIP
+
+Il n'y a pas de numéro d'ordre dans le protocole UDP, donc il ne sait pas réordonner
+les datagrammes => Il les réassemble dans l'ordre qu'il les a reçu
 
 ## Chapitre 8 : Adressage IP <a name="8"></a>
 
+### Adressage IPv4
+
+Une IP est le numéro qui identifie chaque ordinateur connecté à Internet, ou plus précisément, l'interface avec le réseau de tout matériel informatique connecte à Internet.
+
+Elle a un format de 4 octets (32 bits) présentable en binaire ou en décimal
+
+Elle contient deux parties:
+* ID de réseau  
+Adresse réseau logique du sous réseau auquel l'ordinateur se rattache
+* ID d'hôte   
+Adresse logique du périphérique logique identifiant chaque ordinateur sur un sous réseau
+
+### Les ≠ classes d'adresses
+
+A: 8 bits partie réseau, 24 partie hôte
+B: 16 bits réseau, 16 bits hôtes
+C: 24 bits réseau, 8 hôtes
+D: Réservées pour le multicast, TOUJOURS UNE ADRESSE DE DESTINATION
+E: Réservées à la recherche ou à des usages futurs
+Les adresses du bloc 168.254.0.0/16 sont des adresses link-local (c'est du réseau
+local APIPA)
+Les adresses TEST-NET du bloc 192.0.2.0/24 sont réservées à des fins
+pédagogiques
+Les adresses expérimentales du bloc 240.0.0.0 à 255.255.255.254 sont réservées
+pour une utilisation future
+Solution pour palier aux problèmes de l'IPv4
+Le CIDR (Classless Inter-Domain Routing)
+Permet une diffusion plus efficace de l'espace d'adressage IPv4 et retarde la
+croissance des tables de routages donc la pénurie d'adresses
+Utilisation du NAT
+Permet à un ensemble d'hôtes présents sur un réseau local, d'avoir accès à internet
+en utilisant une adresse IP unique => retarde la pénurie d'adresses
+Technique calcul IP réseau/diffusion/hôtes
+Coexistence IPv4 et IPv6
+Techniques de migration vers l'IPv6
+Double pile
+Permet à l'IPv4 et à l'IPv6 de coexister sur le même réseau. Les périphériques
+exécutent les piles de protocoles IPv4 et v6 simultanément
+●
+Tunneling
+Méthode de transport des paquets IPv6 via un réseau IPv4. Les paquets I Pv6 sont
+encapsulés dans les paquets IPv4
+●
+Traduction
+Un paquet IPv6 est traduit en paquet IPv4 et inversement
+●
+37Adressage IPv6
+Une adresse IPv6 est longue de 128 bits (16 octets)
+La notation décimale a été abandonée au profit d'une notation hexa
+décimale où les 8 groupes de deux octets sont séparés par un signe ":"
+Règles
+● On peut supprimer les 0 de gauche: 01AB devient 1AB et 00CD devient CD mais
+/!\ 0000 devient 0 !
+● Une (ou plusieurs) suite de groupe de quatre 0 peut être compressée en "::" (une
+seule fois)
+ex: 2001:DB8:0:1111::200 => 2001:0DB8:0000:1111:0000:0000:0000:0200
+La longueur de préfixe est utilisée pour indiquer la partie réseau d'une adresse IPv6,
+elle peut aller de 0 à 128
+Si elle vaut 64, il y a 64 bits réseau et 64 bits hôtes
+Adresse anycast
+Adresse de monodiffusion IPv6 qui peut être attribuée à plusieurs périphériques
+Le périphérique le plus proche reçoit le paquet
+Il n'y a pas d'adresse de diffusion en IPv6 mais on peut faire un multi-diffusion à tout
+les noeuds dont ça revient au même
+Adresse de monodiffusion
+Il existe 6 types mais voici les plus importants:
+●
+Adresse de monodiffusion globale: idem que IPv4, un hôte à un destinataire
+Adresse link-local: utilisées pour communiquer avec d'autres périphériques sur la
+même liaison locale, uniquement utilisable en local plage FE80 ::/10
 
 ## Chapitre 9 : Découpage réseau <a name="9"></a>
 
 
 ## Chapitre 10 : Couche Application <a name="10"></a>
 
+![Alt text](image-7.png)
