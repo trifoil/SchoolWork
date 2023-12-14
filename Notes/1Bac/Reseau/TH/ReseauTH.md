@@ -288,9 +288,54 @@ paquets est déterminée.
 
 ### IPv4
 
+Un paquet IPv4 comporte deux parties
+1) En-tête IP -> indique les caractéristiques du paquet
+2) Données utiles -> contient les info. du segment de couche 4 et les données en elles-mêmes
+
+> "Time To Live" = valeur pour limiter la durée de vie d'un paquet. Elle est indiquée en secondes mais généralement appelée "nombre de
+sauts". Si cette valeur est dépassée, le routeur rejette le paquet et envoie un message de dépassement de délai ICMP à la source.
+
 ### IPv6
 
+Les problèmes de l'IPv4 ont conduit au développement de l'IPv6
+Espace d'adressage plus important (beaucoup beaucoup + d'adresses IP,
+environs 67 milliards par cm^2 de surface terrestre, ui c bcp)
+* Traitement des paquets plus efficace => l'en-tête IPv6 a été simplifiée et comporte moins de champs
+* Traduction d'adresses réseau non nécessaire => comme y'a beaucoup d'IP, plus besoin de NAT
+* Sécurité intégrée => prend en charge les fonctions d'authentification et de confidentialité (pas comme l'IPv4)
+
 ### Routeur
+
+Equipement intermédiaire opérant au niveau de la couche 3 du modèle OSI, il envoie
+et recevoir des paquets IP qui lui sont destinés
+Chaque interface du routeur est un membre ou un hôté d'un réseau IP différent
+/!\ Deux interfaces actives ne peuvent pas appartenir au même réseau
+Ils nécessitent:
+* Un OS
+* Un processeur 
+* De la mémoire vive => contient l'IOS, fichier de config « running-config », table de
+routage IP, Cache ARP, Mémoire tampon
+/ !\ Mémoire volatile, perd son contenu lors mise hors tension.
+* De la mémoire morte => instructions de démarrage, le POST (Power On Self
+Test, pour savoir si tout va bien), une version limitée (de merde) de l'IOS
+
+
+La mémoire vive non volatile est utilisé par IOS comme stockage permanent pour le
+fichier startup-config
+La mémoire Flash est une mémoire non volative utilisée comme stockage permanent
+pour l'IOS et d'autres fichier associés au système, il y est copié de la mémoire
+Flash vers la mémoire vive lors du démarrage
+
+![Alt text](image-2.png)
+
+Etapes lors du démarrage:
+● Exécution du POST et chargement du bootstrap (ROM)
+● Localisation et chargement de l'IOS (Flash ou TFTP)
+● Localisation et chargemetn du fichier de config initiale (NVRAM, TFTP ou Console)
+
+![Alt text](image-3.png)
+
+
 
 ## Chapitre 7 : Couche transport <a name="7"></a>
 
