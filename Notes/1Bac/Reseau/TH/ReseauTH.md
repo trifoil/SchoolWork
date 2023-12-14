@@ -208,7 +208,13 @@ Le modèle OSI est un modèle en 7 couches :
 * 2 couches moyennes : servant au contrôle du transport de l’information
 * 3 couches hautes : liées à la gestion de l’application
 
-<img src="assets/Diagrammes/image.png" alt="drawing" width="800"/>
+<img src="assets/Diagrammes/image-3.png" alt="drawing" width="800"/>
+
+![Alt text](image-1.png)
+
+![Alt text](image-2.png)
+
+![Alt text](image-3.png)
 
 ## Chapitre 3 : Accès réseau <a name="3"></a>
 
