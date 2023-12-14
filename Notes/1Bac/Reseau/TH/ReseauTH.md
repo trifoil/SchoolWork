@@ -262,9 +262,29 @@ Elle compte 4 processus de base :
 
 4) Désencapsulation
     * Valable si le paquet a atteint le périphérique cible
-    * 
+    * Desencapsulation
+    * Transmission de l'unité de donnée de protocole à la couche 4 Transport
 
 ### Caractéristiques du protocole IP 
+
+Il a été conçu pour ne pas surcharger les réseaux. Il fournit uniquement les fonctions requises pour transférer un paquet d’une source à une destination en passant par un système interconnecté de réseaux.
+
+* Aucune connexion n'est établie avant l'envoi de paquets de données
+* Acheminement non fiable: aucune surchage n'est utilisée pour garantir la transmission des paquets
+* Indépendant du support: fonctionne indépendamment du support transportant les
+données
+* Il est qualifié de protocole "non fiable" car il ne sait pas gérer les paquets
+endommagés ou non remis
+* Il n'y a pas de champs requis pour la transmission fiable dans l'en-tête d'un
+paquet IP mais cela offre moins de surcharge
+* On ne sait donc pas si le destinataire est sur le réseau, si le paquet est bien arrivé
+à destination et si le destinataire peut lire le paquet
+* Le destinataire ne sait pas quand le paquet arrive
+
+:warning: La taille maximale d'unité de données de protocole que chaque support peut
+transporter est déterminé au niveau de la couche de liaison
+de données et est transmise à la couche réseau. Donc la taille de création des
+paquets est déterminée.
 
 ### IPv4
 
