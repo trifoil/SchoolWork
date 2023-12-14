@@ -335,7 +335,65 @@ Etapes lors du démarrage:
 
 ![Alt text](image-3.png)
 
+### Connexion et interfaces d'un routeur
+Les connexions sur un routeur Cisco peuvent être regroupées en deux catégories:
+● Ports de gestion: ports console et aux utilisés pour configurer, gérer et dépanner
+le routeur (pas de transfert de paquets)
+● Interfaces de routeur: configurée via l'adressage IP pour transporter le trafic.
+On peut y accéder avec le port console, telnet ou ssh, le port AUX (comme le
+switch)
+### Le routage
+Le rôle principal du routeur c'est d'effectuer la fonction de routage, c'est à dire de diriger les paquets entre les hôtes
+Un hôte peut envoyer un paquet à:
+* Lui (via 127.0.0.1 qui est une interface de bouclage, à des fins de test)
+* Un hôte local
+* Un hôte distant => le routeur sera une "passerelle par défaut"
+La passerelle par défaut, dans un réseau domestique, est souvent utilisée pour connecter un réseau local à internet.
+### La table de routage
+Fichier de donnée stocké dans la mémoire vive qui contient des informations de route sur le réseau connecté ainsi que les entrées de réseaux distants que le périphérique a découvertes. Le routeur utilise ces infos pour trouver le meilleur chemin.  
 
+Les routes possèdent trois caractéristiques principales:
+* Le réseau de destination
+* Le tronçon suivant ou la passerelle permettant d'atteindre le réseau de
+destination
+* La métrique associée au réseau de destination
+
+Fonctionnement
+1) Le routeur lit l'adresse de destination dans l'en-tête IP et regarde dans sa table de routage s'il connait une route à cette adresse
+2) Il transfère le paquet au prochain routeur en fonction du tronçon suivant spécifié par cette route.
+
+Un routeur peut être configuré pour posséder une route par défaut. Il s'agit d'une
+route qui correspond à tous les réseaux de destination.
+Dans les réseaux IPv4 l'adresse 0.0.0.0 avec le masque 0.0.0.0 est utilisée à cet
+effet. La route par défaut est utilisée pour transférer
+Les paquets pour lesquels aucune entrée ne figure dans la table de routage pour le
+réseau de destination.
+29Fonctionnement route statique
+$
+Quand un routeur reçoit des info. sur des nouvelles routes ou des routes modifiées, il
+met à jour sa propre table de routage et transmet ces infos aux autres routeurs.
+C'est donc du routage dynamique et l'inconvénient est que l'échange d'info. afin
+d'avoir les routes correctement à jour impose une surcharge de la bande passante.
+Les protocoles de routage sont:
+● RIP (Routing Information Protocol)
+Chaque route est associée à une métrique (nombre de sauts limité à 15)
+Chaque routeur envoie à ses voisins ses info. de routage (toutes les 30 sec)
+Il va calculer les meilleures routes et déduire sa table de routage selon la métrique
+calculée
+EIGRP (Enhanced Interior Gateway Routing Protocol)
+Calcule les métriques sur base d'une formule composée du délai, de la bande
+passante, de la fiabilité et de la charge.
+Au niveau du réseau, chaque routeur envoie un paquet "Hello" à ses voisins toutes
+les 5sec afin de dire qu'il est actif et que ses routes sont correctes.
+Au niveau de l'échange d'info. Une mise à jour concernant une table de routage n'est
+envoyée que lorsque celle-ci est modifiée. Cette màj contiendra que les
+routes modifiées et sera envoyée qu'aux routeurs concernés
+●
+30OSPF (Open Shortest Path First)
+Permet d'avoir des routes de plus de 15 sauts
+Utilise une métrique plus compliquée (prenant compte des débits)
+Améliore le temps de convergence. (Temps nécessaire aux routeurs pour recalculer
+les nouvelles routes suites à un changement dans le résau)
 
 ## Chapitre 7 : Couche transport <a name="7"></a>
 
