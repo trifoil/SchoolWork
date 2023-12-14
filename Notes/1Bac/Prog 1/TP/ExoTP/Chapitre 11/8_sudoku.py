@@ -59,4 +59,3 @@ print(checkSudo([[int(x) for x in sudo[i]] for i in range(9)]))
 #             print("Mauvais format")
 #         else:
 #             sudo.append([*str(line)])
-
