@@ -208,13 +208,9 @@ Le modèle OSI est un modèle en 7 couches :
 * 2 couches moyennes : servant au contrôle du transport de l’information
 * 3 couches hautes : liées à la gestion de l’application
 
-<img src="assets/Diagrammes/image-3.png" alt="drawing" width="800"/>
+<img src="assets/Diagrammes/image.png" alt="drawing" width="800"/>
 
 ![Alt text](image-1.png)
-
-![Alt text](image-2.png)
-
-![Alt text](image-3.png)
 
 ## Chapitre 3 : Accès réseau <a name="3"></a>
 
@@ -243,9 +239,38 @@ Le modèle OSI est un modèle en 7 couches :
 
 
 
-## Chapitre 6 : Couche réseau <a name="6"></a>
+## Chapitre 6 : Couche réseau (OSI3) <a name="6"></a>
 
+### La couche réseau
 
+> Elle fournit des services permettant aux périphériques finaux d'échanger des données sur le réseau.
+
+Elle compte 4 processus de base :
+
+1) Adressage
+    * Identification de manière unique du périphérique présent sur le réseau, pour acheminer les données via IPv4 ou IPv6
+
+2) Encapsulation
+    * La couche 3 recoit l'unité de données de protocole (segment/datagramme) de la couche 4
+    * Ajout d'une en-tête de de couche 3
+    * l'unité de données de protocole de la couche 3 est un paquet
+
+3) Routage
+    * Les paquets doivent circuler à travers des periphériques intermédiaires
+    * Periphériques intermédiaires = "routeurs"
+    * Chemin emprunté par un paquet entre deux périphériques consécutifs = "un saut"
+
+4) Désencapsulation
+    * Valable si le paquet a atteint le périphérique cible
+    * 
+
+### Caractéristiques du protocole IP 
+
+### IPv4
+
+### IPv6
+
+### Routeur
 
 ## Chapitre 7 : Couche transport <a name="7"></a>
 
