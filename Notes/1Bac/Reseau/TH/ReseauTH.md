@@ -529,39 +529,43 @@ Adresse logique du périphérique logique identifiant chaque ordinateur sur un s
 
 ### Les ≠ classes d'adresses
 
-A: 8 bits partie réseau, 24 partie hôte
-B: 16 bits réseau, 16 bits hôtes
-C: 24 bits réseau, 8 hôtes
-D: Réservées pour le multicast, TOUJOURS UNE ADRESSE DE DESTINATION
-E: Réservées à la recherche ou à des usages futurs
-Les adresses du bloc 168.254.0.0/16 sont des adresses link-local (c'est du réseau
-local APIPA)
+A: 8 bits partie réseau, 24 partie hôte 
+B: 16 bits réseau, 16 bits hôtes  
+C: 24 bits réseau, 8 hôtes  
+D: Réservées pour le multicast, TOUJOURS UNE ADRESSE DE DESTINATION   
+E: Réservées à la recherche ou à des usages futurs  
+
+Les adresses du bloc 168.254.0.0/16 sont des adresses link-local (c'est du réseau local APIPA)
+
 Les adresses TEST-NET du bloc 192.0.2.0/24 sont réservées à des fins
 pédagogiques
-Les adresses expérimentales du bloc 240.0.0.0 à 255.255.255.254 sont réservées
-pour une utilisation future
-Solution pour palier aux problèmes de l'IPv4
+
+Les adresses expérimentales du bloc 240.0.0.0 à 255.255.255.254 sont réservées pour une utilisation future
+
+### Solution pour palier aux problèmes de l'IPv4
+
 Le CIDR (Classless Inter-Domain Routing)
-Permet une diffusion plus efficace de l'espace d'adressage IPv4 et retarde la
-croissance des tables de routages donc la pénurie d'adresses
+
+Permet une diffusion plus efficace de l'espace d'adressage IPv4 et retarde la croissance des tables de routages donc la pénurie d'adresses
 Utilisation du NAT
-Permet à un ensemble d'hôtes présents sur un réseau local, d'avoir accès à internet
-en utilisant une adresse IP unique => retarde la pénurie d'adresses
+Permet à un ensemble d'hôtes présents sur un réseau local, d'avoir accès à internet en utilisant une adresse IP unique => retarde la pénurie d'adresses
 Technique calcul IP réseau/diffusion/hôtes
-Coexistence IPv4 et IPv6
+
+### Coexistence IPv4 et IPv6
+
 Techniques de migration vers l'IPv6
-Double pile
-Permet à l'IPv4 et à l'IPv6 de coexister sur le même réseau. Les périphériques
-exécutent les piles de protocoles IPv4 et v6 simultanément
-●
-Tunneling
+* Double pile   
+Permet à l'IPv4 et à l'IPv6 de coexister sur le même réseau. Les périphériques exécutent les piles de protocoles IPv4 et v6 simultanément
+
+* Tunneling   
 Méthode de transport des paquets IPv6 via un réseau IPv4. Les paquets I Pv6 sont
 encapsulés dans les paquets IPv4
-●
-Traduction
+
+* Traduction    
 Un paquet IPv6 est traduit en paquet IPv4 et inversement
-●
-37Adressage IPv6
+
+### Adressage IPv6
+
 Une adresse IPv6 est longue de 128 bits (16 octets)
 La notation décimale a été abandonée au profit d'une notation hexa
 décimale où les 8 groupes de deux octets sont séparés par un signe ":"
