@@ -14,6 +14,18 @@ Choix selon plateforme
 * Laragon
 * XAMPP
 
+### Installation de Laragon sous winshit
+
+Telecharger l'executable :
+
+https://laragon.org/download/
+
+Installer 
+
+Clic droit -> Tools -> Quick add -> *phpmyadmin :
+
+![Alt text](image.png)
+
 ### Installation de XAMPP sous linux (fedora)
 
 XAMPP a besoin de libnsl pour fonctionner sous fedora linux :
@@ -39,6 +51,22 @@ sudo ./xampp-linux-x64-7.2.9-0-installer.run
 
 Il faut suivre les instructions et cocher la case "launch xampp"
 
+
+### Utilisation de Laragon sous Windows
+
+Démarrer les services 
+
+![Alt text](image-1.png)
+
+Modifier le code php :
+
+![Alt text](image-2.png)
+
+Accéder à phpmyadmin :
+
+![Alt text](image-3.png)
+
+Accéder au 
 
 ### Utilisation de XAMPP sous linux
 
