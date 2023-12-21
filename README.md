@@ -44,20 +44,10 @@ Pour unifier notre belle communauté nerdo-anarcho-communiste, nous pouvons dès
 ## Bac 1
 ### **TH**
 - [ ] Réseau
-  - [ ] Chap 1
-  - [ ] Chap 2
-  - [ ] Chap 3
-  - [ ] Chap 4
-  - [ ] Chap 5
-  - [ ] Chap 6
-  - [ ] Chap 7
-  - [ ] Chap 8
-  - [ ] Chap 9
-  - [ ] Chap 10
-
 - [ ] Archi
 - [ ] IOE
 - [ ] Elec
+- [ ] Prog
 ### **TP**
 - [x] Prog
 
