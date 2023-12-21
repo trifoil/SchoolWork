@@ -403,6 +403,26 @@ La syntaxe est comme ceci (RW pour l'owner, RWX pour le groupe, R pour les autre
 chmod 674 [nom de fichier]
 ```
 
+### Mount
+
+Pour savoir ce qui est monté
+
+```
+mount
+```
+
+### Umount
+
+Pour démonter :
+
+```
+umount
+```
+
+### Permission par défaut à un fichier créé âr un utilisateur
+
+644 (RW R R)
+
 
 
 ## TP4 : Gestion utilisateurs <a name="4"></a>
