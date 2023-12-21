@@ -13,7 +13,7 @@ def lettersCount(str):
 
     out = sorted(lettersDict.items(), key=lambda x: x[1], reverse=True)
 
-    with open("a.hist", 'w+') as f:
+    with open("b.hist", 'w+') as f:
         for i in out:
             j = f"{i[0]} {i[1]}\n"
             f.write(j)

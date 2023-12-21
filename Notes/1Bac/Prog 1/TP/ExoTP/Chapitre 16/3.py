@@ -1,27 +1,24 @@
 # 328
 def moyenne(file):
     dictStudents = {}
-    l = file.readline()
-    
-    while l != '':
-        sl = l.split()
-        name = sl[0] + " " + sl[1]
+
+    for line in file:
+        sl = line.split()
+        name = f"{sl[0]} {sl[1]}"
         sl[2] = float(sl[2].replace(',', '.'))
-        
-        if not name in list(dictStudents.keys()):
+
+        if name not in dictStudents:
             dictStudents[name] = [sl[2], 1]
         else:
-            tmp = dictStudents[name]
-            tmp[0] += sl[2]
-            tmp[1] += 1 
-            dictStudents[name] = tmp
-        
-        l = file.readline()
-    
-    for i in dictStudents.keys():
-        note = dictStudents[i]
-        note = note[0]/note[1]
-        print(i, note)
+            dictStudents[name][0] += sl[2]
+            dictStudents[name][1] += 1
+
+    # écriture dans le fichier
+    with open("rapport.txt", 'w+') as f:
+        for name, (total, count) in dictStudents.items():
+            average = total / count
+            prt = name + " " + str(average) + "\n"
+            f.write(prt)
 
 
 while True:

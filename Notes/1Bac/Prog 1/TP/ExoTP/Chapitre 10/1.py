@@ -94,7 +94,7 @@ def victory_for():
 
 def draw_move():
     while True:
-        move = randrange(1, 9)
+        move = randrange(1, 10)
         if move in used_case:
             pass
         else:
