@@ -1,12 +1,12 @@
 # 326
-def lettersCount(str):
+def lettersCount(input_str):
     lettersDict = {}
-    for ch in str.read():
+    for ch in input_str.read():
         ch = ch.lower()
         
         if not ch.isalnum():
             continue
-        if not ch in lettersDict.keys():
+        if not ch in lettersDict:
             lettersDict[ch] = 1
         else:
             lettersDict[ch] += 1
@@ -14,8 +14,12 @@ def lettersCount(str):
     orderedList = list(lettersDict.keys())
     orderedList.sort()
     
-    for l in orderedList:
-        print(l, lettersDict[l])
+    with open("a.hist", 'w+') as f:
+        for l in orderedList:
+            prt = f"{l} {lettersDict[l]}\n"
+            f.write(prt)
+
+
 
 
 while True:
