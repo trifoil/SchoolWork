@@ -1,5 +1,16 @@
 # Notes IOE 
 
-## Ressources
+## Cours
 
+## Presentations
+
+### Lunettes google
+
+Expansive learning 
+
+Thinking by doing 
+
+
+
+## Ressources
 
