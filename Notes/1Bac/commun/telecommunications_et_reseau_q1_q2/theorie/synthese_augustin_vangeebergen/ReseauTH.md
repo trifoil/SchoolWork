@@ -97,8 +97,6 @@ réseau s’appellent des hôtes ou des périphériques finaux
 
 ## Chapitre 2 : Communication et protocoles réseaux <a name="2"></a>
 
-
-
 ### Protocoles
 
 >Un protocole est une suite de règles qui visent à ce qu'un message soit correctement transmis et compris.
@@ -122,7 +120,7 @@ La trame contient :
 * L'adresse de destination
 * Les données encapsulées
 
-<img src="image.png" alt="drawing" width="800"/>
+<img src="assets/Diagrammes/Pasted image.png" alt="drawing" width="800"/>
 
 Désencapsuler c'est extraire ces données.
 
@@ -144,9 +142,11 @@ Si le message est grand, on le découpe en plusieurs trames.
 Options de remise des messages
 
 * Monodiffusion
+  * un émetteur, un récepteur
 * Diffusion
+  * un émetteur à tous les récepteurs
 * Multidiffusion
-  
+  * un émetteur à un groupe de récepteurs
 
 ### Acronymes
 
@@ -208,9 +208,9 @@ Le modèle OSI est un modèle en 7 couches :
 * 2 couches moyennes : servant au contrôle du transport de l’information
 * 3 couches hautes : liées à la gestion de l’application
 
-<img src="assets/Diagrammes/image.png" alt="drawing" width="800"/>
+<img src="assets/Diagrammes/Pasted image 3.png" alt="drawing" width="800"/>
 
-![Alt text](assets/images/image-1.png)
+>PDU = Protocol Data Unit (ou unités de données)
 
 ## Chapitre 3 : Accès réseau <a name="3"></a>
 
@@ -326,14 +326,14 @@ La mémoire Flash est une mémoire non volative utilisée comme stockage permane
 pour l'IOS et d'autres fichier associés au système, il y est copié de la mémoire
 Flash vers la mémoire vive lors du démarrage
 
-![Alt text](assets/images/image-2.png)
+![Alt text](image-2.png)
 
 Etapes lors du démarrage:
 ● Exécution du POST et chargement du bootstrap (ROM)
 ● Localisation et chargement de l'IOS (Flash ou TFTP)
 ● Localisation et chargemetn du fichier de config initiale (NVRAM, TFTP ou Console)
 
-![Alt text](assets/images/image-3.png)
+![Alt text](image-3.png)
 
 ### Connexion et interfaces d'un routeur
 Les connexions sur un routeur Cisco peuvent être regroupées en deux catégories:
@@ -371,7 +371,7 @@ réseau de destination.
 
 Fonctionnement route statique
 
-![Alt text](assets/images/image-4.png)
+![Alt text](image-4.png)
 
 Quand un routeur reçoit des info. sur des nouvelles routes ou des routes modifiées, il
 met à jour sa propre table de routage et transmet ces infos aux autres routeurs.
@@ -447,7 +447,7 @@ Donc TCP > UDP
 * Ports privés ou dynamiques (49152 à 65535)    
   Appelés port éphémères, affectés de façon dynamique à des applications clientes lors d'une connexion
 
-![Alt text](assets/images/image-5.png)
+![Alt text](image-5.png)
 
 L’ensemble formé par le numéro de port et l’adresse ip s’appelle un SOCKET.
 ### Etablissement d'une connexion TCP
@@ -464,7 +464,7 @@ CTL = SYN
 Connexion établie, le client répond avec un ACK égal au numéro d'ordre reçu + 1.
 SEQ = 101 ACK 301 CTL = ACK
 
-![Alt text](assets/images/image-6.png)
+![Alt text](image-6.png)
 
 ### Fermeture d'une connexion TCP
 1) Le client n'a plus rien à envoyer, il envoie un segment pour demander la fin de la
@@ -478,7 +478,7 @@ client
 
 ### Fiabilité de la connexion
 
-![Alt text](assets/images/image-8.png)
+![Alt text](image-8.png)
 
 ### La taille de fenêtre
 
@@ -488,7 +488,7 @@ Cette taille est définie lors du démarrage de la session
 Le procotole TCP peut réduire la taille de la fenêtre afin de mieux contrôler le flux de
 données (envoie d'ACK plus fréquent, évite les pertes)
 
-![Alt text](assets/images/image-9.png)
+![Alt text](image-9.png)
 
 ### Gestion des pertes de segments du TCP
 Quand le protocole TCP source envoie des segments de données, il va : 
@@ -499,7 +499,7 @@ Quand le protocole TCP source envoie des segments de données, il va :
 Il existe également des SACK (ACK sélectifs) permettant, si les 2 hôtes sont
 compatibles, une retransmission partielle des octets manquants.
 
-![Alt text](assets/images/image-10.png)
+![Alt text](image-10.png)
 
 ### Protocole de la couche application utilisant UDP
 
@@ -595,4 +595,4 @@ même liaison locale, uniquement utilisable en local plage FE80 ::/10
 
 ## Chapitre 10 : Couche Application <a name="10"></a>
 
-![Alt text](assets/images/image-7.png)
+![Alt text](image-7.png)
