@@ -6,10 +6,18 @@
 Pour unifier notre belle communauté nerdo-anarcho-communiste, nous pouvons dès à présent créer, remplir, compléter les notes déjà présentes.
 
 ### Organisation des notes
-- Chaque dossier de cours est divisé en deux sous-dossier
-    - TH : Tous les documents relatifs à la théorie
-    - TP : Tous les documents relatifs aux travaux pratiques
 
+Organisation générale des dossiers :
+
+- root
+    - option
+        - cours
+            - theorie 
+                - synthese_nom
+                - ressources
+            - travaux pratiques
+                - synthese_nom
+                - ressources
 
 ## Utilisation de git
 #### [Tutoriel en français sur git](https://www.atlassian.com/fr/git/tutorials)
