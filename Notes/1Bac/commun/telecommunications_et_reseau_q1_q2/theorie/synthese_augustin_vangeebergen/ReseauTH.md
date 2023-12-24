@@ -212,6 +212,32 @@ Le modèle OSI est un modèle en 7 couches :
 
 >PDU = Protocol Data Unit (ou unités de données)
 
+### Adresse réseau et adresse de liaison de données
+
+Paquet IP contient 2 adresses logiques :
+* IP source
+* IP destination
+
+Trame de liaison de données contient 2 adresses physiques :
+* adresse MAC source
+* adresse MAC destination
+
+### Protocole ARP 
+Configuration dynamique :
+1) Question en broadcast : qui a l'adresse IP de mon destinataire? 
+2) Reponse du destinataire qui envoie son adresse MAC
+3) Stockage dans la table de l'adresse MAC et envoi de la trame 
+
+
+### Securité ARP
+
+* Empoisonnement ARP : ffausses requetes ARP et usurpation d'adresse MAC
+* Config manuelle (=/= dynamique) évite ces soucis
+
+### Ressources distantes 
+
+* Passage par passerelle par défaut
+
 ## Chapitre 3 : Accès réseau <a name="3"></a>
 
 
