@@ -552,21 +552,53 @@ les datagrammes => Il les réassemble dans l'ordre qu'il les a reçu
 
 Une IP est le numéro qui identifie chaque ordinateur connecté à Internet, ou plus précisément, l'interface avec le réseau de tout matériel informatique connecte à Internet.
 
+  * En binaire :xxxx xxxx . xxxx xxxx . xxxx xxxx . xxxx xxxx  
+(xxxx xxxx allant de 0000 0000 à 1111 1111)
+
+  * En décimal :xxx.xxx.xxx.xxx   
+(xxx allant de 0 à 255)
+
 Elle a un format de 4 octets (32 bits) présentable en binaire ou en décimal
 
 Elle contient deux parties:
-* ID de réseau  
+1) ID de réseau  
 Adresse réseau logique du sous réseau auquel l'ordinateur se rattache
-* ID d'hôte   
+2) ID d'hôte   
 Adresse logique du périphérique logique identifiant chaque ordinateur sur un sous réseau
 
 ### Les ≠ classes d'adresses
 
-A: 8 bits partie réseau, 24 partie hôte 
-B: 16 bits réseau, 16 bits hôtes  
-C: 24 bits réseau, 8 hôtes  
-D: Réservées pour le multicast, TOUJOURS UNE ADRESSE DE DESTINATION   
-E: Réservées à la recherche ou à des usages futurs  
+<img src="assets/Diagrammes/Pasted image 4.png" alt="drawing" width="600"/>
+
+* A: 
+  * 8 bits partie réseau
+    * premier bit à 0
+    * 0->127
+    * 0 et  127 réservées
+    * masque de sous-réseau par défaut : 255.0.0.0
+
+  * 24 bits partie hôte
+    * 0.0.0 n'est pas un hostID valide
+    * 255.255.255 utilisé pour broadcast
+
+* B: 
+  * 16 bits réseau
+    * premiers bits à 10
+    * 128->191
+    * masque de sous-réseau par défaut : 255.255.0.0
+  * 16 bits hôtes  
+    * 0.0 n'est pas un hostID valide
+    * 255.255 utilisé pour broadcast
+* C: 
+  * 24 bits réseau
+    * premiers bits à 110
+    * masque de sous-réseau par défaut : 255.255.0.0
+
+  * 8 bits hôtes   
+* D: Réservées pour le multicast, TOUJOURS UNE ADRESSE DE DESTINATION   
+  * 
+* E: Réservées à la recherche ou à des usages futurs  
+  * 
 
 Les adresses du bloc 168.254.0.0/16 sont des adresses link-local (c'est du réseau local APIPA)
 
