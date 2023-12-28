@@ -1,43 +1,51 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Tirages du Lotto 0</title>
-    <style>
-        @import url('https://fonts.cdnfonts.com/css/bitstream-vera-sans');
-
-
-        body {
-            font-family: 'Bitstream Vera Sans', sans-serif;
-            font-size: 1.2em;
-            text-align: center;
-        }
-
-        table {
-            margin: auto;
-        }
-
-        table td,
-        th {
-            width: 2em;
-            height: 2em;
-            text-align: center;
-            border: 2px solid black;
-        }
-    </style>
+    <title>Tirages du Lotto</title>
+    <link rel="stylesheet" type="text/css" href="styles.css"> <!-- Link to your CSS file -->
 </head>
-
 <body>
-    <h1>Tirages du Lotto 0</h1>
+    <h1>Tirages du Lotto</h1>
+
     <?php
-    $nb_tirages = rand(4, 10);
-    for ($tirage = 1; $tirage <= $nb_tirages; $tirage++) {
-        for ($i = 0; $i < 6; $i++) {
-            $numeros[$tirage][$i] = rand(1, 50);
+    // Génération des tirages
+    $nb_tirages = rand(4,10) ;
+    for ($tirage=1 ; $tirage<=$nb_tirages ; $tirage++) {
+        $numeros[$tirage] = array();
+        for ($i=0 ; $i<6 ; $i++) {
+            do {
+                $random = rand(1,50);
+            } while (in_array($random, $numeros[$tirage]));
+            $numeros[$tirage][$i] = $random;
         }
+        sort($numeros[$tirage]);
     }
     ?>
-</body>
 
+    <!-- Affichage des tirages dans un tableau -->
+    <table>
+        <tr>
+            <th colspan="6">Numéros</th>
+        </tr>
+        <?php 
+        foreach ($numeros as $ligne) {
+            echo '<tr>';
+            foreach ($ligne as $num) {
+                echo '<td>', $num; 
+            }
+        } 
+        ?>
+    </table>
+
+    <?php
+    if (isset($numeros[3][7])) {
+        $value = $numeros[3][7];
+        echo '<p class="index-message">The value at index [3][7] is: ' . $value . '</p>';
+    } else {
+        echo '<p class="error-message">Index [3][7] does not exist in the array.</p>';
+    }
+    ?>
+
+</body>
 </html>
