@@ -49,5 +49,14 @@
         } 
         ?>
     </table>
+
+    if (isset($numeros[3][7])) {
+    $value = $numeros[3][7];
+    echo "The value at index [3][7] is: $value";
+} else {
+    echo "Index [3][7] does not exist in the array.";
+}
+
+
 </body>
 </html>
