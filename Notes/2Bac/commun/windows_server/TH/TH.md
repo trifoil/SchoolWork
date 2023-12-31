@@ -20,7 +20,7 @@ IPv6
 * 64 premiers bits : le préfixe
 * 64 derniers bits : Identifiant de l’interface
 
-## Bonnes pratiques (halal windows server)
+## Bonnes pratiques (Halal windows server)
 
 ## Roles et fonctionnalités 
 
@@ -50,3 +50,11 @@ fonctionnalité de la totalité du serveur, quels que soient les rôles install�
 > C'est un protocole utilisé pour interroger une base de
 données en ligne afin d'obtenir des informations sur
 les noms de domaine, les adresses IP, ...
+
+## Réseau 
+
+## Serveur DHCP
+
+## Active Directory
+
+s
