@@ -1,6 +1,6 @@
 # Notes de Windows Server (bonne merde en tt cas)
 
-## 
+## Notes Mankou la best
 
 On met toujours une adresse IP fixe à un serveur
 
@@ -54,6 +54,17 @@ Tous les services qui vont modifier fondamentalement notre serveur on va les app
 Et les autres services moins important sont des fonctionnalités -> surface d'attaque moins importante
 
 Un role peut etre divisé en plusieurs petits roles
+Ex: serveur web principal = role et petit role = https -> surface d'attaque moins importante
+
+Soit pour installer / désinstaller en interface graphique avec le server manager ou avec 3 commandes de base
+
+Le serveur manager est une constante super importante, permet d'installer, changer le nom de la machine, changer les add ip, ajouter des ,...?
+
+Un work c'est un niveau reseau ou on va regrouper les ordis. c'est une architecture logique qui permet de trouver les ordis qui ont le même groupe
+
+Il est interdit d'aller sur internet avec le serveur 
+
+Le serveur DNS c'est un role il est composé de plusieurs parties: l'espace le nom des serveurs qui vont transformer le nom en add Ip, le client l'espace de noms à l'intérieur il y a toutes les machines connectées au réseau.
 
 
 
