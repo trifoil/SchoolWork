@@ -53,6 +53,8 @@ Tous les services qui vont modifier fondamentalement notre serveur on va les app
 
 Et les autres services moins important sont des fonctionnalités -> surface d'attaque moins importante
 
+3)
+
 Un role peut etre divisé en plusieurs petits roles
 Ex: serveur web principal = role et petit role = https -> surface d'attaque moins importante
 
@@ -65,6 +67,18 @@ Un work c'est un niveau reseau ou on va regrouper les ordis. c'est une architect
 Il est interdit d'aller sur internet avec le serveur 
 
 Le serveur DNS c'est un role il est composé de plusieurs parties: l'espace le nom des serveurs qui vont transformer le nom en add Ip, le client l'espace de noms à l'intérieur il y a toutes les machines connectées au réseau.
+Un hostname ne peut dépasser 63 caractères
+un nom de domaine ne peut pas dépasser 254 caractères
+l'adresse mail peut être écrite en maj ou min, c'est la même chose, rfc1034 -> pas sensible à la casse 
+
+4)
+
+Quand le client fait une requete qu'il veut aller sur le site HEH.be
+Il envoie une requete au DNS local situé à l'intérieur du réseau et peut externe.
+Le DNS local va donc envoyer une requete au DNS root et va demander quel est le serveur DNS qui s'occupe de .be et le root lui donne la réponse.
+
+QUand il a le DNS de .be il va demander l'adresse IP de HEH.be
+
 
 
 
