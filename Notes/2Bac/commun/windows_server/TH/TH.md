@@ -77,8 +77,25 @@ Quand le client fait une requete qu'il veut aller sur le site HEH.be
 Il envoie une requete au DNS local situé à l'intérieur du réseau et peut externe.
 Le DNS local va donc envoyer une requete au DNS root et va demander quel est le serveur DNS qui s'occupe de .be et le root lui donne la réponse.
 
-QUand il a le DNS de .be il va demander l'adresse IP de HEH.be
+Quand il a le DNS de .be il va demander l'adresse IP de HEH.be
 
+Et ensuit il va demander l'adresse IP de www.heh.be
+Et des dès qu'il a tout ça il revient au client
+
+Dns peut garder les données en cache
+
+Il y a 13 DNS root dans le monde, qui connaissent les TLD ils ont les adresses ip de donnée de poremier niveau
+
+Les DNS root sont appelés domaines racines
+
+Domaines génériques examples : .com .org
+Domaines <proxy??> : .be .fr .swiss
+
+Dans une zone, il ya des enregistrements, un DNS est une base de données dans laquelle il peut y avoir plusieurs fichiers de zone.
+Une zone c'est un domaine. Quand on va créer notre DNS on va créer une zone, par ex heh.be car comme c'es c'est en interne on s'en fout
+Mais dans un serveur DNS on peut avoir plusieurs zones = plusieurs domaines 
+Chaque nom de domaine est un fichier de zone. 
+plusieurs types d'enregistrements.
 
 
 
