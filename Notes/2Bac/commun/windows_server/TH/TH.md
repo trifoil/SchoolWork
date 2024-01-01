@@ -49,6 +49,12 @@ Active directory sert à la gestion des utilisateurs
 
 Changer le nom de l'ordi direct blabla
 
+Tous les services qui vont modifier fondamentalement notre serveur on va les appeler des roles -> super important 
+
+Et les autres services moins important sont des fonctionnalités -> surface d'attaque moins importante
+
+Un role peut etre divisé en plusieurs petits roles
+
 
 
 ## Bonnes pratiques (Halal windows server)
