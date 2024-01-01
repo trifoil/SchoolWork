@@ -45,7 +45,11 @@ Chaque serveur a une adresse IP fixe.
 
 Renommer l'ordi est la première chose à faire car important pour c'est plus facile de savoir identifier le serveur 
 
-Active directory 
+Active directory sert à la gestion des utilisateurs
+
+Changer le nom de l'ordi direct blabla
+
+
 
 ## Bonnes pratiques (Halal windows server)
 
