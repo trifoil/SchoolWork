@@ -174,23 +174,78 @@ premier niveau (TLD).
 * L'IANA qui est une composante de l'ICANN gère les noms
 de domaine, les adresses IP et les N° de protocole.
 
+### Qu'est-ce qu'un espace de nom DNS ? (Partie 1)
+* Définition :
+> Toute zone délimitée dans laquelle un nom peut être résolu.
+* FQDN (Fully Qualified Domain Name) :
+    * Nom de domaine qui est écrit de manière à fournir l’emplacement précis d’une ressource sur Internet.
+    C’est une séquence de labels de domaine où chaque label est séparé par un point. Le FQDN commence
+    par le domaine de plus haut niveau (TLD – Top-Level Domain) à droite, en allant vers le domaine de niveau
+    le plus bas à gauche.
+* Exemple : www.exemple.com
+    * « com » est le TLD.
+    * « exemple » est le domaine de second niveau.
+    * « www » est un sous-domaine.
+
+* Les FQDN sont utilisés pour la résolution DNS (Domain Name System) qui permet de
+traduire les noms de domaine en adresse IP.
+* Lorsque l'on parle de FQHN, ça signifie HN + FQDN où HN correspond au serveur
+hôte et ne peux valoir que 63 caractères maximums. On utilise la spécification RFC
+1123 pour le FQDN (càd que les caractères A-Z; a-z; 0-9; -) et le FQDN = maximum
+255 caractères et n'est pas sensible à la case (RFC 1034).
+
+![Alt text](image.png)
+
+### Comment se passe une requête DNS ? (Partie 1)
+1) Initialisation de la requête DNS :   
+    ➢ Lorsqu’un utilisateur saisit le nom de domaine (www.exemple.com) dans un
+navigateur web, l’ordinateur client déclenche alors la résolution DNS.
+
+2) Recherche dans le cache local :  
+    ➢ Le client vérifie d’abord son cache local pour voir si la résolution DNS pour
+ce nom de domaine a déjà été effectuée récemment. Si l’information est
+présente dans le cache, le processus se termine ici.
+
+3) Interrogation du serveur DNS récursif :  
+    ➢ Si l’information n’est pas dans le cache, le client envoie une requête au
+serveur DNS récursif configuré, généralement fourni par le FAI (Fournisseur
+d’Accès Internet). Le serveur DNS récursif est chargé de résoudre la requête
+DNS.
+
+4) Interrogation des serveurs racines (DNS Root) :  
+    ➢ Le serveur DNS récursif envoie une requête aux DNS Root. Ces serveurs
+racines sont au sommet de la hiérarchie DNS et ne gèrent que les
+informations sur les Top-Level Domain (TLD).
+
+5) Interrogation des serveurs de domaine de premier niveau (TLD – Top-
+Level Domain) : 
+    ➢ Les serveurs root renvoient le serveur récursif vers les serveurs TLD
+appropriés. Par exemple, dans le cas de « www.exemple.com », le serveur
+récursif interrogera les serveurs DNS TLD « .com ».
+
+6) Interrogation des serveurs d’hôtes (HN) :    
+➢ Les serveurs DNS TLD renvoient le serveur récursif vers les serveurs DNS du
+domaine d’hôtes (HN) , dans ce cas, « exemple.com ». Les serveurs HN
+contiennent les informations spécifiques du domaine en question.
+
+7) Récupération de l’enregistrement A (Adresse IP) :    
+    ➢ Les serveurs DNS du domaine d’hôtes (HN) renvoient vers l’enregistrement
+DNS correspondant au nom de domaine recherché, généralement un
+enregistrement A-AAAA qui associe le nom de domaine à une adresse IP.
+
+8) Réponse au client :  
+    ➢ Le serveur récursif reçoit l’enregistrement A-AAAA et le transmet au client. Le
+client peut alors utiliser cette adresse IP pour établir une connexion avec le
+serveur web du domaine correspondant (www.exemple.com).
+
+![Alt text](image-1.png)
+
 ## Réseau 
 
-Serveur DNS
-◦ Qu'est-ce qu'un espace de nom DNS ? (Partie 1)
-◦ Définition :
-◦ Toute zone délimitée dans laquelle un nom peut être résolu.
-◦ FQDN (Fully Qualified Domain Name) :
-◦ Nom de domaine qui est écrit de manière à fournir l’emplacement précis d’une ressource sur Internet.
-C’est une séquence de labels de domaine où chaque label est séparé par un point. Le FQDN commence
-par le domaine de plus haut niveau (TLD – Top-Level Domain) à droite, en allant vers le domaine de niveau
-le plus bas à gauche.
-◦ Exemple : www.exemple.com
-◦ « com » est le TLD.
-◦ « exemple » est le domaine de second niveau.
-◦ « www » est un sous-domaine.
 
 ## Serveur DHCP
+
+
 
 ## Active Directory
 
