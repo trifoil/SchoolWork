@@ -174,7 +174,7 @@ premier niveau (TLD).
 * L'IANA qui est une composante de l'ICANN gère les noms
 de domaine, les adresses IP et les N° de protocole.
 
-### Qu'est-ce qu'un espace de nom DNS ? (Partie 1)
+### Qu'est-ce qu'un espace de nom DNS ?
 * Définition :
 > Toute zone délimitée dans laquelle un nom peut être résolu.
 * FQDN (Fully Qualified Domain Name) :
@@ -196,7 +196,7 @@ hôte et ne peux valoir que 63 caractères maximums. On utilise la spécificatio
 
 ![Alt text](image.png)
 
-### Comment se passe une requête DNS ? (Partie 1)
+### Comment se passe une requête DNS ?
 1) Initialisation de la requête DNS :   
     ➢ Lorsqu’un utilisateur saisit le nom de domaine (www.exemple.com) dans un
 navigateur web, l’ordinateur client déclenche alors la résolution DNS.
