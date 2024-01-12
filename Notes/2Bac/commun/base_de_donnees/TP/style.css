@@ -1,0 +1,43 @@
+/* styles.css */
+
+body {
+    font-family: 'Consolas', 'Courier New', monospace;
+    font-size: 1.2em;
+    text-align: center;
+    background-color: #f4f4f4; /* Light gray background */
+}
+
+h1 {
+    color: #333; /* Dark gray heading color */
+}
+
+table {
+    margin: auto;
+    border-collapse: collapse;
+}
+
+table td, table th {
+    width: 2em;
+    height: 2em;
+    text-align: center;
+    border: 2px solid #000; /* Black border for table cells */
+}
+
+th {
+    background-color: #ddd; /* Light gray background for table header cells */
+}
+
+td {
+    background-color: #fff; /* White background for table data cells */
+}
+
+/* Additional styling for the value at index [3][7] message */
+.index-message {
+    font-weight: bold;
+    color: green; /* Green color for success message */
+}
+
+.error-message {
+    font-weight: bold;
+    color: red; /* Red color for error message */
+}

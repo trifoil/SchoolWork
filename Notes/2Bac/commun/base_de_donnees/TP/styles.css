@@ -1,0 +1,50 @@
+/* styles.css */
+
+body {
+    font-family: 'Arial', Helvetica, sans-serif;
+    font-size: 1.2em;
+    text-align: center;
+    background-color: #32363b; /* Light gray background */
+}
+
+h1 {
+    color: #f1f3f3; /* Dark gray heading color */
+}
+
+table {
+    margin: auto;
+    border-collapse: collapse;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+table td, table th {
+    width: 2em;
+    height: 2em;
+    text-align: center;
+    border: 2px solid #000000; /* Black border for table cells */
+    padding: 5px; /* Add padding to remove background color between border and rounded corners */
+}
+
+th {
+    background-color: #fd9300; /* Light gray background for table header cells */
+}
+
+td {
+    /* Remove background-color for table data cells */
+}
+
+titretableau {
+    color: #32363b;
+}
+
+/* Additional styling for the value at index [3][7] message */
+.index-message {
+    font-weight: bold;
+    color: green; /* Green color for success message */
+}
+
+.error-message {
+    font-weight: bold;
+    color: red; /* Red color for error message */
+}

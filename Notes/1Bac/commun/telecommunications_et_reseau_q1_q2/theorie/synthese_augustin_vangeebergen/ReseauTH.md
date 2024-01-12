@@ -1,4 +1,7 @@
 # Sythèse de théorie de télécommunications et réseaux 🖧
+
+Au Q1 la matière comprend 
+
 ## Chapitre 0 : Table des matières <a name="0"></a>
 
 0. [Chapitre 0 : Table des matières](#0)
@@ -238,6 +241,8 @@ Configuration dynamique :
 
 * Passage par passerelle par défaut
 
+
+
 ## Chapitre 3 : Accès réseau <a name="3"></a>
 
 
@@ -260,6 +265,8 @@ Configuration dynamique :
     Elle encapsule les données et contrôle l'accès au support
 
 ### Adresse MAC
+
+
 
 ## Chapitre 5 : Système d'exploitation réseau <a name="5"></a>
 
@@ -352,14 +359,14 @@ La mémoire Flash est une mémoire non volative utilisée comme stockage permane
 pour l'IOS et d'autres fichier associés au système, il y est copié de la mémoire
 Flash vers la mémoire vive lors du démarrage
 
-![Alt text](image-2.png)
+![Alt text](assets/images/image-2.png)
 
 Etapes lors du démarrage:
 ● Exécution du POST et chargement du bootstrap (ROM)
 ● Localisation et chargement de l'IOS (Flash ou TFTP)
 ● Localisation et chargemetn du fichier de config initiale (NVRAM, TFTP ou Console)
 
-![Alt text](image-3.png)
+![Alt text](assets/images/image-3.png)
 
 ### Connexion et interfaces d'un routeur
 Les connexions sur un routeur Cisco peuvent être regroupées en deux catégories:
@@ -397,7 +404,7 @@ réseau de destination.
 
 Fonctionnement route statique
 
-![Alt text](image-4.png)
+![Alt text](assets/images/image-4.png)
 
 Quand un routeur reçoit des info. sur des nouvelles routes ou des routes modifiées, il
 met à jour sa propre table de routage et transmet ces infos aux autres routeurs.
@@ -473,7 +480,7 @@ Donc TCP > UDP
 * Ports privés ou dynamiques (49152 à 65535)    
   Appelés port éphémères, affectés de façon dynamique à des applications clientes lors d'une connexion
 
-![Alt text](image-5.png)
+![Alt text](assets/images/image-5.png)
 
 L’ensemble formé par le numéro de port et l’adresse ip s’appelle un SOCKET.
 ### Etablissement d'une connexion TCP
@@ -490,7 +497,7 @@ CTL = SYN
 Connexion établie, le client répond avec un ACK égal au numéro d'ordre reçu + 1.
 SEQ = 101 ACK 301 CTL = ACK
 
-![Alt text](image-6.png)
+![Alt text](assets/images/image-6.png)
 
 ### Fermeture d'une connexion TCP
 1) Le client n'a plus rien à envoyer, il envoie un segment pour demander la fin de la
@@ -504,7 +511,7 @@ client
 
 ### Fiabilité de la connexion
 
-![Alt text](image-8.png)
+![Alt text](assets/images/image-8.png)
 
 ### La taille de fenêtre
 
@@ -514,7 +521,7 @@ Cette taille est définie lors du démarrage de la session
 Le procotole TCP peut réduire la taille de la fenêtre afin de mieux contrôler le flux de
 données (envoie d'ACK plus fréquent, évite les pertes)
 
-![Alt text](image-9.png)
+![Alt text](assets/images/image-9.png)
 
 ### Gestion des pertes de segments du TCP
 Quand le protocole TCP source envoie des segments de données, il va : 
@@ -525,7 +532,7 @@ Quand le protocole TCP source envoie des segments de données, il va :
 Il existe également des SACK (ACK sélectifs) permettant, si les 2 hôtes sont
 compatibles, une retransmission partielle des octets manquants.
 
-![Alt text](image-10.png)
+![Alt text](assets/images/image-10.png)
 
 ### Protocole de la couche application utilisant UDP
 
@@ -545,21 +552,53 @@ les datagrammes => Il les réassemble dans l'ordre qu'il les a reçu
 
 Une IP est le numéro qui identifie chaque ordinateur connecté à Internet, ou plus précisément, l'interface avec le réseau de tout matériel informatique connecte à Internet.
 
+  * En binaire :xxxx xxxx . xxxx xxxx . xxxx xxxx . xxxx xxxx  
+(xxxx xxxx allant de 0000 0000 à 1111 1111)
+
+  * En décimal :xxx.xxx.xxx.xxx   
+(xxx allant de 0 à 255)
+
 Elle a un format de 4 octets (32 bits) présentable en binaire ou en décimal
 
 Elle contient deux parties:
-* ID de réseau  
+1) ID de réseau  
 Adresse réseau logique du sous réseau auquel l'ordinateur se rattache
-* ID d'hôte   
+2) ID d'hôte   
 Adresse logique du périphérique logique identifiant chaque ordinateur sur un sous réseau
 
 ### Les ≠ classes d'adresses
 
-A: 8 bits partie réseau, 24 partie hôte 
-B: 16 bits réseau, 16 bits hôtes  
-C: 24 bits réseau, 8 hôtes  
-D: Réservées pour le multicast, TOUJOURS UNE ADRESSE DE DESTINATION   
-E: Réservées à la recherche ou à des usages futurs  
+<img src="assets/Diagrammes/Pasted image 4.png" alt="drawing" width="600"/>
+
+* A: 
+  * 8 bits partie réseau
+    * premier bit à 0
+    * 0->127
+    * 0 et  127 réservées
+    * masque de sous-réseau par défaut : 255.0.0.0
+
+  * 24 bits partie hôte
+    * 0.0.0 n'est pas un hostID valide
+    * 255.255.255 utilisé pour broadcast
+
+* B: 
+  * 16 bits réseau
+    * premiers bits à 10
+    * 128->191
+    * masque de sous-réseau par défaut : 255.255.0.0
+  * 16 bits hôtes  
+    * 0.0 n'est pas un hostID valide
+    * 255.255 utilisé pour broadcast
+* C: 
+  * 24 bits réseau
+    * premiers bits à 110
+    * masque de sous-réseau par défaut : 255.255.0.0
+
+  * 8 bits hôtes   
+* D: Réservées pour le multicast, TOUJOURS UNE ADRESSE DE DESTINATION   
+  * 
+* E: Réservées à la recherche ou à des usages futurs  
+  * 
 
 Les adresses du bloc 168.254.0.0/16 sont des adresses link-local (c'est du réseau local APIPA)
 
@@ -621,4 +660,4 @@ même liaison locale, uniquement utilisable en local plage FE80 ::/10
 
 ## Chapitre 10 : Couche Application <a name="10"></a>
 
-![Alt text](image-7.png)
+![Alt text](assets/images/image-7.png)
