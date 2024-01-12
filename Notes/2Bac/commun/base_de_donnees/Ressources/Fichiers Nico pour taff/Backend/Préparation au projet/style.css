@@ -1,0 +1,116 @@
+/* Reset CSS + base */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
+    background-color: #222233;
+    color: white;
+}
+
+/* Index et CSS général */
+h1 {
+    font-size: 3em;
+    margin: 20px;
+    margin-bottom: 40px;
+}
+
+p {
+    font-size: 1.2em;
+    margin: 5px;
+}
+
+.pets {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.pet {
+    min-width: 175px;
+    margin: 20px;
+    padding: 20px;
+    border: 1px dashed white;
+    border-radius: 10px;
+}
+
+.pet:hover {
+    background-color: #3b3b59;
+}
+
+img {
+    width: 150px;
+    height: 150px;
+    margin: 10px;
+
+}
+
+.modified {
+    color: yellow;
+}
+
+span {
+    text-decoration: line-through;
+    color: gray;
+}
+
+.comment:hover {
+    cursor: pointer;
+    color: lightblue;
+}
+
+/* Page de modification */
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h3 {
+    font-size: 2em;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    font-size: 1.2em;
+}
+
+input[type="number"] {
+    width:  45px;
+    vertical-align: middle;
+}
+
+textarea {
+    width: 250px;
+    height: 60px;
+    vertical-align: middle;
+}
+
+input[type="submit"] {
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+    border: none;
+    background-color: #3b3b59;
+    color: white;
+}
+input[type="submit"]:hover {
+    cursor: pointer;
+    background-color: #54547f;
+}
+
+/* Footer, commun aux pages */
+footer {
+    padding: 40px;
+    padding-bottom: 20px;
+}

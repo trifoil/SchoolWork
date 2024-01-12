@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+a:hover {color: rgb(154, 151, 151);}
+
+body {
+    font-family: 'Exo 2', sans-serif;
+    background-color: azure;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin: 0.8em 0;
+}
+
+.bold {font-weight: bold;}
+
+.pays {
+    font-size: 1.2em;
+    margin: 0.5em 0;
+}
+
+.joueur {
+    font-size: 1.2em;
+    margin: 0.5em 0;
+}
+
+.flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.flex > div {
+    margin: 1em;
+    padding: 1em;
+    border: 1px solid black;
+    border-radius: 15px;
+    background-color: white;
+    width: 300px;
+}
+
+input {
+    margin: 0.5em 0;
+    padding: 0.5em;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+select {
+    margin: 0.5em 0;
+    margin-right: 5px;
+    padding: 0.5em;
+    border-radius: 5px;
+    border: 1px solid black;
+}

@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+a:hover {color: rgba(0, 0, 0, 0.60);}
+
+body {
+    font-family: 'Exo 2', sans-serif;
+    background-color: azure;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin: 0.8em 0;
+}
+
+img {
+    width: 25px;
+    height: auto;
+    vertical-align: middle;
+}
+
+p {
+    margin: 0.2em 0;
+}
+
+.bold {font-weight: bold;}
+
+.flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.flex > div {
+    margin: 1em;
+    padding: 1em;
+    border: 1px solid black;
+    border-radius: 15px;
+    background-color: white;
+    width: 350px;
+}
+
+input {
+    margin: 0.5em 0;
+    padding: 0.5em;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+input:hover {cursor: pointer;}
+
+select {
+    margin: 0.5em 0;
+    margin-right: 5px;
+    padding: 0.5em;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+select:hover {cursor: pointer;}
