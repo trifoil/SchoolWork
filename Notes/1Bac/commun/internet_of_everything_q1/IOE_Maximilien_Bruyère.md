@@ -148,7 +148,7 @@ Règles des 3V :
     Variété (différentes formats de données)
 
 Cloud computing : ensemble de data center se trouvant hors du réseau.
-Edge computing : gère et traite les données avant de les envoyer vers un cloud. 
+Edge computing : gère et traite les données avant de les envoyer vers un cloud.
 Fog computing : permet d'être un médiateur entre la périphérie et le cloud.
 
 Les données sont des informations provenant de diverses sources, telles que des personnes, des images, des capteurs, des sites web et des dispositifs technologiques. 
@@ -486,3 +486,4 @@ Données personnelles et IoE
 - Volontaire
 - Observé
 - Déduit
+
