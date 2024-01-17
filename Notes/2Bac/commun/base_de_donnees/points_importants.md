@@ -28,6 +28,8 @@ regex
 
 ## Synthèse sur les requêtes SQL
 
+### SELECT
+
 Pour sélectionner toute la table "Customers" :
 ```
 SELECT * FROM joueurs;
@@ -40,11 +42,20 @@ SELECT equipe FROM joueurs;
 ```
 ![Alt text](image-1.png)
 
-Pour sélectionner les éléments distincts d'une colonne d'un tableau
+Rigoureusement, on précise que l'on sélectionne la colonne qui vient d'une table précise (pas de conflits quand on importe plusieurs tables) :
 
 ```
-SELECT DISTINCT equipe FROM joueurs;
+SELECT joueurs.equipe FROM joueurs
 ```
 
-![Alt text](image-2.png)
+![Alt text](image-3.png)
 
+### WHERE
+
+Pour sélectionner les lignes auxquelles la colonne possède la valeur :
+
+```
+SELECT joueurs.equipe FROM joueurs WHERE joueurs.equipe = 'RUS';
+```
+
+![Alt text](image-4.png)
