@@ -1,3 +1,5 @@
+## Points importants :
+
 SELECT
 WHERE
 ORDER BY
@@ -24,6 +26,8 @@ requete preparée
 regex
 
 
+## Synthèse sur les requêtes SQL
+
 Pour sélectionner toute la table "Customers" :
 ```
 SELECT * FROM joueurs;
@@ -36,9 +40,11 @@ SELECT equipe FROM joueurs;
 ```
 ![Alt text](image-1.png)
 
-Pour sélectionner les éléments distincts 
+Pour sélectionner les éléments distincts d'une colonne d'un tableau
 
 ```
 SELECT DISTINCT equipe FROM joueurs;
 ```
+
+![Alt text](image-2.png)
 
