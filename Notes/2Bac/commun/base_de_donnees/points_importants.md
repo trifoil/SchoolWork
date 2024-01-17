@@ -30,7 +30,7 @@ regex
 
 ### SELECT
 
-Pour sélectionner toute la table "Customers" :
+Pour sélectionner toute la table "Customers" (* veut dire all):
 ```
 SELECT * FROM joueurs;
 ```
