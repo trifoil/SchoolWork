@@ -6,19 +6,38 @@
     * augmentation des fréquences
     * augmentation du nombre de canaux
 * Schéma CPU
-    * Unité de controle   
-    ![Alt text](image.png)
-    * ALU   
-    ![Alt text](image-1.png)
-    * Registres     
-    ![Alt text](image-2.png)
-    * FPU   
-    ![Alt text](image-3.png)
-    * Unité vectorielle     
+    * Basique
+        * Unité de controle   
+        ![Alt text](image.png)
+        * ALU   
+        ![Alt text](image-1.png)
+        * Registres     
+        ![Alt text](image-2.png)
+        * FPU   
+        ![Alt text](image-3.png)
+        * Unité vectorielle     
+        ![Alt text](image-4.png)
+        * Mémoire cache L1  
+        ![Alt text](image-5.png)
+        * Mémoire cache L2  
+        ![Alt text](image-6.png)
+        * Entrées-sorties   
+        ![Alt text](image-7.png)
+    * Variantes
+        * Plusieurs unités de calcul    
+        ![Alt text](image-8.png)
+        * Plusieurs coeurs  
+        ![Alt text](image-9.png)
+    * Hiérarchie memoire    
+    ![Alt text](image-10.png)
 
 * Architecture big/little (page 18)
+    * Mélange de gros et petits coeurs pour avoir la perf quand on en a besoin et etre économe en energie quand on est pas en charge
 * Pas fabrication processeur
+    * https://www.youtube.com/watch?v=IS5ycm7VfXg pour culture G
 * Finesse de gravure
+    * 7 nm pour apple et amd
+    * 14 nm pour intel
 * Savoir CPU lié au socket
 * Qu'est-ce que la fréquence (p28)
 * Connaitre TDP
