@@ -3,7 +3,19 @@
 * Savoir faire conversion binaire, octale , hexadécimale, décimal (pas opération (+; -; ..) mais bien de revoir)
 * Pas fonction logique
 * Comment augmenter le débit
+    * augmentation des fréquences
+    * augmentation du nombre de canaux
 * Schéma CPU
+    * Unité de controle   
+    ![Alt text](image.png)
+    * ALU   
+    ![Alt text](image-1.png)
+    * Registres     
+    ![Alt text](image-2.png)
+    * FPU   
+    ![Alt text](image-3.png)
+    * Unité vectorielle     
+
 * Architecture big/little (page 18)
 * Pas fabrication processeur
 * Finesse de gravure
