@@ -35,9 +35,9 @@
 
 * Attention, les droits d'endossement d'utilisateur n'existent pas sur les dossiers
 
-* Risques liés aux droits d'endossement 
+* Risques liés aux droits d'endossement
 
-* Changer les options d emontage pour contrer 
+* Changer les options d emontage pour contrer
 
 * Sticky bit
 
