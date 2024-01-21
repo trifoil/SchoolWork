@@ -7,7 +7,7 @@
 - ~~mode graphique mode texte~~
 - ~~shell~~ 
 - role admin 
-- methodolie admin
+- methodologie admin
 - gestion des fichier (citer 5 ou 6  ficher de base et ce qu'il y a dedans )
 - repertoire personel 
 - chemins relatif / absolue
