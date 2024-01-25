@@ -10,7 +10,7 @@ Pour unifier notre belle communauté nerdo-anarcho-communiste, nous pouvons dès
 Organisation générale des dossiers :
 
 
-
+```
 bloc_x      
 └── quad_x      
     └── option      
@@ -27,6 +27,8 @@ bloc_x
             │       
             └── supports        
                 └── course      
+```
+ 
 
 
 ## Utilisation de git
