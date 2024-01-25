@@ -13,23 +13,23 @@
 - chemins relatif / absolue
 - Types de fichiers 
 - Extensions de fichier
-- liens durs, symboliques 
-- Droits d'accès (fichiers =! dossier) + commande 
+- liens durs, symboliques
+- Droits d'accès (fichiers =! dossier) + commande
 - Umask + (commande)
-- Droit d'endossements tout attention pièges 
+- Droit d'endossements tout attention pièges
 - sticky bit
-- gestion des groupes et utilisateurs   
-- UPG 
+- gestion des groupes et utilisateurs
+- UPG
 - UID-GID
 - authentification
-- ou stocker mdp 
+- ou stocker mdp
 - gestion systeme et ficheiers
-- disque secteur 
-- structeure systeme fichier 
-- tables inodes 
-- pq gerer sois meme systeme de fichier 
+- disque secteur
+- structeure systeme fichier
+- tables inodes
+- pq gerer sois meme systeme de fichier
 - types de systems journalaises
-- types de systemes de fichier en citer 5 
+- types de systemes de fichier en citer 5
 - sauvegardes 
 - plan de sauvegardes tout
 - avanatges et inco des types de stockages 

@@ -9,15 +9,25 @@ Pour unifier notre belle communauté nerdo-anarcho-communiste, nous pouvons dès
 
 Organisation générale des dossiers :
 
-- root
-    - option
-        - cours
-            - theorie 
-                - synthese_nom
-                - ressources
-            - travaux pratiques
-                - synthese_nom
-                - ressources
+
+
+bloc_x
+└── quad_x
+    └── option
+        └── nom_du_cours
+            ├── nom_de_la_personne
+            │   ├── sytheses
+            │   ├── questions
+            │   ├── syntheses
+            │   ├── notes
+            │   └── projets
+            │
+            ├── exos
+            │   └── exo-...md
+            │
+            └── supports
+                └── course
+
 
 ## Utilisation de git
 #### [Tutoriel en français sur git](https://www.atlassian.com/fr/git/tutorials)
