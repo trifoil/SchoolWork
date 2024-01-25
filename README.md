@@ -16,11 +16,17 @@ bloc_x
     └── option      
         └── nom_du_cours        
             ├── nom_de_la_personne      
-            │   ├── sytheses        
-            │   ├── questions       
-            │   ├── syntheses       
-            │   ├── notes       
-            │   └── projets     
+            │   ├── sytheses
+            │   │   └── syntheses...
+            │   │
+            │   ├── questions
+            │   │   └── questions...
+            │   │   
+            │   ├── notes
+            |   |   └── note_x...
+            │   │
+            │   └── projets
+            │       └── ...
             │       
             ├── exos        
             │   └── exo-...md       
@@ -29,6 +35,25 @@ bloc_x
                 └── course      
 ```
  
+- bloc_x (x = 1,2,3)
+
+- quad_x (x = 1,2)
+
+- option (commun, secu, dev)
+
+- nom_du_cours (ex: prog, prog-tp, ioe)
+
+- nom_de_la_personne (nom_prenom)
+
+- syntheses (vos syntheses sans format precis)
+
+- questions (questions type d'intero)
+
+- notes/note_x (x = sceance du cours)
+
+- exos/exo-...md (un exo a la fois)
+
+- supports (support de cours)
 
 
 ## Utilisation de git
