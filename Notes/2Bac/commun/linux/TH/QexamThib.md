@@ -51,7 +51,7 @@
 - priorité d'un processus  (lequel est le plus prioritaire)
 - crontab
 - at cquoi 
-- anacran cquoi
+- anacron cquoi
 - les quotas, types , limite douce , dur ,perdiode de grace , comment l'activer , option de mantages 
 - recourcesa surveiller  
 - Noyau linux  
