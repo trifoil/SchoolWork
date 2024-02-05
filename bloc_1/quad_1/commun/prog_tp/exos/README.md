@@ -1,11 +1,14 @@
 # SchoolWork
-Pour unifier notre belle communauté nerdo-anarcho-communiste, nous avons créé ce répo dans lequel vous pouvez créer/ajouter vos synthèses/notes/supports de cours. Avec votre aide, nous pourrions créer une ressource capable d'aider tout le monde pour cette année ou les années à venir.
 
-> Si vous souhaitez devenir contributeur, veuillez contacter @trifoil (Augustin) sur l'un des serveurs Discord de la HEH.
+## Notes
+
+### Objectif du dépôt
+Pour unifier notre belle communauté nerdo-anarcho-communiste, nous pouvons dès à présent créer, remplir, compléter les notes déjà présentes.
 
 ### Organisation des notes
 
 Organisation générale des dossiers :
+
 
 ```
 bloc_x      
