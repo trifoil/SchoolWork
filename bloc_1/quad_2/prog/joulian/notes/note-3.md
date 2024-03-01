@@ -9,7 +9,7 @@
     - de recopie (un seul argument, une instance de meme classe)
 
 ### Relations entre classes
-    - Association (une classe utilise une autre)
+    - Association (une classe utilise une autre, mais pas de dependance)
     - Composition-Composition (une classe en compose une autre, le composant est dependant de la classe d'origine)
     - Composition-Aggregation (une classe en compose une autre, le composant n'est pas dependant de la classe d'origine)
     - Heritage (Classe mere/fille)
