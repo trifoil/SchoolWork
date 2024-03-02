@@ -13,8 +13,8 @@ bloc_x
     └── option      
         └── nom_du_cours        
             ├── nom_de_la_personne      
-            │   ├── sytheses
-            │   │   └── syntheses...
+            │   ├── synthèses
+            │   │   └── synthèses...
             │   │
             │   ├── questions
             │   │   └── questions...
@@ -29,27 +29,18 @@ bloc_x
             │   └── exo-...md       
             │       
             └── supports        
-                └── course      
+                └── cours     
 ```
  
-- bloc_x (x = 1,2,3)
-
-- quad_x (x = 1,2)
-
+- bloc_x (x = 1, 2, 3)
+- quad_x (x = 1, 2)
 - option (commun, secu, dev)
-
-- nom_du_cours (ex: prog, prog-tp, ioe)
-
-- nom_de_la_personne (nom_prenom)
-
-- syntheses (vos syntheses sans format precis)
-
-- questions (questions type d'intero)
-
-- notes/note_x (x = sceance du cours)
-
-- exos/exo-...md (un exo a la fois)
-
+- nom_du_cours (ex : prog, prog-tp, ioe)
+- nom_de_la_personne (nom_prénom)
+- synthèses (vos synthèses sans format précis)
+- questions (questions type d'interrogation)
+- notes/note_x (x = séance du cours)
+- exos/exo-...md (un exercice à la fois)
 - supports (support de cours)
 
 
@@ -84,21 +75,34 @@ bloc_x
 <summary> Bac 1 </summary>
 
 ## Bac 1
+### <u> Quad 1 </u>
+
 ### **TH**
-- [ ] Réseau
-- [ ] Archi
-- [ ] IOE
+- [x] Réseau
+- [x] Archi
+- [x] IOE
 - [ ] Elec
-- [ ] Prog
+- [ ] Tech num
+- [x] Prog
 ### **TP**
 - [x] Prog
+
+### <u> Quad 2 </u>
+
+### **TH**
+- [ ] Réseau
+- [ ] Elec
+- [ ] Prog
+- [ ] Tech num
+### **TP**
+- [ ] Prog
 
 </details>
 
 <details>
 <summary> Bac 2 </summary>
 
-### Bac 2 
+### Bac 2
 ---
 ### **TH**
 - [ ] DB
