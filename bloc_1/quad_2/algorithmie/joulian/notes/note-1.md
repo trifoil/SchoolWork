@@ -35,6 +35,9 @@
 | pire cas     | O(n)                  |
 | meilleur cas | O(log(n))             |
 
+## Recherche d'élément
+- ...
+
 ## Ajout d'élément
 -...
 
