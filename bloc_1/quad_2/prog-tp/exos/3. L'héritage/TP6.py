@@ -24,20 +24,20 @@ class Sorcier(Humain):
         self.__maison = maison
         self.__sortilegesConnus = []
 
-
-    def LancerSort(self, sortilege):
+    def LancerSort(self, sortilege: Sortilege):
         if sortilege in self.__sortilegesConnus:
             print("Lancement du sort :", sortilege.formule)
             sortilege.SeLancer()
         else:
             raise ValueError("Le sort n'est pas connu")
 
-
-    def AjouterSort(self, sortilege):
+    def AjouterSort(self, sortilege: Sortilege):
         self.__sortilegesConnus.append(sortilege)
 
-sortilege1 = Sortilege("Expelliarmus", "Désarme l'adversaire")
-sorcier1 = Sorcier("Harry", "Potter", 1980, "Épicéa, plume de phénix", "Gryffondor")
 
-sorcier1.AjouterSort(sortilege1)
-sorcier1.LancerSort(sortilege1)
+if __name__ == "__main__":
+    sortilege1 = Sortilege("Expelliarmus", "Désarme l'adversaire")
+    sorcier1 = Sorcier("Harry", "Potter", 1980, "Épicéa, plume de phénix", "Gryffondor")
+
+    sorcier1.AjouterSort(sortilege1)
+    sorcier1.LancerSort(sortilege1)

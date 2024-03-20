@@ -13,10 +13,10 @@ class Equipe:
         self.nom = nom
         self.joueurs = []
 
-    def add_joueur(self, joueur):
+    def add_joueur(self, joueur: Joueur):
         self.joueurs.append(joueur)
 
-    def remove_joueur(self, joueur):
+    def remove_joueur(self, joueur: Joueur):
         self.joueurs.remove(joueur)
 
     def moyenne_age(self):
@@ -37,7 +37,7 @@ class Equipe:
         else:
             return None
 
-    def joueur_au_poste(self, poste):
+    def joueur_au_poste(self, poste: str):
         for joueur in self.joueurs:
             if joueur.poste == poste:
                 return joueur

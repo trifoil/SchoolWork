@@ -72,4 +72,3 @@ if __name__ == "__main__":
     humain3 = Humain()
     humain1.SePresenter()
     humain1.reconnaissanceParentale(humain2)
-

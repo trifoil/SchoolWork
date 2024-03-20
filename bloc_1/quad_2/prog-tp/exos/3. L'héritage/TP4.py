@@ -31,6 +31,7 @@ class Triangle:
         side1 = self.__points[0].distance_from_point(self.__points[1])
         side2 = self.__points[1].distance_from_point(self.__points[2])
         side3 = self.__points[2].distance_from_point(self.__points[0])
+
         return side1 + side2 + side3
 
 
