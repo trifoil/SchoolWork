@@ -34,6 +34,15 @@ class Sorcier(Humain):
     def AjouterSort(self, sortilege: Sortilege):
         self.__sortilegesConnus.append(sortilege)
 
+    @property
+    def bagette(self):
+        return self.__baguette
+
+    @property
+    def maison(self):
+        return self.__maison
+
+
 
 if __name__ == "__main__":
     sortilege1 = Sortilege("Expelliarmus", "Désarme l'adversaire")
