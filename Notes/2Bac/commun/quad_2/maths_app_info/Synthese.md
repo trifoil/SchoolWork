@@ -17,3 +17,7 @@ $$\exists c > 0, \exists n_0 \geq 1 : f(n) \geq c . g(n) \forall n \geq n_0 $$
 Ce qui veut dire que $f(n)$ appartient à $O(g(n))$ s'il existe une constante multiplicative $c$ plus grande que zero, et un nombre (seuil) plus grand ou égal à 1, tels que $f(n)$ est toujours plus petit ou égal à la constante multiplicative fois $g(n)$ pour tout n supérieur ou égal au seuil choisi.     
 C'est donc une manière de voir si on dépasse pour des n grands.
 
+Quelques exercices :
+
+> [!IMPORTANT]  
+> Log veut dire ici logaritme néperien, et l'un et l'autre sont liés par une constante
