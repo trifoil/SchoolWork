@@ -30,8 +30,8 @@ $n \log(n) \in O(n)$
     $f(n) \leq c . g(n) $ 
     $\forall n \geq n_0 $       
     devient     
-    $ n \log(n) \leq c . n $ 
-    $ \forall n \geq n_0 $       
+    $n \log(n) \leq c . n $ 
+    $\forall n \geq n_0 $       
 
     * approche intuitive        
 
