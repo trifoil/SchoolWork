@@ -27,9 +27,18 @@ $n \log(n) \in O(n)$
 
     * résolution rigoureuse     
     Selon la définition,    
-    $f(n) \leq c . g(n)$   $\forall n \geq n_0 $       
+    $f(n) \leq c . g(n)$    
+    $\forall n \geq n_0 $       
     devient     
-    $n \log(n) \leq c . n$ $\forall n \geq n_0 $       
+    $n \log(n) \leq c . n$  
+    $\forall n \geq n_0 $  
+    Il faut chercher $n_0$ et c pour que l'équation soit vraie  
+    Avec    
+    $n \log(n) \leq 1000 n$  
+    $\forall n \geq n_0 $   
+    Isoler $n$  
+    $n \log(n) \leq 1000 n = \log(n) \leq 1000 = $   
+
 
     * approche intuitive        
 
