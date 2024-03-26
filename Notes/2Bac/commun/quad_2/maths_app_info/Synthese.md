@@ -35,10 +35,34 @@ $n \log(n) \in O(n)$
         * Il faut chercher $n_0$ et c pour que l'équation soit vraie  
     Avec    
     $n \log(n) \leq 1000 n$  
+    par définition, $n \neq 0$     
     $\forall n \geq n_0 $   
         * Isoler $n$  
-    $n \log(n) \leq 1000 n = \log(n) \leq 1000 = $   
+    $n \log(n) \leq 1000 n$     
+    $\log(n) \leq 1000$   
+    $n \leq \exp(1000)$    
+
 
 
     * approche intuitive        
 
+2) Vrai ou faux?   
+$10^{12} \in O(1)$
+
+    * résolution rigoureuse     
+        * Selon la définition,   
+        $10^{12} \leq C .1$     
+        $\forall n \geq n_0 $  
+        * On prend un $c$ arbitraire    
+        $10^{12} \leq 10^{12} .1$       
+
+        * Ici, le $n_0$ n'influence rien donc il est choisi arbitrairement, On va donc prendre :         
+        $\forall n \geq 1 $ 
+        * Il faut juste vérifier que ceci est vrai :    
+        $10^{12} \leq 10^{12} .1$            
+        $\forall n \geq 1 $ 
+        * -> Vrai
+   
+
+
+3) Vrai ou faux?   
