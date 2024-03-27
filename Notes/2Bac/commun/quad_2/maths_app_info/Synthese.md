@@ -62,7 +62,10 @@ $10^{12} \in O(1)$
         $10^{12} \leq 10^{12} .1$            
         $\forall n \geq 1 $ 
         * -> Vrai
-   
-
 
 3) Vrai ou faux?   
+$2^{n+3}+\log(n) \in O(2^n)$
+
+    * résolution rigoureuse
+        * selon la définition, 
+        $$
