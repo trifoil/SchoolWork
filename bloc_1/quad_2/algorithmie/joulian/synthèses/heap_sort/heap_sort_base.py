@@ -1,7 +1,7 @@
 def heapify(arr, n, i, condition):
     # heapify part of the algorithm
 
-def heap_sort(arr, condtion):
+def heap_sort(arr, condition):
     # heap sort code
 
 
