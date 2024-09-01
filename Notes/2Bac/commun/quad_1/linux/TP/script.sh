@@ -30,3 +30,4 @@ sudo mkdir /exam
 sudo chown :lastuser /exam
 
 sudo dnf install NetworkManager-tui
+sudo systemctl restart NetworkManager
