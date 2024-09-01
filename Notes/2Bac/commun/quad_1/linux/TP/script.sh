@@ -31,3 +31,14 @@ sudo chown :lastuser /exam
 
 sudo dnf install NetworkManager-tui
 sudo systemctl restart NetworkManager
+
+sudo dnf install nfs-utils
+sudo mkdir /partage
+sudo chown user1 /partage
+sudo chmod 755 /partage
+echo "/partage 192.168.0.0/24(rw,sync,no_root_squash,no_subtree_check)" | sudo tee -a /etc/exports
+sudo exportfs -a
+sudo systemctl restart nfs-server
+
+sudo touch /temp/test
+sudo chattr +i /temp/test
