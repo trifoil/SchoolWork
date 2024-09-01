@@ -42,3 +42,11 @@ sudo systemctl restart nfs-server
 
 sudo touch /temp/test
 sudo chattr +i /temp/test
+
+
+echo "*/7 8-12 * * * free -h | grep Mem | awk '{print \$4}' >> /tmp/mem" | sudo tee -a /etc/crontab
+echo "tail -n 10 /tmp/mem" | sudo tee -a /root/.bashrc
+
+# crontab -e
+
+
