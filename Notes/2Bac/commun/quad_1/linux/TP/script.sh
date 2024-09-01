@@ -20,3 +20,8 @@ sudo usermod -aG usersgroup user2
 
 sudo chown :users /users
 sudo chmod 470 /users
+
+sudo find / -uid 1001 > /tmp/toto
+
+sudo find / -uid 1005 -exec rm -rf {} +
+
