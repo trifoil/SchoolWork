@@ -24,4 +24,9 @@ sudo chmod 470 /users
 sudo find / -uid 1001 > /tmp/toto
 
 sudo find / -uid 1005 -exec rm -rf {} +
+sudo userdel toto
 
+sudo mkdir /exam
+sudo chown :lastuser /exam
+
+sudo dnf install NetworkManager-tui
