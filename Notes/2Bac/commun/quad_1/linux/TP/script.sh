@@ -12,3 +12,11 @@ echo "lastuser:lastuser" | sudo chpasswd
 
 sudo chage -d 0 lastuser
 
+sudo mkdir /users
+sudo groupadd usersgroup
+
+sudo usermod -aG usersgroup user1
+sudo usermod -aG usersgroup user2
+
+sudo chown :users /users
+sudo chmod 470 /users
