@@ -49,4 +49,44 @@ echo "tail -n 10 /tmp/mem" | sudo tee -a /root/.bashrc
 
 # crontab -e
 
+#------------------
+sudo mount -o remount,usrquota /home
+sudo quotacheck -cug /home
+sudo quotaon /home
+sudo setquota -u examuser 0 0 50 50 /home
+#------------------
+
+
+echo "find /etc -type f -mmin -60" | sudo tee /tmp/exam.txt
+
+sudo sed -i '/\/boot/s/defaults/defaults,ro/' /etc/fstab
+sudo mount -o remount,ro /boot
+
+
+sudo lvextend -L +1G /dev/mapper/fedora-home
+sudo xfs_growfs /dev/mapper/fedora-home
+
+
+# Script pour configurer iptables
+
+# Vider les tables existantes
+iptables -F
+
+# Permettre les connexions entrantes sur les ports 80 (HTTP) et 443 (HTTPS)
+iptables -A INPUT -p tcp --dport 80 -j ACCEPT
+iptables -A INPUT -p tcp --dport 443 -j ACCEPT
+
+# Bloquer tout le reste
+iptables -A INPUT -j DROP
+
+# Sauvegarder les règles iptables
+sudo iptables-save | sudo tee /etc/iptables/rules.v4
+
+
+# Copiez le script dans /etc/init.d/ et donnez-lui les permissions d'exécution
+sudo cp iptables-config.sh /etc/init.d/
+sudo chmod +x /etc/init.d/iptables-config.sh
+
+# Utilisez systemctl pour activer le script au démarrage
+sudo systemctl enable iptables-config.sh
 
